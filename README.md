@@ -14,9 +14,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — M5 Chain 02 — real ink, machine-verified end to end; penecho 🟢: 7 strokes drawn on penecho's live canvas (headless browser), exported by penecho's own renderer, converted by the new ink2plan adapter, construction_gate C1–C5 exit 0. Verified reach 2×1→3×2=6. Gate's first catch: kitchen 4.4m² < Neufert 4.6 at 5.0m scale — sketch redeclared at 5.2m.
 - **2026-07-25** — Charter retrofitted — VISION + milestone arc, gated; META_REPO_PLAYBOOK minted: Paul's audit: no meta-repo playbook existed. Minted _templates/META_REPO_PLAYBOOK.md (charter-before-scaffold, composition doctrine, milestone arc) and applied it here: docs/VISION.md (north-star: verified reach = 🟢 × chains, now 3×1) + ROADMAP M5–M9, both enforced by tests/test_charter.py.
 - **2026-07-25** — M4 launched — long-form live on the portfolio; CI mystery closed: Article 'One front door. No badge without a gate.' shipped via PR #121 to agentic-portfolio (canonical URL) with house-style cover + Chain-01 infographic; LinkedIn/X syndication prefilled, clicks stay human. CI verdict: GitHub queue infra — v5/v6 workflow passed via dispatch once the queue recovered.
-- **2026-07-25** — Registry curation: company-os → ai-native-os; + graph-engineering-anything: Paul's call: company-os out; ai-native-os (remote: physical-ai-native-os, private) and graph-engineering-anything (private, public Vercel demo) in as ⚪ candidates with routing triggers. 17 satellites.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -29,12 +29,12 @@ edit the YAML, run `make build`; CI fails on drift.
 |---|---|---|---|
 | [anyagent](https://github.com/wjlgatech/anyagent) 🔒 | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
 | [design-anything](https://github.com/wjlgatech/design-anything) 🔒 | 🦾 physical | 🟢 integrated | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
+| [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟢 integrated | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
 | [FDE-os](https://github.com/wjlgatech/FDE-os) | 🌉 bridge | 🟡 digested | Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp |
 | [FM-os](https://github.com/wjlgatech/FM-os) | 💻 digital | 🟡 digested | Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first |
 | [blueprint-anything](https://github.com/wjlgatech/blueprint-anything) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
 | [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟡 digested | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |
 | [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟡 digested | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
-| [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟡 digested | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
 | [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟡 digested | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
 | [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟡 digested | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |

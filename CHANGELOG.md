@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.6.0 — 2026-07-25
+
+- M5: Chain 02 "real ink" — penecho export → `ink2plan` adapter (enclosed-region rooms,
+  wall-centerline unification, 100mm module snap, code-minimum openings policy) →
+  construction_gate exit 0 on a REAL export drawn on penecho's live canvas and rendered by
+  penecho's own exporter. penecho promoted 🟢; verified reach 2×1 → 3×2 = 6. Fixture banked;
+  6 adapter tests incl. a live gate run (skipped where design-anything is absent). CI gains pillow.
+
 ## 0.5.0 — 2026-07-25
 
 - M4: portfolio launch. Long-form live at

@@ -11,7 +11,7 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.5"
+version: "0.6"
 updated: "2026-07-25"
 satellites:
   - id: penecho
@@ -19,10 +19,10 @@ satellites:
     role: bridge
     capability: "AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge)"
     url: https://github.com/penecho/penecho
-    status: digested
+    status: integrated
     pinned_sha: e1b936fe51103243b79c82427eef5a369448a660
     license: AGPL-3.0-only
-    notes: "AGPL — pointer + pinned digest + thin skill ONLY; never vendored, never forked"
+    notes: "AGPL — pointer + pinned digest ONLY, never vendored. 🟢 earned 2026-07-25: real canvas export → ink2plan adapter → construction_gate exit 0 (docs/walkthroughs/real-ink-to-ready.md)"
     triggers: ["handwriting", "sketch", "canvas", "whiteboard", "draw by hand", "by hand"]
 
   - id: anyagent

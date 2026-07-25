@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "M5 Chain 02 — real ink, machine-verified end to end; penecho 🟢"
+    note: "7 strokes drawn on penecho's live canvas (headless browser), exported by penecho's own renderer, converted by the new ink2plan adapter, construction_gate C1–C5 exit 0. Verified reach 2×1→3×2=6. Gate's first catch: kitchen 4.4m² < Neufert 4.6 at 5.0m scale — sketch redeclared at 5.2m."
+  - date: "2026-07-25"
     title: "Charter retrofitted — VISION + milestone arc, gated; META_REPO_PLAYBOOK minted"
     note: "Paul's audit: no meta-repo playbook existed. Minted _templates/META_REPO_PLAYBOOK.md (charter-before-scaffold, composition doctrine, milestone arc) and applied it here: docs/VISION.md (north-star: verified reach = 🟢 × chains, now 3×1) + ROADMAP M5–M9, both enforced by tests/test_charter.py."
   - date: "2026-07-25"

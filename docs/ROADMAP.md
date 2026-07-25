@@ -18,7 +18,7 @@
 
 | M | Phase | Deliverable | DoD (runnable) | Reach target |
 |---|---|---|---|---|
-| M5 | Proof | **Chain 02 — real ink**: adapter from a penecho canvas export → `construction_gate` input; the sketch step becomes machine-verified | adapter + fixture export in-repo; gate exit 0 on a REAL export; penecho 🟡→🟢 | 3×2 |
+| M5 ✅ 2026-07-25 | Proof | **Chain 02 — real ink**: 7 strokes drawn on penecho's live canvas (headless browser, zoom 12→105%), exported by penecho's own renderer, adapted by `scripts/ink2plan.py`, gated | fixture in-repo; construction_gate C1–C5 exit 0 on the REAL export (walkthrough: real-ink-to-ready.md); penecho 🟢 | 3×2 ✓ |
 | M6 | Coverage | Digest wave 2: zero ⚪ in the registry (loop-engineering-anything, career-os, neuro-os, ai-native-os, graph-engineering-anything) | every satellite 🟡+; `make check` green | 3×2 |
 | M7 | Library | **Five chains**, each walkthrough manifest-gated + eval case + golden example banked from a real run (incl. one all-digital: career-os × research-anything; one all-physical: design-anything STL → ready_gate → print) | 5 walkthroughs; tests green | 5×5 |
 | M8 | Autonomy | AI-autonomous mode for bounded 🟢-only chains: router executes end-to-end, human gate at every irreversible step | `anyagent brace`/`enterprise` assessment passes threshold; autonomy is per-chain flags in registry | 7×5 |
@@ -26,6 +26,7 @@
 
 ## analyze trajectory (honest, not gamed)
 
+- M5 (2026-07-25): 79/100; tests 23 → 29 (adapter suite incl. live gate run).
 - M0: 68 → 75 → 77/100 (docstring passes; structure left honest at 14%).
 - M1: 78/100 (renderer: URL-less + 🔒). M2: 78/100 (structure 14→21%, real Router classes;
   tests 9→17). M3: 78/100 (tests 17→19). M4: 78/100 (no engine change — launch milestone).

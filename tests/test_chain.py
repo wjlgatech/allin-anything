@@ -21,4 +21,5 @@ def test_chain_satellites_carry_their_evidence():
     by_id = {s.id: s for s in reg.satellites}
     assert by_id["design-anything"].status == "integrated"
     assert "walkthroughs" in by_id["design-anything"].notes  # evidence pointer, not vibes
-    assert by_id["penecho"].status == "digested"  # honest: sketch step is upstream+human
+    assert by_id["penecho"].status == "integrated"  # earned by Chain 02 (real-ink-to-ready)
+    assert "walkthroughs" in by_id["penecho"].notes
