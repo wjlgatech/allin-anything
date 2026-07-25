@@ -23,7 +23,7 @@ human hand on it.
 ## North-star metric
 
 **Verified reach = (🟢 integrated satellites) × (proven chains).** Computable offline from
-`data/registry.yml` + `docs/walkthroughs/` — currently 5 × 5 = 25. Coverage
+`data/registry.yml` + `docs/walkthroughs/` — currently 8 × 5 = 40. Coverage
 (zero ⚪ in the registry) and chain count are the two levers; a milestone that moves neither is
 maintenance, not progress.
 
@@ -31,10 +31,11 @@ maintenance, not progress.
 
 - **AI-assisted (today):** the router declares the hand-off with statuses disclosed; a human runs
   the satellite. Chain 01 ran this way — the human/upstream sketch step is labeled, not hidden.
-- **AI-autonomous (unlocks at M8):** the router executes *bounded* chains end-to-end — but only
-  chains whose every machine step is 🟢, with a security/enterprise assessment passed and a human
-  gate at every irreversible or outward-facing step. Autonomy is earned per-chain, never granted
-  repo-wide.
+- **AI-autonomous (unlocked at M8, bounded):** `scripts/autorun.py` executes chains marked
+  `autonomous_bounded` in `data/chains.yml` — only when every satellite is 🟢 (re-checked at run
+  time), always stopping at the declared human gates. The autonomy *ceiling* is calibrated by
+  assessment (BRACE Tier-1 currently NO-GO for anything beyond local gate-running — see
+  docs/AUTONOMY.md); it rises only when those blockers actually close.
 
 ## Non-goals
 

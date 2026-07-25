@@ -29,6 +29,8 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 - **money-os** (💻) — finances; own gates run live (Chain 04, intent-to-money-gates).
 - **graph-engineering-anything** (💻 🔒) — evidence-tiered knowledge graphs; own gates run live
   (Chain 05, corpus-to-graph).
+- **rsi-os / FM-os** (⚙️ 💻) — self-improvement + foundation-model knowledge maps; gates run live.
+- **FDE-os** (🌉) — ship agents inside the customer's real environment; gates run live (225 tests).
 
 ## Routing hints (digested / candidates — verify before promising)
 
@@ -37,8 +39,6 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 - research-anything (💻 🔒) — verified, window-dated research briefs.
 - strategize-anything / reverse-engineering-anything (🔒 local-only) — strategy / reconstruction;
   pointer entries, route only for Paul locally.
-- rsi-os / FM-os (⚙️ 💻) — self-improvement and foundation-model knowledge maps.
-- FDE-os (🌉) — deploy agents inside a customer's real environment; live webapp.
 - career-os / ai-native-os (💻) — job search, AI-native org operations.
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.

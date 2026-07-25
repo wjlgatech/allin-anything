@@ -1,0 +1,34 @@
+name: weekly-freshness
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # Mondays 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: measure external pins
+        id: fresh
+        run: |
+          set +e
+          python3 scripts/freshness.py | tee /tmp/freshness.txt
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+      - name: open a human-gated issue when stale
+        if: steps.fresh.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "STALE satellite pin ($(date -u +%F))" \
+            --body-file /tmp/freshness.txt \
+            --repo "$GITHUB_REPOSITORY" || true

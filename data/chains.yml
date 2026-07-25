@@ -1,0 +1,61 @@
+# chains.yml — the chain library as data (single source of truth).
+# autonomy: assisted | autonomous_bounded
+#   autonomous_bounded requires: every listed satellite 🟢 integrated, executable steps,
+#   and >=1 declared human gate (the runner ALWAYS stops before the irreversible step).
+# cwd: "." = this repo; "projects/<name>" = sibling checkout (missing => honest BLOCKED, never fake).
+
+version: "1.0"
+chains:
+  - id: chain-01
+    title: "sketch by hand → verify it's buildable"
+    walkthrough: sketch-to-buildable.md
+    satellites: [penecho, design-anything]
+    autonomy: assisted
+    human_gates:
+      - "drawing + accepting ink on penecho (upstream, human by design)"
+      - "approving any real-world build"
+
+  - id: chain-02
+    title: "real ink → construction READY"
+    walkthrough: real-ink-to-ready.md
+    satellites: [penecho, design-anything]
+    autonomy: autonomous_bounded
+    steps:
+      - cwd: "."
+        cmd: ["python3", "scripts/ink2plan.py", "tests/fixtures/penecho-export-studio.png", "/tmp/allin-chain02.json", "--width-mm", "5200", "--name", "chain02-autorun"]
+      - cwd: "projects/design-anything"
+        cmd: ["python3", "pipeline/construction_gate.py", "/tmp/allin-chain02.json"]
+    human_gates:
+      - "approving any real-world build (READY is design-sanity, not a permit)"
+
+  - id: chain-03
+    title: "text brief → printable STL"
+    walkthrough: brief-to-printable.md
+    satellites: [design-anything]
+    autonomy: autonomous_bounded
+    steps:
+      - cwd: "projects/design-anything"
+        cmd: ["python3", "examples/planter/generate.py", "/tmp/allin-chain03.stl"]
+      - cwd: "projects/design-anything"
+        cmd: ["python3", "pipeline/ready_gate.py", "/tmp/allin-chain03.stl", "--min-feature", "3.0"]
+    human_gates:
+      - "starting the physical print (filament, printer, supervision)"
+
+  - id: chain-04
+    title: "finance intent → money-os gates"
+    walkthrough: intent-to-money-gates.md
+    satellites: [money-os]
+    autonomy: autonomous_bounded
+    steps:
+      - cwd: "projects/money-os"
+        cmd: ["make", "check"]
+    human_gates:
+      - "any actual financial action (money-os is human-gated for money by its own design)"
+
+  - id: chain-05
+    title: "corpus → evidence-tiered knowledge graph"
+    walkthrough: corpus-to-graph.md
+    satellites: [graph-engineering-anything, research-anything]
+    autonomy: assisted   # research-anything is 🟡 — an autonomous chain needs every satellite 🟢
+    human_gates:
+      - "publishing or acting on graph conclusions"

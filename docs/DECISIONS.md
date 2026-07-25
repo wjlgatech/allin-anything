@@ -1,5 +1,16 @@
 # Decision log
 
+- **2026-07-25 · M8: autonomy is calibrated by assessment, not argued with.** BRACE Tier-1 scored
+  the AutoRunner deployment NO-GO (15/44) — so the autonomy ceiling IS local, human-launched
+  gate-running with mandatory human gates. The score is the design constraint; raising the
+  ceiling requires actually closing the named blockers (scoped revocable credentials, recursive
+  kill switch, isolation). An honest NO-GO obeyed beats a gamed GO.
+- **2026-07-25 · License = CC0 1.0 (family precedent: FM-os, rsi-os), with explicit boundaries**
+  (external satellites keep their licenses; 🔒 pointers not covered). Swap to MIT/other is one
+  file if Paul prefers.
+- **2026-07-25 · M9 target shortfall stated:** 9×6 was the aspiration; shipped 8×5. The deltas
+  are named work (career-os needs a live gate run for 🟢; Chain 06 queued), not silently dropped.
+
 - **2026-07-25 · M6: career-os digested from a remote pin.** No local checkout exists on this
   machine; the digest was built from a shallow clone pinned at `395b64b2cb2f`. Its gate was not
   run, so 🟡 is its ceiling — a live run is the promotion path.

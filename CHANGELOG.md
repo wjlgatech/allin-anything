@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.0.0 — 2026-07-25
+
+- M8 (autonomy, bounded + calibrated): `data/chains.yml` is the chain library as data (autonomy
+  per-chain; ≥1 human gate mandatory, validator-enforced). `AutoRunner` executes
+  `autonomous_bounded` chains only — satellites re-checked 🟢 at runtime, missing checkouts are
+  BLOCKED not faked, every run journaled to `runs/journal.jsonl`, execution always stops at the
+  human gates. Live bounded run of chain-02: exit 0. **BRACE Tier-1: NO-GO 15/44 — recorded and
+  OBEYED** (ceiling = local gate-running); enterprise 6/14 → 7/14 (LICENSE CC0, CODEOWNERS).
+- M9 (cadence, v1.0): weekly `sync.yml` measures external-pin freshness (`scripts/freshness.py`,
+  offline-tested; unreachable = not measured = flagged) and opens a human-gated issue on STALE —
+  never auto-updates a pin. README gains a generated, drift-gated `Verified reach` badge.
+- Promotions by live gate runs: rsi-os, FM-os, FDE-os (225 tests) → 🟢. Reach 5×5 → **8×5 = 40**.
+
 ## 0.7.0 — 2026-07-25
 
 - M6: digest wave 2 — registry reaches **zero ⚪** (17/17 satellites 🟡+). career-os digested from

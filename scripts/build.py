@@ -28,7 +28,8 @@ def main() -> int:
 
     readme = ROOT / "README.md"
     current = readme.read_text()
-    rendered = generate.render_readme(current, reg, ROOT / "data" / "news.yml")
+    rendered = generate.render_readme(current, reg, ROOT / "data" / "news.yml",
+                                      ROOT / "docs" / "walkthroughs")
 
     if args.check:
         if rendered != current:

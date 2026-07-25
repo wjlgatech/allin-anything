@@ -51,7 +51,16 @@ def inject(text: str, name: str, body: str) -> str:
     return pattern.sub(block, text)
 
 
-def render_readme(readme_text: str, reg: Registry, news_path: Path) -> str:
+def render_reach(reg: Registry, walkthroughs_dir: Path) -> str:
+    """The north-star, computed: 🟢 integrated × proven chains (walkthrough files)."""
+    greens = len(reg.by_status("integrated"))
+    chains = len(list(walkthroughs_dir.glob("*.md")))
+    return (f"**Verified reach = {greens} 🟢 × {chains} chains = {greens * chains}** — "
+            f"computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).")
+
+
+def render_readme(readme_text: str, reg: Registry, news_path: Path, walkthroughs_dir: Path) -> str:
     out = inject(readme_text, "satellites", render_satellites(reg))
     out = inject(out, "news", render_news(news_path))
+    out = inject(out, "reach", render_reach(reg, walkthroughs_dir))
     return out

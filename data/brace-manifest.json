@@ -1,0 +1,33 @@
+{
+  "name": "allin-anything-autorunner",
+  "container": "",
+  "harness": "allin_anything.autorun.AutoRunner@1.0.0",
+  "system_prompt": "",
+  "model": "",
+  "config": {
+    "note": "deterministic subprocess orchestrator — no LLM in the execution loop; chains and steps are declared in data/chains.yml (git-versioned)"
+  },
+  "token_scopes": [],
+  "credentials_independently_revocable": false,
+  "destructive_verbs_denied": ["delete", "drop", "force-push", "wipe", "teardown", "payment", "send"],
+  "default_deny_destructive": true,
+  "tools_allowlist": ["python3 scripts/ink2plan.py", "python3 pipeline/construction_gate.py", "python3 examples/planter/generate.py", "python3 pipeline/ready_gate.py", "make check"],
+  "system_prompt_source_controlled": true,
+  "system_prompt_web_editable": false,
+  "environment_isolated": false,
+  "egress_allowlist": [],
+  "multitenant_isolation_infra": false,
+  "capability_review_days": 0,
+  "container_signed": false,
+  "container_minimal": false,
+  "kernel_isolation": "",
+  "limits": { "iterations": 2, "wall_clock_s": 300 },
+  "input_validated_at_boundary": true,
+  "channels_separated": false,
+  "memory_scoped_per_instance_type": false,
+  "security_monitoring_separate": false,
+  "behavioral_alerts": [],
+  "behavioral_baselines_context_stratified": false,
+  "audit_retention_by_risk_class": false,
+  "kill_switch": { "tested_days_ago": 0, "recursive": false, "safe_state": true }
+}

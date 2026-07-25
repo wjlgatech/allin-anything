@@ -87,7 +87,8 @@ satellites:
     role: engine
     capability: "Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026)"
     url: https://github.com/wjlgatech/rsi-os
-    status: digested
+    status: integrated
+    notes: "🟢 earned 2026-07-25: own make check run live, exit 0 (ingest check passed)"
     triggers: ["self-improv", "recursive self", "automated ai research", "godel"]
 
   - id: FM-os
@@ -95,7 +96,8 @@ satellites:
     role: digital
     capability: "Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first"
     url: https://github.com/wjlgatech/FM-os
-    status: digested
+    status: integrated
+    notes: "🟢 earned 2026-07-25: own make check run live, exit 0 (router index drift-checked)"
     triggers: ["fine-tun", "pretrain", "post-train", "small language model", "slm", "train a model"]
 
   - id: FDE-os
@@ -103,7 +105,8 @@ satellites:
     role: bridge
     capability: "Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp"
     url: https://github.com/wjlgatech/FDE-os
-    status: digested
+    status: integrated
+    notes: "🟢 earned 2026-07-25: own make check run live, exit 0 (225 tests)"
     triggers: ["forward deployed", "customer environment", "on-site", "field engineer"]
 
   - id: money-os

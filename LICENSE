@@ -1,0 +1,13 @@
+CC0 1.0 Universal
+
+To the extent possible under law, Paul Jialiang Wu has waived all copyright and
+related or neighboring rights to allin-anything (the composition layer: registry,
+router, adapters, gates, and docs in this repository).
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Note the boundaries this dedication does NOT cross (see data/registry.yml):
+- External satellites keep their own licenses (penecho is AGPL-3.0-only and is
+  never vendored here — pointer + pinned digest only).
+- Private family repos referenced as pointers (🔒) are NOT covered; all rights
+  reserved by their owner.

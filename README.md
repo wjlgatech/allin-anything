@@ -11,12 +11,18 @@ Inspired by [penecho](https://github.com/penecho/penecho): a shared canvas where
 becomes digital model input. allin-anything generalizes that bridge — *any* physical or digital
 surface, one interaction contract.
 
+## Verified reach
+
+<!-- BEGIN GENERATED: reach -->
+**Verified reach = 8 🟢 × 5 chains = 40** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
+<!-- END GENERATED: reach -->
+
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — v1.0 — M8 bounded autonomy (BRACE-calibrated) + M9 cadence; reach 40: chains.yml + AutoRunner (🟢-only, human gates mandatory, journaled; live chain-02 run exit 0). BRACE Tier-1 honestly NO-GO 15/44 → autonomy ceiling = local gate-running. Enterprise 43%→50% (LICENSE CC0 + CODEOWNERS). Weekly freshness workflow (stale pin → human-gated issue). rsi-os, FM-os, FDE-os 🟢 by live gate runs (225 tests on FDE-os). Reach 5×5 → 8×5 = 40.
 - **2026-07-25** — M6+M7 — zero ⚪ and a five-chain library; verified reach 25: Digest wave 2 (5 satellites, career-os pinned remotely — no local checkout). Chains 03–05 run live: planter STL ready_gate G1–G4, money-os make check (28 tests), graph-engineering-anything make check (green-at-birth selftest). money-os + graph-engineering-anything 🟢. Reach 3×2 → 5×5 = 25.
 - **2026-07-25** — M5 Chain 02 — real ink, machine-verified end to end; penecho 🟢: 7 strokes drawn on penecho's live canvas (headless browser), exported by penecho's own renderer, converted by the new ink2plan adapter, construction_gate C1–C5 exit 0. Verified reach 2×1→3×2=6. Gate's first catch: kitchen 4.4m² < Neufert 4.6 at 5.0m scale — sketch redeclared at 5.2m.
-- **2026-07-25** — Charter retrofitted — VISION + milestone arc, gated; META_REPO_PLAYBOOK minted: Paul's audit: no meta-repo playbook existed. Minted _templates/META_REPO_PLAYBOOK.md (charter-before-scaffold, composition doctrine, milestone arc) and applied it here: docs/VISION.md (north-star: verified reach = 🟢 × chains, now 3×1) + ROADMAP M5–M9, both enforced by tests/test_charter.py.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -27,13 +33,14 @@ edit the YAML, run `make build`; CI fails on drift.
 <!-- BEGIN GENERATED: satellites -->
 | Satellite | World | Status | Capability |
 |---|---|---|---|
+| [FDE-os](https://github.com/wjlgatech/FDE-os) | 🌉 bridge | 🟢 integrated | Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp |
+| [FM-os](https://github.com/wjlgatech/FM-os) | 💻 digital | 🟢 integrated | Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first |
 | [anyagent](https://github.com/wjlgatech/anyagent) 🔒 | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
 | [design-anything](https://github.com/wjlgatech/design-anything) 🔒 | 🦾 physical | 🟢 integrated | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
 | [graph-engineering-anything](https://github.com/wjlgatech/graph-engineering-anything) 🔒 | 💻 digital | 🟢 integrated | Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel) |
 | [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟢 integrated | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
 | [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟢 integrated | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
-| [FDE-os](https://github.com/wjlgatech/FDE-os) | 🌉 bridge | 🟡 digested | Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp |
-| [FM-os](https://github.com/wjlgatech/FM-os) | 💻 digital | 🟡 digested | Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first |
+| [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟢 integrated | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
 | [ai-native-os](https://github.com/wjlgatech/physical-ai-native-os) 🔒 | 💻 digital | 🟡 digested | Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door |
 | [blueprint-anything](https://github.com/wjlgatech/blueprint-anything) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | 🟡 digested | Autonomous job-search pipeline + self-upgrading inner loop |
@@ -42,7 +49,6 @@ edit the YAML, run `make build`; CI fails on drift.
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | 🟡 digested | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
 | [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟡 digested | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
-| [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟡 digested | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
 <!-- END GENERATED: satellites -->
 
@@ -57,8 +63,10 @@ make check   # pytest + drift gate + ainative self-audit (offline, deterministic
 
 ## Honest edges
 
-- Most satellites are still ⚪ candidates — named and role-assigned, not yet verified. The table
-  above tells you exactly which; nothing here pretends otherwise.
+- A 🟡 satellite's own gate has NOT run here — only its facts are pinned. The table tells you
+  exactly which; nothing here pretends otherwise (career-os isn't even checked out locally).
+- Autonomy is bounded and BRACE-calibrated: the assessment says NO-GO beyond local gate-running,
+  and the AutoRunner obeys it — every chain stops at a declared human gate (docs/AUTONOMY.md).
 - penecho is AGPL-3.0 and lives upstream: we index it (pointer + pinned SHA + digest), we do not
   ship, fork, or wrap its code. Run it from its own repo.
 - The physical-world reach is only as real as each satellite's own gates (e.g. design-anything's

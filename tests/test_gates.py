@@ -10,7 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_readme_has_no_drift():
     reg = registry.load(ROOT / "data" / "registry.yml")
     current = (ROOT / "README.md").read_text()
-    assert generate.render_readme(current, reg, ROOT / "data" / "news.yml") == current
+    assert generate.render_readme(current, reg, ROOT / "data" / "news.yml",
+                                  ROOT / "docs" / "walkthroughs") == current
 
 
 def test_ainative_gate_passes():
