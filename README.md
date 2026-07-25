@@ -20,9 +20,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — v1.0 launch article live — 'The Best Number in My v1.0 Was a NO-GO.': Long-form on the portfolio (PR #123, canonical URL live-verified) with cover + one-day-arc infographic; LinkedIn/X composers prefilled, posting stays Paul's click.
 - **2026-07-25** — v1.0 — M8 bounded autonomy (BRACE-calibrated) + M9 cadence; reach 40: chains.yml + AutoRunner (🟢-only, human gates mandatory, journaled; live chain-02 run exit 0). BRACE Tier-1 honestly NO-GO 15/44 → autonomy ceiling = local gate-running. Enterprise 43%→50% (LICENSE CC0 + CODEOWNERS). Weekly freshness workflow (stale pin → human-gated issue). rsi-os, FM-os, FDE-os 🟢 by live gate runs (225 tests on FDE-os). Reach 5×5 → 8×5 = 40.
 - **2026-07-25** — M6+M7 — zero ⚪ and a five-chain library; verified reach 25: Digest wave 2 (5 satellites, career-os pinned remotely — no local checkout). Chains 03–05 run live: planter STL ready_gate G1–G4, money-os make check (28 tests), graph-engineering-anything make check (green-at-birth selftest). money-os + graph-engineering-anything 🟢. Reach 3×2 → 5×5 = 25.
-- **2026-07-25** — M5 Chain 02 — real ink, machine-verified end to end; penecho 🟢: 7 strokes drawn on penecho's live canvas (headless browser), exported by penecho's own renderer, converted by the new ink2plan adapter, construction_gate C1–C5 exit 0. Verified reach 2×1→3×2=6. Gate's first catch: kitchen 4.4m² < Neufert 4.6 at 5.0m scale — sketch redeclared at 5.2m.
 <!-- END GENERATED: news -->
 
 ## Satellites
