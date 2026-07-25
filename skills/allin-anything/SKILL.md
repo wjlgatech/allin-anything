@@ -36,7 +36,8 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
   pointer entries, route only for Paul locally.
 - rsi-os / FM-os (⚙️ 💻) — self-improvement and foundation-model knowledge maps.
 - FDE-os (🌉) — deploy agents inside a customer's real environment; live webapp.
-- money-os / career-os / company-os (💻) — finances, job search, founder ops.
+- money-os / career-os / ai-native-os (💻) — finances, job search, AI-native org operations.
+- graph-engineering-anything (💻 🔒) — evidence-tiered knowledge graphs; live demo public.
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
 

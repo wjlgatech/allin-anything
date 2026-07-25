@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "Registry curation: company-os → ai-native-os; + graph-engineering-anything"
+    note: "Paul's call: company-os out; ai-native-os (remote: physical-ai-native-os, private) and graph-engineering-anything (private, public Vercel demo) in as ⚪ candidates with routing triggers. 17 satellites."
+  - date: "2026-07-25"
     title: "M3 Chain 01 verified — sketch by hand → buildable floor plan"
     note: "design-anything promoted ⚪→🟢 by RUNNING its gate (make check 7.7s green; construction_gate C1-C5 pass, exit 0). Walkthrough with verbatim evidence in docs/walkthroughs/; penecho stays 🟡 honestly (sketch step is upstream+human). CI actions bumped v5/v6 + workflow_dispatch."
   - date: "2026-07-25"

@@ -11,7 +11,7 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.4"
+version: "0.5"
 updated: "2026-07-25"
 satellites:
   - id: penecho
@@ -132,13 +132,24 @@ satellites:
     status: candidate
     triggers: ["converge", "judge loop", "generate and judge"]
 
-  - id: company-os
+  - id: ai-native-os
     kind: family
     role: digital
-    capability: "Governed agent runtime for founders & operators"
-    url: https://github.com/wjlgatech/company-os
+    capability: "Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door"
+    url: https://github.com/wjlgatech/physical-ai-native-os
     status: candidate
-    triggers: ["founder ops", "governed runtime", "company operations"]
+    visibility: private
+    notes: "remote repo name is physical-ai-native-os; local folder is ai-native-os"
+    triggers: ["ai-native org", "founder ops", "company operations", "institutional knowledge", "compounding org"]
+
+  - id: graph-engineering-anything
+    kind: family
+    role: digital
+    capability: "Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel)"
+    url: https://github.com/wjlgatech/graph-engineering-anything
+    status: candidate
+    visibility: private
+    triggers: ["knowledge graph", "graph engineering", "build the graph", "entity resolution", "graph rag"]
 
   - id: career-os
     kind: family

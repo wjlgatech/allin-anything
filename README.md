@@ -14,9 +14,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — Registry curation: company-os → ai-native-os; + graph-engineering-anything: Paul's call: company-os out; ai-native-os (remote: physical-ai-native-os, private) and graph-engineering-anything (private, public Vercel demo) in as ⚪ candidates with routing triggers. 17 satellites.
 - **2026-07-25** — M3 Chain 01 verified — sketch by hand → buildable floor plan: design-anything promoted ⚪→🟢 by RUNNING its gate (make check 7.7s green; construction_gate C1-C5 pass, exit 0). Walkthrough with verbatim evidence in docs/walkthroughs/; penecho stays 🟡 honestly (sketch step is upstream+human). CI actions bumped v5/v6 + workflow_dispatch.
 - **2026-07-25** — M2 router proven — every eval case is now a pytest: Deterministic Router (triggers-as-data in registry.yml) + scripts/route.py CLI; 5 should-trigger + 3 should-not cases executable in tests/test_router.py, incl. the AGPL vendoring refusal and the cross-world penecho→design-anything chain.
-- **2026-07-25** — M1 digest wave 1 — 9 satellites promoted to 🟡: blueprint/research/master/strategize/reverse-engineering-anything + rsi/FM/FDE/money-os digested with pinned local SHAs; private repos are public-safe pointers only; registry now 16 satellites.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -39,8 +39,9 @@ edit the YAML, run `make build`; CI fails on drift.
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
 | [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟡 digested | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
+| [ai-native-os](https://github.com/wjlgatech/physical-ai-native-os) 🔒 | 💻 digital | ⚪ candidate | Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | ⚪ candidate | Autonomous job-search pipeline + self-upgrading inner loop |
-| [company-os](https://github.com/wjlgatech/company-os) | 💻 digital | ⚪ candidate | Governed agent runtime for founders & operators |
+| [graph-engineering-anything](https://github.com/wjlgatech/graph-engineering-anything) 🔒 | 💻 digital | ⚪ candidate | Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel) |
 | [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | ⚪ candidate | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | ⚪ candidate | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
 <!-- END GENERATED: satellites -->
