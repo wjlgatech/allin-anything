@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.4.1 — 2026-07-25
+
+- Reverted CI actions to checkout@v4 + setup-python@v5 (the last-green config, kept
+  `workflow_dispatch`): every run on the v5/v6 file died log-less (startup_failure or zero-step
+  "failure") while the v4/v5 file passed. Tags exist upstream, so root cause is unproven — this
+  is the evidence-driven rollback, not a diagnosis. Deprecation-warning cleanup retried later.
+
 ## 0.4.0 — 2026-07-25
 
 - M3: Chain 01 (sketch → buildable) walked with live evidence — design-anything's own gate run
