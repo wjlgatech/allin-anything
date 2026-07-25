@@ -19,13 +19,14 @@
 | M | Phase | Deliverable | DoD (runnable) | Reach target |
 |---|---|---|---|---|
 | M5 ✅ 2026-07-25 | Proof | **Chain 02 — real ink**: 7 strokes drawn on penecho's live canvas (headless browser, zoom 12→105%), exported by penecho's own renderer, adapted by `scripts/ink2plan.py`, gated | fixture in-repo; construction_gate C1–C5 exit 0 on the REAL export (walkthrough: real-ink-to-ready.md); penecho 🟢 | 3×2 ✓ |
-| M6 | Coverage | Digest wave 2: zero ⚪ in the registry (loop-engineering-anything, career-os, neuro-os, ai-native-os, graph-engineering-anything) | every satellite 🟡+; `make check` green | 3×2 |
-| M7 | Library | **Five chains**, each walkthrough manifest-gated + eval case + golden example banked from a real run (incl. one all-digital: career-os × research-anything; one all-physical: design-anything STL → ready_gate → print) | 5 walkthroughs; tests green | 5×5 |
+| M6 ✅ 2026-07-25 | Coverage | Digest wave 2 — **zero ⚪**: loop-engineering-anything, career-os (remote-pinned; no local checkout), neuro-os, ai-native-os, graph-engineering-anything all 🟡+ | 5 digests with pinned SHAs; `make check` green | 3×2 |
+| M7 ✅ 2026-07-25 | Library | **Five chains live**: 01 sketch→buildable · 02 real-ink→READY · 03 brief→printable STL (ready_gate G1–G4) · 04 finance intent→money-os gates (28 tests) · 05 corpus→graph-engineering-anything gates (green-at-birth selftest) | 5 walkthroughs manifest-gated (test_every_walkthrough…); each router verdict a pytest; money-os + graph-engineering-anything 🟢 by live gate runs | 5×5 ✓ |
 | M8 | Autonomy | AI-autonomous mode for bounded 🟢-only chains: router executes end-to-end, human gate at every irreversible step | `anyagent brace`/`enterprise` assessment passes threshold; autonomy is per-chain flags in registry | 7×5 |
 | M9 | Cadence | v1.0: weekly freshness sync (STALE measured, human-gated PRs), one long-form per new chain, north-star tracked in README | sync workflow merged; `## Verified reach` badge drift-gated | 9×6 |
 
 ## analyze trajectory (honest, not gamed)
 
+- M6+M7 (2026-07-25): 79/100 steady; tests 29 → 33 (3 chain-route cases + walkthrough sweep).
 - M5 (2026-07-25): 79/100; tests 23 → 29 (adapter suite incl. live gate run).
 - M0: 68 → 75 → 77/100 (docstring passes; structure left honest at 14%).
 - M1: 78/100 (renderer: URL-less + 🔒). M2: 78/100 (structure 14→21%, real Router classes;

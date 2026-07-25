@@ -16,6 +16,16 @@ def test_chain_walkthrough_manifest():
     assert len(text.split()) >= 200  # a walkthrough, not a stub
 
 
+def test_every_walkthrough_has_verdict_and_honest_edges():
+    walkthroughs = sorted((ROOT / "docs" / "walkthroughs").glob("*.md"))
+    assert len(walkthroughs) >= 5  # the M7 chain library
+    for w in walkthroughs:
+        text = w.read_text()
+        assert "## Router verdict" in text, f"{w.name}: no router verdict"
+        assert "## Honest edges" in text, f"{w.name}: no honest edges"
+        assert len(text.split()) >= 120, f"{w.name}: a stub, not a walkthrough"
+
+
 def test_chain_satellites_carry_their_evidence():
     reg = registry.load(ROOT / "data" / "registry.yml")
     by_id = {s.id: s for s in reg.satellites}

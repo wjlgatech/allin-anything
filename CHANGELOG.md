@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.7.0 — 2026-07-25
+
+- M6: digest wave 2 — registry reaches **zero ⚪** (17/17 satellites 🟡+). career-os digested from
+  a shallow remote pin (no local checkout — stated in its digest, 🟡 is its ceiling until a live
+  gate run). Honest gaps recorded for repos without a root `make check`.
+- M7: the five-chain library — Chains 03 (brief→printable STL, ready_gate G1–G4 exit 0),
+  04 (finance intent→money-os `make check`, 28 tests, exit 0), 05 (corpus→graph-engineering-
+  anything `make check`, green-at-birth selftest, exit 0) join 01–02. Every walkthrough is
+  manifest-gated; every router verdict is a pytest. money-os + graph-engineering-anything 🟢.
+  Verified reach 3×2 → **5×5 = 25**.
+
 ## 0.6.0 — 2026-07-25
 
 - M5: Chain 02 "real ink" — penecho export → `ink2plan` adapter (enclosed-region rooms,

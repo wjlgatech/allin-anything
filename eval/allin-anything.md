@@ -16,6 +16,12 @@ pinned by `tests/test_gates.py::test_skill_eval_has_both_directions`.
   · `test_agent_app_routes_to_anyagent`
 - cross-world chain: "sketch a room layout by hand, then verify it's buildable" → penecho +
   design-anything, chain declared · `test_cross_world_chain_declares_both`
+- "design and 3D print a self-watering planter" → design-anything (Chain 03)
+  · `test_planter_routes_to_design_anything`
+- "run my weekly finance review and rebalance my budget" → money-os (Chain 04)
+  · `test_finance_routes_to_money_os`
+- "build the knowledge graph for my research corpus" → graph-engineering-anything first,
+  research-anything declared at its honest status (Chain 05) · `test_graph_routes_to_gea_first`
 
 ## Should NOT trigger
 

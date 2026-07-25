@@ -11,7 +11,7 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.6"
+version: "0.7"
 updated: "2026-07-25"
 satellites:
   - id: penecho
@@ -111,7 +111,8 @@ satellites:
     role: digital
     capability: "AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0)"
     url: https://github.com/wjlgatech/money-os
-    status: digested
+    status: integrated
+    notes: "🟢 earned 2026-07-25: own make check run live, exit 0 (28 tests, all gates) — docs/walkthroughs/intent-to-money-gates.md"
     triggers: ["finance", "invest", "budget", "wealth", "portfolio rebalanc"]
 
   - id: design-anything
@@ -129,7 +130,7 @@ satellites:
     role: engine
     capability: "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence"
     url: https://github.com/wjlgatech/loop-engineering-anything
-    status: candidate
+    status: digested
     triggers: ["converge", "judge loop", "generate and judge"]
 
   - id: ai-native-os
@@ -137,7 +138,7 @@ satellites:
     role: digital
     capability: "Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door"
     url: https://github.com/wjlgatech/physical-ai-native-os
-    status: candidate
+    status: digested
     visibility: private
     notes: "remote repo name is physical-ai-native-os; local folder is ai-native-os"
     triggers: ["ai-native org", "founder ops", "company operations", "institutional knowledge", "compounding org"]
@@ -147,8 +148,9 @@ satellites:
     role: digital
     capability: "Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel)"
     url: https://github.com/wjlgatech/graph-engineering-anything
-    status: candidate
+    status: integrated
     visibility: private
+    notes: "🟢 earned 2026-07-25: own make check run live, exit 0 (incl. green-at-birth selftest) — docs/walkthroughs/corpus-to-graph.md"
     triggers: ["knowledge graph", "graph engineering", "build the graph", "entity resolution", "graph rag"]
 
   - id: career-os
@@ -156,7 +158,8 @@ satellites:
     role: digital
     capability: "Autonomous job-search pipeline + self-upgrading inner loop"
     url: https://github.com/wjlgatech/career-os
-    status: candidate
+    status: digested
+    notes: "no local checkout — digest pinned from a shallow remote clone"
     triggers: ["job", "resume", "career", "application"]
 
   - id: neuro-os
@@ -164,5 +167,5 @@ satellites:
     role: physical
     capability: "Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical)"
     url: https://github.com/wjlgatech/neuro-os
-    status: candidate
+    status: digested
     triggers: ["brain", "neuroscience", "neural mechanism"]

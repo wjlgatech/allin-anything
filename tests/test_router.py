@@ -48,6 +48,23 @@ def test_cross_world_chain_declares_both(router):
     assert {"penecho", "design-anything"} <= set(d.satellite_ids)
 
 
+def test_planter_routes_to_design_anything(router):
+    d = router.route("design and 3D print a self-watering planter")
+    assert d.mode == "route" and d.satellite_ids[0] == "design-anything"
+
+
+def test_finance_routes_to_money_os(router):
+    d = router.route("run my weekly finance review and rebalance my budget")
+    assert d.mode == "route" and d.satellite_ids[0] == "money-os"
+
+
+def test_graph_routes_to_gea_first(router):
+    d = router.route("build the knowledge graph for my research corpus")
+    assert d.mode == "route"
+    assert d.satellite_ids[0] == "graph-engineering-anything"
+    assert "research-anything=digested" in d.reason  # partner declared at honest status
+
+
 # ---- Should NOT trigger (or refuse) ----
 
 def test_named_satellite_goes_direct(router):

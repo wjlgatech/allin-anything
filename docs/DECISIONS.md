@@ -1,5 +1,13 @@
 # Decision log
 
+- **2026-07-25 · M6: career-os digested from a remote pin.** No local checkout exists on this
+  machine; the digest was built from a shallow clone pinned at `395b64b2cb2f`. Its gate was not
+  run, so 🟡 is its ceiling — a live run is the promotion path.
+- **2026-07-25 · M7: a chain's minimum bar = router verdict (pytest) + the target's own gate run
+  live (exit 0) + a manifest-gated walkthrough with honest edges.** Chains 04/05 verify the
+  hand-off target's health, not a domain computation — the deeper golden examples are named as
+  the next depth in each walkthrough, not claimed.
+
 - **2026-07-25 · Charter retrofitted; META_REPO_PLAYBOOK minted.** Paul's audit was correct: no
   meta-repo playbook existed — the repo followed REPO_PLAYBOOK mechanics but had a build log where
   a founding charter belonged. Fixed both ends: `_templates/META_REPO_PLAYBOOK.md` (canonical,

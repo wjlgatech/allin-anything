@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "M6+M7 — zero ⚪ and a five-chain library; verified reach 25"
+    note: "Digest wave 2 (5 satellites, career-os pinned remotely — no local checkout). Chains 03–05 run live: planter STL ready_gate G1–G4, money-os make check (28 tests), graph-engineering-anything make check (green-at-birth selftest). money-os + graph-engineering-anything 🟢. Reach 3×2 → 5×5 = 25."
+  - date: "2026-07-25"
     title: "M5 Chain 02 — real ink, machine-verified end to end; penecho 🟢"
     note: "7 strokes drawn on penecho's live canvas (headless browser), exported by penecho's own renderer, converted by the new ink2plan adapter, construction_gate C1–C5 exit 0. Verified reach 2×1→3×2=6. Gate's first catch: kitchen 4.4m² < Neufert 4.6 at 5.0m scale — sketch redeclared at 5.2m."
   - date: "2026-07-25"

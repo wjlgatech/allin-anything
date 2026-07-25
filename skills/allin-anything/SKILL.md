@@ -22,13 +22,16 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 ## Routing table (integrated satellites)
 
 - **anyagent** (⚙️ engine) — "build/grade/improve/ship an agent app", messy objectives → `anyagent goal`.
-- **design-anything** (🦾 physical) — physical blueprints with machine gates (STL / floor plan /
-  sewing / sim); the physical end of Chain 01 (docs/walkthroughs/sketch-to-buildable.md).
+- **design-anything** (🦾 physical) — physical blueprints with machine gates; Chains 01–03
+  (sketch-to-buildable, real-ink-to-ready, brief-to-printable).
+- **penecho** (🌉 bridge, external, AGPL — run upstream, NEVER vendor) — handwriting/canvas ink;
+  its export feeds `scripts/ink2plan.py` (Chain 02).
+- **money-os** (💻) — finances; own gates run live (Chain 04, intent-to-money-gates).
+- **graph-engineering-anything** (💻 🔒) — evidence-tiered knowledge graphs; own gates run live
+  (Chain 05, corpus-to-graph).
 
 ## Routing hints (digested / candidates — verify before promising)
 
-- penecho (🌉 bridge, external, AGPL) — handwriting/spatial-canvas thinking → point the user to run
-  it upstream (`github.com/penecho/penecho`, pinned digest in `docs/satellites/penecho.md`). NEVER vendor.
 - blueprint-anything (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
 - master-anything (💻 🔒) — learn/verify/express any hard topic.
 - research-anything (💻 🔒) — verified, window-dated research briefs.
@@ -36,8 +39,7 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
   pointer entries, route only for Paul locally.
 - rsi-os / FM-os (⚙️ 💻) — self-improvement and foundation-model knowledge maps.
 - FDE-os (🌉) — deploy agents inside a customer's real environment; live webapp.
-- money-os / career-os / ai-native-os (💻) — finances, job search, AI-native org operations.
-- graph-engineering-anything (💻 🔒) — evidence-tiered knowledge graphs; live demo public.
+- career-os / ai-native-os (💻) — job search, AI-native org operations.
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
 
