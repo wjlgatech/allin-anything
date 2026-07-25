@@ -14,9 +14,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — Charter retrofitted — VISION + milestone arc, gated; META_REPO_PLAYBOOK minted: Paul's audit: no meta-repo playbook existed. Minted _templates/META_REPO_PLAYBOOK.md (charter-before-scaffold, composition doctrine, milestone arc) and applied it here: docs/VISION.md (north-star: verified reach = 🟢 × chains, now 3×1) + ROADMAP M5–M9, both enforced by tests/test_charter.py.
 - **2026-07-25** — M4 launched — long-form live on the portfolio; CI mystery closed: Article 'One front door. No badge without a gate.' shipped via PR #121 to agentic-portfolio (canonical URL) with house-style cover + Chain-01 infographic; LinkedIn/X syndication prefilled, clicks stay human. CI verdict: GitHub queue infra — v5/v6 workflow passed via dispatch once the queue recovered.
 - **2026-07-25** — Registry curation: company-os → ai-native-os; + graph-engineering-anything: Paul's call: company-os out; ai-native-os (remote: physical-ai-native-os, private) and graph-engineering-anything (private, public Vercel demo) in as ⚪ candidates with routing triggers. 17 satellites.
-- **2026-07-25** — M3 Chain 01 verified — sketch by hand → buildable floor plan: design-anything promoted ⚪→🟢 by RUNNING its gate (make check 7.7s green; construction_gate C1-C5 pass, exit 0). Walkthrough with verbatim evidence in docs/walkthroughs/; penecho stays 🟡 honestly (sketch step is upstream+human). CI actions bumped v5/v6 + workflow_dispatch.
 <!-- END GENERATED: news -->
 
 ## Satellites

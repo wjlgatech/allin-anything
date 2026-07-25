@@ -25,4 +25,6 @@ as the founding bridge satellite.
 Not another app — a **composition contract**. Each satellite already does one world well; the 10x
 is the verified index + router that makes them one product, at the cost of one YAML entry per repo.
 
-## Milestones → docs/ROADMAP.md (machine-checkable DoD table)
+## Charter → docs/VISION.md (vision · mission · north-star · operating modes · non-goals)
+## Milestones → docs/ROADMAP.md (the arc: Foundation → Coverage → Proof → Library → Autonomy → Cadence)
+## Pattern → docs/META_REPO_PLAYBOOK.md (canonical copy: `_templates/META_REPO_PLAYBOOK.md`)

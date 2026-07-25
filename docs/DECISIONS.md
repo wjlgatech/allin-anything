@@ -1,5 +1,12 @@
 # Decision log
 
+- **2026-07-25 · Charter retrofitted; META_REPO_PLAYBOOK minted.** Paul's audit was correct: no
+  meta-repo playbook existed — the repo followed REPO_PLAYBOOK mechanics but had a build log where
+  a founding charter belonged. Fixed both ends: `_templates/META_REPO_PLAYBOOK.md` (canonical,
+  earned from strategize-/research-/design-/allin-anything) now mandates charter-before-scaffold;
+  this repo gained docs/VISION.md (north-star: verified reach = 🟢 × chains) + a phased ROADMAP
+  (M5–M9), both manifest-gated by tests/test_charter.py so the charter can't rot into prose.
+
 - **2026-07-25 · Shape = content/publishing (playbook default).** Public build with a portfolio
   launch (M4). No deviation from the playbook shapes.
 - **2026-07-25 · penecho is a satellite, never a base.** AGPL-3.0-only upstream → pointer +

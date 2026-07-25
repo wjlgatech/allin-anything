@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "Charter retrofitted — VISION + milestone arc, gated; META_REPO_PLAYBOOK minted"
+    note: "Paul's audit: no meta-repo playbook existed. Minted _templates/META_REPO_PLAYBOOK.md (charter-before-scaffold, composition doctrine, milestone arc) and applied it here: docs/VISION.md (north-star: verified reach = 🟢 × chains, now 3×1) + ROADMAP M5–M9, both enforced by tests/test_charter.py."
+  - date: "2026-07-25"
     title: "M4 launched — long-form live on the portfolio; CI mystery closed"
     note: "Article 'One front door. No badge without a gate.' shipped via PR #121 to agentic-portfolio (canonical URL) with house-style cover + Chain-01 infographic; LinkedIn/X syndication prefilled, clicks stay human. CI verdict: GitHub queue infra — v5/v6 workflow passed via dispatch once the queue recovered."
   - date: "2026-07-25"
