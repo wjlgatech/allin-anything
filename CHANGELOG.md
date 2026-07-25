@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.5.0 — 2026-07-25
+
+- M4: portfolio launch. Long-form live at
+  agentic-portfolio-lovat.vercel.app/articles/allin-anything-born-green.html (PR #121); cover +
+  Chain-01 infographic in house style; LinkedIn/X share composers prefilled — posting stays
+  human-gated. Registry curation earlier today: company-os → ai-native-os,
+  + graph-engineering-anything (17 satellites).
+- CI post-mortem closed: the log-less failures were GitHub queue infrastructure — the v5/v6
+  workflow passed via workflow_dispatch once the queue recovered; re-bumping actions is safe
+  whenever convenient.
+
 ## 0.4.1 — 2026-07-25
 
 - Reverted CI actions to checkout@v4 + setup-python@v5 (the last-green config, kept

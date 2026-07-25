@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "M4 launched — long-form live on the portfolio; CI mystery closed"
+    note: "Article 'One front door. No badge without a gate.' shipped via PR #121 to agentic-portfolio (canonical URL) with house-style cover + Chain-01 infographic; LinkedIn/X syndication prefilled, clicks stay human. CI verdict: GitHub queue infra — v5/v6 workflow passed via dispatch once the queue recovered."
+  - date: "2026-07-25"
     title: "Registry curation: company-os → ai-native-os; + graph-engineering-anything"
     note: "Paul's call: company-os out; ai-native-os (remote: physical-ai-native-os, private) and graph-engineering-anything (private, public Vercel demo) in as ⚪ candidates with routing triggers. 17 satellites."
   - date: "2026-07-25"
