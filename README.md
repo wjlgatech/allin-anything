@@ -14,6 +14,7 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — M1 digest wave 1 — 9 satellites promoted to 🟡: blueprint/research/master/strategize/reverse-engineering-anything + rsi/FM/FDE/money-os digested with pinned local SHAs; private repos are public-safe pointers only; registry now 16 satellites.
 - **2026-07-25** — allin-anything born green: Scaffolded from REPO_PLAYBOOK; registry seeded with 9 satellites (penecho digested at e1b936f, AGPL — pointer only); make check green at birth.
 <!-- END GENERATED: news -->
 
@@ -25,14 +26,21 @@ edit the YAML, run `make build`; CI fails on drift.
 <!-- BEGIN GENERATED: satellites -->
 | Satellite | World | Status | Capability |
 |---|---|---|---|
-| [anyagent](https://github.com/wjlgatech/anyagent) | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
+| [anyagent](https://github.com/wjlgatech/anyagent) 🔒 | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
+| [FDE-os](https://github.com/wjlgatech/FDE-os) | 🌉 bridge | 🟡 digested | Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp |
+| [FM-os](https://github.com/wjlgatech/FM-os) | 💻 digital | 🟡 digested | Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first |
+| [blueprint-anything](https://github.com/wjlgatech/blueprint-anything) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
+| [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟡 digested | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |
+| [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟡 digested | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
 | [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟡 digested | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
+| [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟡 digested | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
+| `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
+| [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟡 digested | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
+| `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | ⚪ candidate | Autonomous job-search pipeline + self-upgrading inner loop |
 | [company-os](https://github.com/wjlgatech/company-os) | 💻 digital | ⚪ candidate | Governed agent runtime for founders & operators |
 | [design-anything](https://github.com/wjlgatech/design-anything) | 🦾 physical | ⚪ candidate | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
 | [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | ⚪ candidate | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
-| [master-anything](https://github.com/wjlgatech/master-anything) | 💻 digital | ⚪ candidate | Master any hard topic: compress -> learn -> verify-by-transfer -> express -> build |
-| [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | ⚪ candidate | AI financial consciousness — 17 skills, zero-trust, local-only |
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | ⚪ candidate | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
 <!-- END GENERATED: satellites -->
 

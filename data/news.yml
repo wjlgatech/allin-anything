@@ -1,5 +1,8 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "M1 digest wave 1 — 9 satellites promoted to 🟡"
+    note: "blueprint/research/master/strategize/reverse-engineering-anything + rsi/FM/FDE/money-os digested with pinned local SHAs; private repos are public-safe pointers only; registry now 16 satellites."
+  - date: "2026-07-25"
     title: "allin-anything born green"
     note: "Scaffolded from REPO_PLAYBOOK; registry seeded with 9 satellites (penecho digested at e1b936f, AGPL — pointer only); make check green at birth."

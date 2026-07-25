@@ -20,14 +20,17 @@ _ROLE_BADGE = {"digital": "💻 digital", "physical": "🦾 physical", "bridge":
 
 
 def render_satellites(reg: Registry) -> str:
+    """Render the README satellite table: linked or plain name, pin, 🔒 badge, role, status."""
     lines = [
         "| Satellite | World | Status | Capability |",
         "|---|---|---|---|",
     ]
     for s in reg.sorted():
         pin = f" `@{s.pinned_sha[:7]}`" if s.pinned_sha else ""
+        name = f"[{s.id}]({s.url})" if s.url else f"`{s.id}`"
+        lock = " 🔒" if s.visibility == "private" else ""
         lines.append(
-            f"| [{s.id}]({s.url}){pin} | {_ROLE_BADGE[s.role]} | {_STATUS_BADGE[s.status]} | {s.capability} |"
+            f"| {name}{pin}{lock} | {_ROLE_BADGE[s.role]} | {_STATUS_BADGE[s.status]} | {s.capability} |"
         )
     return "\n".join(lines)
 

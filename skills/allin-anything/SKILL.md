@@ -24,9 +24,15 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 
 - penecho (🌉 bridge, external, AGPL) — handwriting/spatial-canvas thinking → point the user to run
   it upstream (`github.com/penecho/penecho`, pinned digest in `docs/satellites/penecho.md`). NEVER vendor.
-- design-anything (🦾) — physical blueprints with machine gates (STL / floor plan / sewing / sim).
-- master-anything (💻) — learn/verify/express any hard topic.
+- blueprint-anything (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
+- master-anything (💻 🔒) — learn/verify/express any hard topic.
+- research-anything (💻 🔒) — verified, window-dated research briefs.
+- strategize-anything / reverse-engineering-anything (🔒 local-only) — strategy / reconstruction;
+  pointer entries, route only for Paul locally.
+- rsi-os / FM-os (⚙️ 💻) — self-improvement and foundation-model knowledge maps.
+- FDE-os (🌉) — deploy agents inside a customer's real environment; live webapp.
 - money-os / career-os / company-os (💻) — finances, job search, founder ops.
+- design-anything (🦾) — physical blueprints with machine gates (STL / floor plan / sewing / sim).
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
 
