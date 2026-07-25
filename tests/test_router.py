@@ -21,7 +21,7 @@ def test_3d_print_routes_to_design_anything(router):
     d = router.route("design me a phone stand I can 3D print")
     assert d.mode == "route"
     assert d.satellite_ids[0] == "design-anything"
-    assert "candidate" in d.reason  # status disclosed, never hidden
+    assert "design-anything=integrated" in d.reason  # status disclosed, never hidden
 
 
 def test_handwriting_routes_to_penecho(router):

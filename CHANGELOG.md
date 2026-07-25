@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.4.0 — 2026-07-25
+
+- M3: Chain 01 (sketch → buildable) walked with live evidence — design-anything's own gate run
+  green (construction_gate C1–C5, `make check` 7.7s) and promoted ⚪→🟢; penecho stays 🟡 by
+  honesty (sketch step is upstream + human). Walkthrough manifest-gated by tests/test_chain.py.
+- CI wrinkle fix: actions/checkout@v5 + setup-python@v6 (Node 20 deprecation gone) and
+  `workflow_dispatch` so a transient `startup_failure` is one click to re-run.
+
 ## 0.3.0 — 2026-07-25
 
 - M2: deterministic `Router` over registry triggers (spec-as-data), `scripts/route.py` thin CLI,

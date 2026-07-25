@@ -11,7 +11,7 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.3"
+version: "0.4"
 updated: "2026-07-25"
 satellites:
   - id: penecho
@@ -119,7 +119,9 @@ satellites:
     role: physical
     capability: "Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes"
     url: https://github.com/wjlgatech/design-anything
-    status: candidate
+    status: integrated
+    visibility: private
+    notes: "gate run live 2026-07-25 (make check 7.7s green; construction_gate C1-C5 pass) — see docs/walkthroughs/sketch-to-buildable.md"
     triggers: ["3d print", "stl", "floor plan", "sewing", "room layout", "buildable", "printable", "garment"]
 
   - id: loop-engineering-anything

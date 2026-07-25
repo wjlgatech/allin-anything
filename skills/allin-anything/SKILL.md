@@ -22,6 +22,8 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 ## Routing table (integrated satellites)
 
 - **anyagent** (⚙️ engine) — "build/grade/improve/ship an agent app", messy objectives → `anyagent goal`.
+- **design-anything** (🦾 physical) — physical blueprints with machine gates (STL / floor plan /
+  sewing / sim); the physical end of Chain 01 (docs/walkthroughs/sketch-to-buildable.md).
 
 ## Routing hints (digested / candidates — verify before promising)
 
@@ -35,7 +37,6 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 - rsi-os / FM-os (⚙️ 💻) — self-improvement and foundation-model knowledge maps.
 - FDE-os (🌉) — deploy agents inside a customer's real environment; live webapp.
 - money-os / career-os / company-os (💻) — finances, job search, founder ops.
-- design-anything (🦾) — physical blueprints with machine gates (STL / floor plan / sewing / sim).
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
 

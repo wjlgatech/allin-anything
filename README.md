@@ -14,9 +14,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — M3 Chain 01 verified — sketch by hand → buildable floor plan: design-anything promoted ⚪→🟢 by RUNNING its gate (make check 7.7s green; construction_gate C1-C5 pass, exit 0). Walkthrough with verbatim evidence in docs/walkthroughs/; penecho stays 🟡 honestly (sketch step is upstream+human). CI actions bumped v5/v6 + workflow_dispatch.
 - **2026-07-25** — M2 router proven — every eval case is now a pytest: Deterministic Router (triggers-as-data in registry.yml) + scripts/route.py CLI; 5 should-trigger + 3 should-not cases executable in tests/test_router.py, incl. the AGPL vendoring refusal and the cross-world penecho→design-anything chain.
 - **2026-07-25** — M1 digest wave 1 — 9 satellites promoted to 🟡: blueprint/research/master/strategize/reverse-engineering-anything + rsi/FM/FDE/money-os digested with pinned local SHAs; private repos are public-safe pointers only; registry now 16 satellites.
-- **2026-07-25** — allin-anything born green: Scaffolded from REPO_PLAYBOOK; registry seeded with 9 satellites (penecho digested at e1b936f, AGPL — pointer only); make check green at birth.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -28,6 +28,7 @@ edit the YAML, run `make build`; CI fails on drift.
 | Satellite | World | Status | Capability |
 |---|---|---|---|
 | [anyagent](https://github.com/wjlgatech/anyagent) 🔒 | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
+| [design-anything](https://github.com/wjlgatech/design-anything) 🔒 | 🦾 physical | 🟢 integrated | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
 | [FDE-os](https://github.com/wjlgatech/FDE-os) | 🌉 bridge | 🟡 digested | Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp |
 | [FM-os](https://github.com/wjlgatech/FM-os) | 💻 digital | 🟡 digested | Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first |
 | [blueprint-anything](https://github.com/wjlgatech/blueprint-anything) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
@@ -40,7 +41,6 @@ edit the YAML, run `make build`; CI fails on drift.
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | ⚪ candidate | Autonomous job-search pipeline + self-upgrading inner loop |
 | [company-os](https://github.com/wjlgatech/company-os) | 💻 digital | ⚪ candidate | Governed agent runtime for founders & operators |
-| [design-anything](https://github.com/wjlgatech/design-anything) | 🦾 physical | ⚪ candidate | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
 | [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | ⚪ candidate | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | ⚪ candidate | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
 <!-- END GENERATED: satellites -->
