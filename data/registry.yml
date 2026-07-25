@@ -8,8 +8,10 @@
 #   integrated = digest + routed by the flagship skill (id appears in skills/allin-anything/SKILL.md)
 # role: digital | physical | bridge (crosses the two worlds) | engine (builds/grades the others)
 # visibility: private => pointer-only; the public digest carries NO internal detail.
+# triggers: lowercase phrases the deterministic Router matches against an intent
+#           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.2"
+version: "0.3"
 updated: "2026-07-25"
 satellites:
   - id: penecho
@@ -21,6 +23,7 @@ satellites:
     pinned_sha: e1b936fe51103243b79c82427eef5a369448a660
     license: AGPL-3.0-only
     notes: "AGPL — pointer + pinned digest + thin skill ONLY; never vendored, never forked"
+    triggers: ["handwriting", "sketch", "canvas", "whiteboard", "draw by hand", "by hand"]
 
   - id: anyagent
     kind: family
@@ -30,6 +33,7 @@ satellites:
     status: integrated
     visibility: private
     notes: "the engine this super-repo is driven by; private repo, pointer only"
+    triggers: ["build an agent", "agent app", "ship an agent", "grade an agent", "refine an agent"]
 
   - id: blueprint-anything
     kind: family
@@ -38,6 +42,7 @@ satellites:
     url: https://github.com/wjlgatech/blueprint-anything
     status: digested
     visibility: private
+    triggers: ["scope an agent", "autonomy level", "feasibility", "before we build", "agent contract"]
 
   - id: research-anything
     kind: family
@@ -46,6 +51,7 @@ satellites:
     url: https://github.com/wjlgatech/research-anything
     status: digested
     visibility: private
+    triggers: ["research", "literature", "verified brief", "market research"]
 
   - id: master-anything
     kind: family
@@ -54,6 +60,7 @@ satellites:
     url: https://github.com/wjlgatech/master-anything
     status: digested
     visibility: private
+    triggers: ["learn", "master this", "understand deeply", "teach me", "explain so it sticks"]
 
   - id: strategize-anything
     kind: family
@@ -63,6 +70,7 @@ satellites:
     status: digested
     visibility: private
     notes: "local-only; pointer entry by owner's request — no details published"
+    triggers: ["strategy", "strategize"]
 
   - id: reverse-engineering-anything
     kind: family
@@ -72,6 +80,7 @@ satellites:
     status: digested
     visibility: private
     notes: "local-only; pointer entry by owner's request — no details published"
+    triggers: ["reverse engineer", "reconstruct", "how does it work inside", "clean-room"]
 
   - id: rsi-os
     kind: family
@@ -79,6 +88,7 @@ satellites:
     capability: "Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026)"
     url: https://github.com/wjlgatech/rsi-os
     status: digested
+    triggers: ["self-improv", "recursive self", "automated ai research", "godel"]
 
   - id: FM-os
     kind: family
@@ -86,6 +96,7 @@ satellites:
     capability: "Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first"
     url: https://github.com/wjlgatech/FM-os
     status: digested
+    triggers: ["fine-tun", "pretrain", "post-train", "small language model", "slm", "train a model"]
 
   - id: FDE-os
     kind: family
@@ -93,6 +104,7 @@ satellites:
     capability: "Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp"
     url: https://github.com/wjlgatech/FDE-os
     status: digested
+    triggers: ["forward deployed", "customer environment", "on-site", "field engineer"]
 
   - id: money-os
     kind: family
@@ -100,6 +112,7 @@ satellites:
     capability: "AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0)"
     url: https://github.com/wjlgatech/money-os
     status: digested
+    triggers: ["finance", "invest", "budget", "wealth", "portfolio rebalanc"]
 
   - id: design-anything
     kind: family
@@ -107,6 +120,7 @@ satellites:
     capability: "Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes"
     url: https://github.com/wjlgatech/design-anything
     status: candidate
+    triggers: ["3d print", "stl", "floor plan", "sewing", "room layout", "buildable", "printable", "garment"]
 
   - id: loop-engineering-anything
     kind: family
@@ -114,6 +128,7 @@ satellites:
     capability: "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence"
     url: https://github.com/wjlgatech/loop-engineering-anything
     status: candidate
+    triggers: ["converge", "judge loop", "generate and judge"]
 
   - id: company-os
     kind: family
@@ -121,6 +136,7 @@ satellites:
     capability: "Governed agent runtime for founders & operators"
     url: https://github.com/wjlgatech/company-os
     status: candidate
+    triggers: ["founder ops", "governed runtime", "company operations"]
 
   - id: career-os
     kind: family
@@ -128,6 +144,7 @@ satellites:
     capability: "Autonomous job-search pipeline + self-upgrading inner loop"
     url: https://github.com/wjlgatech/career-os
     status: candidate
+    triggers: ["job", "resume", "career", "application"]
 
   - id: neuro-os
     kind: family
@@ -135,3 +152,4 @@ satellites:
     capability: "Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical)"
     url: https://github.com/wjlgatech/neuro-os
     status: candidate
+    triggers: ["brain", "neuroscience", "neural mechanism"]

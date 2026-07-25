@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-07-25"
+    title: "M2 router proven — every eval case is now a pytest"
+    note: "Deterministic Router (triggers-as-data in registry.yml) + scripts/route.py CLI; 5 should-trigger + 3 should-not cases executable in tests/test_router.py, incl. the AGPL vendoring refusal and the cross-world penecho→design-anything chain."
+  - date: "2026-07-25"
     title: "M1 digest wave 1 — 9 satellites promoted to 🟡"
     note: "blueprint/research/master/strategize/reverse-engineering-anything + rsi/FM/FDE/money-os digested with pinned local SHAs; private repos are public-safe pointers only; registry now 16 satellites."
   - date: "2026-07-25"

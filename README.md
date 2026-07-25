@@ -14,6 +14,7 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-25** — M2 router proven — every eval case is now a pytest: Deterministic Router (triggers-as-data in registry.yml) + scripts/route.py CLI; 5 should-trigger + 3 should-not cases executable in tests/test_router.py, incl. the AGPL vendoring refusal and the cross-world penecho→design-anything chain.
 - **2026-07-25** — M1 digest wave 1 — 9 satellites promoted to 🟡: blueprint/research/master/strategize/reverse-engineering-anything + rsi/FM/FDE/money-os digested with pinned local SHAs; private repos are public-safe pointers only; registry now 16 satellites.
 - **2026-07-25** — allin-anything born green: Scaffolded from REPO_PLAYBOOK; registry seeded with 9 satellites (penecho digested at e1b936f, AGPL — pointer only); make check green at birth.
 <!-- END GENERATED: news -->

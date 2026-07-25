@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.3.0 — 2026-07-25
+
+- M2: deterministic `Router` over registry triggers (spec-as-data), `scripts/route.py` thin CLI,
+  and tests/test_router.py making all 8 eval cases executable (route / direct / none / refuse;
+  AGPL vendoring refused; cross-world penecho→design-anything chain declared).
+
 ## 0.2.0 — 2026-07-25
 
 - M1 digest wave 1: 9 satellites promoted to 🟡 digested (blueprint-, research-, master-,

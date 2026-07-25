@@ -11,8 +11,11 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 ## Protocol
 
 1. **Absorb** the intent in ≤3 lines; classify the world it touches: 💻 digital, 🦾 physical, or 🌉 both.
-2. **Route** by capability match against the registry. Prefer 🟢 integrated > 🟡 digested > ⚪ candidate;
-   tell the user the status of what you routed to (a ⚪ candidate means "exists, not yet verified here").
+2. **Route** — run the deterministic pre-router first: `python3 scripts/route.py "<intent>"`
+   (modes: route / direct / none / refuse; every eval case is a pytest in tests/test_router.py).
+   Use judgment only to refine its verdict, never to contradict a `refuse`. Prefer 🟢 integrated >
+   🟡 digested > ⚪ candidate; tell the user the status of what you routed to (a ⚪ candidate means
+   "exists, not yet verified here").
 3. **Hand off** to the satellite's own skill/CLI. Never re-implement a satellite inline.
 4. **Bank**: if routing revealed a gap (no satellite matched), append the gap to `data/news.yml`.
 

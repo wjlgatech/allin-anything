@@ -11,7 +11,10 @@ from .models import KINDS, ROLES, STATUSES, Registry, Satellite
 
 def load(path: Path) -> Registry:
     raw = yaml.safe_load(path.read_text())
-    sats = tuple(Satellite(**item) for item in raw.get("satellites", []))
+    sats = tuple(
+        Satellite(**{**item, "triggers": tuple(item.get("triggers", ()))})
+        for item in raw.get("satellites", [])
+    )
     return Registry(version=str(raw["version"]), updated=str(raw["updated"]), satellites=sats)
 
 

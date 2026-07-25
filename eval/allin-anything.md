@@ -1,18 +1,27 @@
 # eval — allin-anything flagship skill
 
-Each case is backed by `tests/test_gates.py::test_skill_eval_has_both_directions` (structure)
-and exercised manually per release.
+Every case below is EXECUTABLE: `tests/test_router.py` runs each against the deterministic
+`Router` (`python3 scripts/route.py "<intent>"` to try one by hand). Structure is additionally
+pinned by `tests/test_gates.py::test_skill_eval_has_both_directions`.
 
 ## Should trigger
 
-- "/allin design me a phone stand I can 3D print" → route: design-anything (🦾, ⚪ — say so)
-- "which of my repos can turn handwriting into AI input?" → route: penecho (🌉, external, run upstream)
-- "I want an agent that watches my job applications" → route: career-os
-- "build and ship an agent app from this one sentence" → route: anyagent (🟢)
-- an intent spanning worlds: "sketch a room layout by hand, then verify it's buildable" → penecho + design-anything (declare the chain)
+- "design me a phone stand I can 3D print" → design-anything (🦾, status disclosed)
+  · `test_3d_print_routes_to_design_anything`
+- "which of my repos can turn handwriting into AI input?" → penecho (🌉, external, run upstream)
+  · `test_handwriting_routes_to_penecho`
+- "I want an agent that watches my job applications" → career-os
+  · `test_job_watching_routes_to_career_os`
+- "build and ship an agent app from this one sentence" → anyagent (🟢)
+  · `test_agent_app_routes_to_anyagent`
+- cross-world chain: "sketch a room layout by hand, then verify it's buildable" → penecho +
+  design-anything, chain declared · `test_cross_world_chain_declares_both`
 
 ## Should NOT trigger
 
-- A task fully inside ONE satellite the user already named ("run money-os weekly review") — go direct.
-- Generic coding questions with no routing need ("fix this stack trace").
-- Anything asking to copy penecho source into this repo — refuse; AGPL + satellites-never-vendored.
+- "run money-os weekly review" — satellite named → go direct, no routing
+  · `test_named_satellite_goes_direct`
+- "fix this stack trace" — generic coding, no satellite → none; bank the gap if it recurs
+  · `test_generic_coding_question_routes_nowhere`
+- "copy the penecho source into this repo" — REFUSED (AGPL + satellites-never-vendored)
+  · `test_vendoring_penecho_is_refused`

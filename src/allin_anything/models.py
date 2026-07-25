@@ -21,10 +21,20 @@ class Satellite:
     license: str | None = None
     visibility: str = "public"
     notes: str = ""
+    triggers: tuple[str, ...] = ()
 
     @property
     def status_rank(self) -> int:
         return STATUSES.index(self.status) if self.status in STATUSES else -1
+
+
+@dataclass(frozen=True)
+class RouteDecision:
+    """The router's verdict for one intent: how to act, where to go, and why."""
+
+    mode: str  # "route" | "direct" | "none" | "refuse"
+    satellite_ids: tuple[str, ...]
+    reason: str
 
 
 @dataclass(frozen=True)
