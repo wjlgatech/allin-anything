@@ -1,0 +1,42 @@
+# ainative.yml — the repo audits ITSELF against the playbook disciplines.
+# Each principle names a machine check implemented in scripts/ainative.py.
+# Scoring: passed / measured * 100. An unmeasured item is EXCLUDED from the score
+# and BLOCKS the gate (no-evidence-means-no). CI fails below the gate.
+
+gate: 90
+principles:
+  - id: spec-as-data
+    check: data_is_source
+    claim: "Curated knowledge lives in data/*.yml; README blocks are generated, not hand-written"
+
+  - id: ready-is-a-gate
+    check: makefile_check_target
+    claim: "`make check` is the offline, deterministic finish line"
+
+  - id: no-evidence-means-no
+    check: unmeasured_blocks_gate
+    claim: "The auditor excludes unmeasured items from the score and fails the gate on them"
+
+  - id: maker-is-not-checker
+    check: generator_and_gate_separate
+    claim: "build.py generates; pytest + --check gate independently"
+
+  - id: satellites-never-vendored
+    check: no_vendored_satellites
+    claim: "Every external satellite has a pinned SHA + license; no third-party source tree in-repo"
+
+  - id: compounding-memory
+    check: news_ledger_alive
+    claim: "Lessons and updates land in data/news.yml, not chat"
+
+  - id: honest-edges
+    check: readme_honest_edges
+    claim: "Limitations stated where users read them (README ## Honest edges)"
+
+  - id: human-gated-irreversible
+    check: ci_has_no_publish
+    claim: "CI only checks; publishing/merging stays human"
+
+  - id: repo-audits-itself
+    check: audit_wired_to_ci
+    claim: "This audit runs inside `make check` and inside CI"

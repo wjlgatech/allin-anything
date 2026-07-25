@@ -1,0 +1,80 @@
+# registry.yml — THE single source of truth for allin-anything's satellites.
+# Every published surface (README table, skill routing list) is GENERATED from this file
+# and drift-gated by `python3 scripts/build.py --check`. Never hand-edit downstream.
+#
+# status ladder: candidate -> digested -> integrated
+#   candidate  = named, role assigned, nothing verified yet
+#   digested   = docs/satellites/<id>.md exists with pinned facts (external: pinned_sha)
+#   integrated = digest + routed by the flagship skill (id appears in skills/allin-anything/SKILL.md)
+# role: digital | physical | bridge (crosses the two worlds) | engine (builds/grades the others)
+
+version: "0.1"
+updated: "2026-07-25"
+satellites:
+  - id: penecho
+    kind: external
+    role: bridge
+    capability: "AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge)"
+    url: https://github.com/penecho/penecho
+    status: digested
+    pinned_sha: e1b936fe51103243b79c82427eef5a369448a660
+    license: AGPL-3.0-only
+    notes: "AGPL — pointer + pinned digest + thin skill ONLY; never vendored, never forked"
+
+  - id: anyagent
+    kind: family
+    role: engine
+    capability: "Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry"
+    url: https://github.com/wjlgatech/anyagent
+    status: integrated
+    visibility: private
+    notes: "the engine this super-repo is driven by; private repo, pointer only"
+
+  - id: design-anything
+    kind: family
+    role: physical
+    capability: "Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes"
+    url: https://github.com/wjlgatech/design-anything
+    status: candidate
+
+  - id: master-anything
+    kind: family
+    role: digital
+    capability: "Master any hard topic: compress -> learn -> verify-by-transfer -> express -> build"
+    url: https://github.com/wjlgatech/master-anything
+    status: candidate
+
+  - id: loop-engineering-anything
+    kind: family
+    role: engine
+    capability: "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence"
+    url: https://github.com/wjlgatech/loop-engineering-anything
+    status: candidate
+
+  - id: money-os
+    kind: family
+    role: digital
+    capability: "AI financial consciousness — 17 skills, zero-trust, local-only"
+    url: https://github.com/wjlgatech/money-os
+    status: candidate
+
+  - id: company-os
+    kind: family
+    role: digital
+    capability: "Governed agent runtime for founders & operators"
+    url: https://github.com/wjlgatech/company-os
+    status: candidate
+
+  - id: career-os
+    kind: family
+    role: digital
+    capability: "Autonomous job-search pipeline + self-upgrading inner loop"
+    url: https://github.com/wjlgatech/career-os
+    status: candidate
+
+  - id: neuro-os
+    kind: family
+    role: physical
+    capability: "Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical)"
+    url: https://github.com/wjlgatech/neuro-os
+    status: candidate

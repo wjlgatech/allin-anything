@@ -1,0 +1,11 @@
+# allin-anything
+
+> One super-repo composing Paul Wu's -anything/-os agent family into a single front door for
+> all-in interaction with the digital and physical world. Registry-driven, gate-verified.
+
+- Source of truth: data/registry.yml (satellites, statuses, pinned SHAs)
+- Finish line: `make check` (pytest + drift gate + ainative self-audit)
+- Flagship skill: skills/allin-anything/SKILL.md (thin router, no domain logic)
+- Evidence: docs/satellites/*.md (pinned digests)
+- Build pattern: docs/REPO_PLAYBOOK.md
+- Founding bridge satellite: penecho (github.com/penecho/penecho, AGPL, pointer only)
