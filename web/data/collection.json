@@ -30,5 +30,37 @@
         "evidence": "commit pending push"
       }
     ]
+  },
+  {
+    "id": "rc0002",
+    "delivery": "Fields-2026 all-in learning page (zh-CN) with per-session animations",
+    "objective": "Learn a 61KB research briefing all-in style: translate, illustrate, animate, verify",
+    "created_at": "2026-07-27T13:40:08Z",
+    "key_results": [
+      {
+        "text": "6 sessions each with key idea + mechanism + CSS animation",
+        "target": "all 6",
+        "score": 1.0,
+        "evidence": "index.html, animations confirmed live across 3 screenshots"
+      },
+      {
+        "text": "Simplified-Chinese compiled translation with sources preserved",
+        "target": "faithful, honest-edges footer",
+        "score": 0.85,
+        "evidence": "compiled translation, not word-for-word 61KB (stated on page)"
+      },
+      {
+        "text": "Anthropic-brand thumbnail + browser verification",
+        "target": "CJK renders, 0 console errors",
+        "score": 1.0,
+        "evidence": "PNG inspected; console clean"
+      },
+      {
+        "text": "all-in routing on record + gap banked",
+        "target": "route verdict + registry entry",
+        "score": 1.0,
+        "evidence": "animate-anything now a candidate satellite"
+      }
+    ]
   }
 ]
