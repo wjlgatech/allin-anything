@@ -62,5 +62,37 @@
         "evidence": "animate-anything now a candidate satellite"
       }
     ]
+  },
+  {
+    "id": "rc0003",
+    "delivery": "REWORK: Fields-2026 page is now the faithful FULL zh-CN translation, authored",
+    "objective": "Correct course per Paul: translate the whole briefing into Simplified Chinese, not a digest",
+    "created_at": "2026-07-27T14:13:38Z",
+    "key_results": [
+      {
+        "text": "complete translation, nothing dropped",
+        "target": "all sections + 40 works + questions + sources",
+        "score": 1.0,
+        "evidence": "42 work cards, 23.3k chars, browser-counted"
+      },
+      {
+        "text": "author + contact on page and thumbnail",
+        "target": "Paul Jialiang Wu + portfolio URL",
+        "score": 1.0,
+        "evidence": "verified in DOM and rendered PNG"
+      },
+      {
+        "text": "animations kept per session, honestly labeled",
+        "target": "6 animations, \u8bd1\u8005\u6f14\u793a caption",
+        "score": 1.0,
+        "evidence": "browser-verified, 0 console errors"
+      },
+      {
+        "text": "misread cost acknowledged",
+        "target": "rework within one turn of correction",
+        "score": 0.7,
+        "evidence": "first attempt compressed when Paul asked for full translation"
+      }
+    ]
   }
 ]
