@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 2026 Fields Medalists: An Institutional Research Briefing</title>
+<meta name="description" content="The 2026 Fields Medalists — Yu Deng, John Pardon, Jacob Tsimerman, Hong Wang: their fields, the problems they solved, why it matters, and the 10 most influential works behind each. Every section ships a CSS animation of the key idea and operational mechanism. By Paul Jialiang Wu.">
+<style>
+:root{
+  --bg:#faf9f5; --card:#ffffff; --card2:#f0eee6; --ink:#141413; --muted:#5f5d58;
+  --border:#e3e0d6; --border2:#b0aea5; --accent:#d97757; --blue:#6a9bcc; --green:#788c5d;
+  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:48rem;margin:0 auto;padding:40px 20px 80px}
+.topbar{height:6px;background:linear-gradient(90deg,var(--accent),var(--blue),var(--green))}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--serif);font-weight:700;font-size:2.05rem;line-height:1.25;margin:.2em 0}
+h2{font-family:var(--serif);font-weight:700;font-size:1.5rem;margin:2.2rem 0 .6rem;padding-top:.3rem}
+h3{font-weight:700;font-size:1.08rem;margin:1.6rem 0 .4rem;color:var(--ink)}
+h4{font-weight:700;font-size:.95rem;margin:1.2rem 0 .3rem;color:var(--accent)}
+.byline{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 18px;margin:1rem 0;font-size:.93rem;color:var(--muted)}
+.byline a{color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid var(--border2)}
+.session{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 30px;margin:28px 0;box-shadow:0 14px 36px -30px rgba(20,20,19,.35)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:999px;padding:3px 12px;margin-bottom:6px}
+.tag.blue{background:var(--blue)} .tag.green{background:var(--green)}
+.meta{color:var(--muted);font-size:.93rem;margin:.2rem 0 .8rem}
+blockquote{margin:1rem 0;padding:.7rem 1.1rem;border-left:4px solid var(--accent);background:var(--card2);border-radius:0 10px 10px 0;color:var(--muted);font-size:.97rem}
+.stage{position:relative;background:var(--card2);border:1px solid var(--border);border-radius:12px;margin:1.2rem 0 .3rem;overflow:hidden}
+.cap{color:var(--muted);font-size:.8rem;font-style:italic;text-align:center;margin:.4rem 0 0}
+.work{margin:.7rem 0;padding:.6rem .9rem;background:var(--card2);border:1px solid var(--border);border-radius:10px;font-size:.92rem}
+.work b{display:block}
+.work a{color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border2)}
+.q{background:var(--card2);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:.55rem .9rem;font-size:.93rem;color:var(--muted);margin:.5rem 0}
+.foot{margin-top:2.2rem;padding-top:1.1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}
+a{color:var(--blue)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin:.6rem 0}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left}
+th{background:var(--card2)}
+em{font-style:italic}
+@media (prefers-reduced-motion: reduce){ *{animation-duration:0s!important;transition:none!important} }
+.route{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 3.2s ease forwards}
+.route.r2{animation-delay:.7s}.route.r3{animation-delay:1.4s}.route.r4{animation-delay:2.1s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.flag{opacity:0;animation:pop .6s ease forwards}
+.flag.f1{animation-delay:2.9s}.flag.f2{animation-delay:3.4s}.flag.f3{animation-delay:3.9s}.flag.f4{animation-delay:4.4s}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.p{animation:jit 1.1s infinite alternate ease-in-out}
+@keyframes jit{from{transform:translate(0,0)}to{transform:translate(var(--dx,4px),var(--dy,-4px))}}
+.wave{stroke-dasharray:560;stroke-dashoffset:560;animation:draw 3s 1.4s ease forwards}
+.scalebox{opacity:0;animation:pop .8s ease forwards}
+.s1a{animation-delay:.2s}.s1b{animation-delay:1.4s}.s1c{animation-delay:2.6s}
+.arrowflow{stroke-dasharray:8 6;animation:flow 1.2s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.tok{opacity:0;animation:pop .5s ease forwards}
+.gw1{animation-delay:.2s}.gw2{animation-delay:.5s}.gw3{animation-delay:.8s}.gw4{animation-delay:1.1s}
+.dt1{animation-delay:.35s}.dt2{animation-delay:.65s}.dt3{animation-delay:.95s}.dt4{animation-delay:1.25s}
+.eq{opacity:0;animation:pop .7s 1.8s ease forwards, pulse 2.4s 2.6s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.beam{stroke-dasharray:200;stroke-dashoffset:200;animation:draw 1.2s 1.5s ease forwards}
+.wild{animation:wildshift 3.5s ease-in-out infinite alternate}
+@keyframes wildshift{from{transform:translateX(0)}to{transform:translateX(-24px)}}
+.lensglow{animation:glow 2.2s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.55}to{opacity:1}}
+.tame{stroke-dasharray:300;stroke-dashoffset:300;animation:draw 2.2s 1s ease forwards}
+.squeezeT{animation:downp 2.6s ease-in-out infinite}
+.squeezeB{animation:upp 2.6s ease-in-out infinite}
+@keyframes downp{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+@keyframes upp{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.needle{transform-origin:150px 110px;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sweep{transform-origin:150px 110px;animation:spin 6s linear infinite;opacity:.16}
+.dimfill{animation:fillup 5s ease forwards}
+@keyframes fillup{from{width:8%}to{width:100%}}
+.dimbox{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 12px;margin:10px 14px}
+.dimtrack{height:10px;background:var(--card2);border:1px solid var(--border);border-radius:999px;overflow:hidden}
+.dimbar{height:100%;background:linear-gradient(90deg,var(--blue),var(--accent));border-radius:999px}
+.brick{opacity:0;animation:pop .6s ease forwards}
+.b1{animation-delay:.4s}.b2{animation-delay:1s}.b3{animation-delay:1.6s}.b4{animation-delay:2.2s}
+.bridge{stroke-dasharray:240;stroke-dashoffset:240;animation:draw 1.6s ease forwards}
+.br1{animation-delay:.3s}.br2{animation-delay:.9s}.br3{animation-delay:1.5s}.br4{animation-delay:2.1s}
+.node{animation:glow 2.6s ease-in-out infinite alternate}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<main class="wrap">
+<p class="eyebrow">Interactive edition · An animation per session · Also available in 简体中文</p>
+<h1>The 2026 Fields Medalists:<br>An Institutional Research Briefing</h1>
+<p class="meta"><b>University Mathematics Department Seminar</b> · July 27, 2026</p>
+<p class="meta"><em>Prepared for seminar presentation. Written for the mathematically gifted young researcher who thinks across disciplines — who sees waves in swimming, geometry in climbing routes, strategy in martial arts, and structure in everything.</em></p>
+<div class="byline">Author: <a href="https://agentic-portfolio-lovat.vercel.app/">Paul Jialiang Wu</a> · Contact &amp; more work: <a href="https://agentic-portfolio-lovat.vercel.app/">agentic-portfolio-lovat.vercel.app</a><br><span style="font-size:.85rem">The per-session animations are the author's teaching aids, illustrating each section's key idea and operational mechanism — they are not rigorous mathematics. 中文全译版：<a href="/articles/fields-2026-zh.html">简体中文版</a></span></div>
+
+<!-- ═══════════ Executive Overview ═══════════ -->
+<section class="session">
+<span class="tag">Executive Overview</span>
+<h2 style="margin-top:.4rem">What Changed in Mathematics?</h2>
+<p>On July 23, 2026, at the International Congress of Mathematicians (ICM) in Philadelphia, the International Mathematical Union awarded four Fields Medals — often called the "Nobel Prize of mathematics" — to four mathematicians under 40 (<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>). Each medalist solved a problem that had resisted the world's best mathematicians for decades, and in some cases, for over a century.</p>
+<p>Think of mathematics as an immense mountain range. There are peaks everyone can see — famous unsolved problems looming over the landscape. There are hidden ridgelines connecting peaks that look unrelated from below. And there are entire valleys of technique that most climbers don't even know exist, yet which turn out to hold the key routes to the summit.</p>
+<p>The four 2026 Fields Medalists didn't just summit peaks. They built new climbing routes that changed the map itself:</p>
+<ul>
+<li><b>Yu Deng</b> proved that the chaotic dance of billions of particles genuinely gives rise to the smooth, predictable equations of fluid mechanics — completing a dream David Hilbert articulated in 1900 (<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>).</li>
+<li><b>John Pardon</b> proved that two completely different ways of counting curves on six-dimensional shapes — shapes that may model our universe in string theory — are actually counting the same thing, settling a 20-year-old conjecture (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>).</li>
+<li><b>Jacob Tsimerman</b> imported a tool from mathematical logic — a concept called "o-minimality" that makes precise what "tame geometry" means — and used it to prove conjectures in number theory that had been open since the 1970s (<a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine</a>).</li>
+<li><b>Hong Wang</b> proved that a needle spinning in every direction in three-dimensional space must sweep out a set of full dimension — resolving a problem posed in 1917 and opening the door to a tower of conjectures in harmonic analysis (<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>, <a href="https://www.ihes.fr/en/hong-wang2026-fields-medal/">IHES</a>).</li>
+</ul>
+<p>This briefing covers each medalist in depth: the field they work in, the problem they solved, why it matters, and the 10 most influential works — theirs and their predecessors' — that define the research lineage.</p>
+<div class="stage">
+<svg viewBox="0 0 640 240" width="100%" role="img" aria-label="Mountain range with four new routes animation">
+<polyline points="0,210 90,120 150,180 240,70 320,170 410,90 480,180 560,110 640,200" fill="none" stroke="#b0aea5" stroke-width="3"/>
+<path class="route" d="M60,208 C110,170 130,140 240,74" fill="none" stroke="#d97757" stroke-width="4" stroke-linecap="round"/>
+<path class="route r2" d="M200,208 C260,180 300,120 410,94" fill="none" stroke="#6a9bcc" stroke-width="4" stroke-linecap="round"/>
+<path class="route r3" d="M360,208 C400,190 430,150 560,114" fill="none" stroke="#788c5d" stroke-width="4" stroke-linecap="round"/>
+<path class="route r4" d="M500,208 C520,190 540,160 638,132" fill="none" stroke="#141413" stroke-width="4" stroke-linecap="round" stroke-dasharray="420" />
+<g class="flag f1"><circle cx="240" cy="70" r="7" fill="#d97757"/><text x="240" y="52" text-anchor="middle" font-size="15" fill="#141413">Deng</text></g>
+<g class="flag f2"><circle cx="410" cy="90" r="7" fill="#6a9bcc"/><text x="410" y="72" text-anchor="middle" font-size="15" fill="#141413">Pardon</text></g>
+<g class="flag f3"><circle cx="560" cy="110" r="7" fill="#788c5d"/><text x="560" y="92" text-anchor="middle" font-size="15" fill="#141413">Tsimerman</text></g>
+<g class="flag f4"><circle cx="150" cy="180" r="7" fill="#141413"/><text x="150" y="162" text-anchor="middle" font-size="15" fill="#141413">Wang</text></g>
+</svg>
+</div>
+<p class="cap">Animation (author's aid): four new routes draw themselves into the range; four flags land on the peaks that fell — they changed the map itself.</p>
+</section>
+
+<!-- ═══════════ Medalist 1: Yu Deng ═══════════ -->
+<section class="session">
+<span class="tag">Medalist 1</span>
+<h2 style="margin-top:.4rem">Yu Deng — Partial Differential Equations</h2>
+<p class="meta"><b>Affiliation:</b> University of Chicago (formerly USC Dornsife; Princeton PhD 2015)<br><b>Age at award:</b> 37</p>
+<h3>Official Citation</h3>
+<blockquote>"For his work in partial differential equations, including the rigorous derivation of the Boltzmann equation from hard-sphere dynamics for rarefied gases, the derivation of wave kinetic equations from nonlinear dispersive systems, and probabilistic approaches to nonlinear Schrödinger dynamics."<br>— (<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>)</blockquote>
+<h3>The Field: Partial Differential Equations (PDEs)</h3>
+<p>Imagine you're swimming in the ocean. The water around you isn't static — it moves, swirls, and crashes in patterns that seem chaotic up close but somehow organized at larger scales. The equations that describe how fluids, gases, and waves evolve are called <b>partial differential equations (PDEs)</b>. A PDE describes how something changes across both space and time simultaneously — not just "how fast is the ball falling?" (that's an ordinary differential equation) but "how does temperature spread across a metal plate as time passes?" (<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>).</p>
+<p>PDEs are the language physics speaks. The heat equation, the wave equation, the Navier-Stokes equations of fluid dynamics, the Schrödinger equation of quantum mechanics — all PDEs. But PDEs are notoriously difficult to solve rigorously. You can write down the equation, but proving that solutions exist, that they behave the way physics predicts, and that you can actually say something precise about them — that's where mathematics gets hard.</p>
+<p>Deng's work lives at the intersection of PDEs and probability. He brings the flexible, probabilistic viewpoint into the rigid, structured world of wave equations — like bringing the fluid adaptability of a martial artist into a rigid kata (form). As Deng himself says: "There is a lot of randomness in this world, and we need a mathematical way to capture it" (<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>).</p>
+<h3>The Award-Winning Contribution</h3>
+<p>Deng's Fields Medal recognizes three interlinked breakthroughs:</p>
+<h4>1. Deriving the Boltzmann equation from hard-sphere dynamics (Hilbert's Sixth Problem)</h4>
+<p>In 1900, David Hilbert posed 23 problems that would shape mathematics for the next century. His sixth problem asked: can we derive the equations of physics — particularly fluid mechanics — from first principles, starting from the motion of individual particles? (<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>)</p>
+<p>Here's the picture: imagine a gas made of billions of tiny hard spheres bouncing off each other like billiard balls. At the microscopic level, each particle follows Newton's laws — deterministic, predictable for any single particle. But at the macroscopic level, the gas behaves according to the <b>Boltzmann equation</b> (1872), which describes temperature, pressure, and velocity in terms of statistical averages. Then at the largest scale, the gas flows as a continuous fluid described by the <b>Navier-Stokes equations</b> (<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>).</p>
+<p>The chain is: <b>Newton → Boltzmann → Navier-Stokes</b>. Hilbert wanted mathematicians to prove each link rigorously.</p>
+<p>The second link (Boltzmann → Navier-Stokes) was already understood. The first link (Newton → Boltzmann) was the hard one. In 1975, Oscar Lanford proved it — but only for an extremely short time, so short that "only one in a million particles is expected to have had one collision" (<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>). Over longer times, particles collide repeatedly, building up complicated shared histories — like sparring partners who've fought so many rounds that each one anticipates the other's moves. The independence assumption that Boltzmann relied on breaks down.</p>
+<p>Deng, together with Zaher Hani (University of Michigan) and Xiao Ma (Princeton), cracked this problem. Their key insight — which came to Deng in a Korean fried chicken stall in Providence, Rhode Island (<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>) — was to break long time intervals into short ones, then use an elaborate "molecule cutting" algorithm to control the combinatorial explosion of collision patterns. They represented collision histories as tree-like diagrams (reminiscent of Feynman diagrams in physics), then showed that even though the trees grow infinitely complex over long times, their contributions cancel and combine in controlled ways (<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>).</p>
+<p>The result: in 2024–2025, Deng, Hani, and Ma published a 200-page proof deriving the Boltzmann equation from hard-sphere dynamics for arbitrarily long times (as long as the relevant Boltzmann solution exists, under the Boltzmann-Grad assumptions), and then completed the rigorous pipeline from Newton to Navier-Stokes in this model setting. Hilbert's sixth problem — at least for the case of a rarefied hard-sphere gas in the Boltzmann-Grad limit — was resolved (<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>, <a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>).</p>
+<h4>2. Deriving the wave kinetic equation from nonlinear dispersive systems</h4>
+<p>Before tackling gases, Deng and Hani worked on an analogous problem for waves. Physicists had long believed that if you start with the nonlinear Schrödinger equation (which describes how waves interact in quantum systems), and you zoom out to look at the average behavior of many waves, you should get the <b>wave kinetic equation</b> — a higher-level description of wave turbulence, like how energy cascades through ocean waves (<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>).</p>
+<p>Deng and Hani proved this rigorously. They represented the wave solution as a sum of tree-like diagrams, then estimated each tree's contribution with almost surgical precision. As Jalal Shatah of Courant Institute put it: "These estimates were beyond anyone's ability" (<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>). This result, published in <em>Inventiones mathematicae</em> in 2023, was the wave analog of Lanford's theorem — and it established the diagrammatic methodology that Deng later adapted for the Boltzmann derivation.</p>
+<h4>3. Probabilistic approaches to nonlinear Schrödinger dynamics</h4>
+<p>Deng also made fundamental contributions to the <b>random data problem</b> for PDEs. When you start a PDE with random initial data — waves that oscillate wildly or have discontinuities — can you still prove the equation has a solution? Deng, with Andrea Nahmod (UMass Amherst) and Haitian Yue, proved that the <b>Gibbs measure</b> (a probability rule modeling thermal equilibrium) is invariant for the 2D nonlinear Schrödinger equation. Their key innovation was the theory of <b>random tensors</b> — a framework for analyzing the wildly oscillating pieces of the solution that had been too complicated for previous methods (<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>).</p>
+<p>Think of it like this: in martial arts, when you face an opponent who moves unpredictably, you can either try to predict each individual move (the traditional, deterministic approach) or you can learn the statistical patterns — which moves are likely, which combinations are rare — and build your strategy on the probabilities. Deng brought this probabilistic thinking into the deterministic world of wave equations.</p>
+<h3>Why It Is Transformative</h3>
+<p>Deng's work bridges three scales of physics — microscopic (particle dynamics), mesoscopic (kinetic theory), and macroscopic (fluid mechanics) — and does so with mathematical rigor that mathematicians had been seeking for over a century. The IMU citation describes it as "a leap forward in a centuries-long quest by mathematicians and physicists to derive the basic laws of physics from first principles" (<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>).</p>
+<p>The methodology Deng developed — the tree-diagram decomposition, the "molecule cutting" algorithm, the random tensor theory — is not just a one-trick solution. It's a new toolkit that is already being applied across PDE theory, statistical physics, and stochastic analysis. The Séminaire Bourbaki, the most prestigious expository venue in mathematics, dedicated a seminar to this work within two years of its appearance — a powerful indicator of its impact (<a href="https://arxiv.org/abs/2602.04407">arXiv:2602.04407</a>).</p>
+<div class="stage">
+<svg viewBox="0 0 640 250" width="100%" role="img" aria-label="Particles to fluid three-scale animation">
+<g class="scalebox s1a">
+<rect x="20" y="30" width="170" height="160" rx="10" fill="#ffffff" stroke="#e3e0d6"/>
+<text x="105" y="215" text-anchor="middle" font-size="14" fill="#5f5d58">Micro: Newtonian particles</text>
+<circle class="p" style="--dx:5px;--dy:-3px" cx="55" cy="70" r="6" fill="#d97757"/>
+<circle class="p" style="--dx:-4px;--dy:5px;animation-delay:.2s" cx="100" cy="60" r="6" fill="#d97757"/>
+<circle class="p" style="--dx:3px;--dy:4px;animation-delay:.4s" cx="150" cy="85" r="6" fill="#d97757"/>
+<circle class="p" style="--dx:-5px;--dy:-4px;animation-delay:.1s" cx="70" cy="120" r="6" fill="#d97757"/>
+<circle class="p" style="--dx:4px;--dy:5px;animation-delay:.3s" cx="125" cy="135" r="6" fill="#d97757"/>
+<circle class="p" style="--dx:-3px;--dy:3px;animation-delay:.5s" cx="160" cy="150" r="6" fill="#d97757"/>
+<circle class="p" style="--dx:5px;--dy:2px;animation-delay:.6s" cx="50" cy="165" r="6" fill="#d97757"/>
+</g>
+<line class="arrowflow" x1="200" y1="110" x2="240" y2="110" stroke="#b0aea5" stroke-width="3"/>
+<g class="scalebox s1b">
+<rect x="245" y="30" width="160" height="160" rx="10" fill="#ffffff" stroke="#e3e0d6"/>
+<text x="325" y="215" text-anchor="middle" font-size="14" fill="#5f5d58">Meso: Boltzmann statistics</text>
+<rect x="265" y="140" width="18" height="35" fill="#6a9bcc"/><rect x="290" y="110" width="18" height="65" fill="#6a9bcc"/>
+<rect x="315" y="85" width="18" height="90" fill="#6a9bcc"/><rect x="340" y="110" width="18" height="65" fill="#6a9bcc"/>
+<rect x="365" y="140" width="18" height="35" fill="#6a9bcc"/>
+</g>
+<line class="arrowflow" x1="415" y1="110" x2="455" y2="110" stroke="#b0aea5" stroke-width="3"/>
+<g class="scalebox s1c">
+<rect x="460" y="30" width="160" height="160" rx="10" fill="#ffffff" stroke="#e3e0d6"/>
+<text x="540" y="215" text-anchor="middle" font-size="14" fill="#5f5d58">Macro: fluid equations</text>
+<path class="wave" d="M470,120 C495,85 520,155 545,120 S595,85 615,120" fill="none" stroke="#788c5d" stroke-width="5" stroke-linecap="round"/>
+</g>
+</svg>
+</div>
+<p class="cap">Animation (author's aid): the key idea and mechanism — jittering particles (micro · Newton) are welded by "molecule cutting + cancelling tree diagrams" to the statistics histogram (meso · Boltzmann), then to the smooth wave (macro · fluid); the three scales light up in sequence and the flowing arrows mark the rigorously proven direction of derivation.</p>
+<h3>10 Most Influential Related Works</h3>
+<h4>Core Papers by Yu Deng</h4>
+<div class="work"><b>1. Deng, Hani, Ma. "Hilbert's sixth problem: derivation of fluid equations via Boltzmann's kinetic theory." Preprint, 2025. <a href="https://arxiv.org/abs/2503.01800">arXiv:2503.01800</a></b>Completes the resolution of Hilbert's Sixth Problem by deriving the Euler and Navier-Stokes-Fourier equations from Newtonian hard-sphere dynamics via the Boltzmann equation — the full chain from particles to fluids.</div>
+<div class="work"><b>2. Deng, Hani, Ma. "Long-time derivation of the Boltzmann equation from hard sphere dynamics." Preprint, 2024. <a href="https://arxiv.org/abs/2408.07818">arXiv:2408.07818</a></b>Extends Lanford's 1975 theorem from short times to arbitrarily long times, introducing the long-time cumulant ansatz and "molecule cutting" algorithm to control combinatorial diagram expansions. The central technical breakthrough.</div>
+<div class="work"><b>3. Deng, Hani. "Full derivation of the wave kinetic equation." <em>Inventiones mathematicae</em>, 2023. <a href="https://arxiv.org/abs/2104.11204">arXiv:2104.11204</a></b>First rigorous derivation of the wave kinetic equation from the cubic nonlinear Schrödinger equation at kinetic timescale — the wave analog of Lanford's theorem. Established the diagrammatic methodology later adapted for the Boltzmann derivation.</div>
+<div class="work"><b>4. Deng, Nahmod, Yue. "Invariant Gibbs measures and global strong solutions for nonlinear Schrödinger equations in dimension two." <em>Annals of Mathematics</em> 200(2), 2024. <a href="https://arxiv.org/abs/1910.08492">arXiv:1910.08492</a></b>Proves almost-sure global well-posedness of 2D NLS and invariance of the Gibbs measure, introducing the method of random averaging operators — a breakthrough in the probabilistic study of dispersive PDEs.</div>
+<div class="work"><b>5. Deng, Nahmod, Yue. "Random tensors, propagation of randomness, and nonlinear dispersive equations." <em>Inventiones mathematicae</em>, 2021. <a href="https://arxiv.org/abs/2006.09285">arXiv:2006.09285</a></b>Introduces the theory of random tensors — the dispersive counterpart of Hairer's regularity structures — establishing almost-sure local well-posedness for semilinear Schrödinger equations in the full subcritical range.</div>
+<h4>Foundational Predecessor Works</h4>
+<div class="work"><b>6. Hilbert, "Mathematische Probleme" (Mathematical Problems). Göttingen, 1900.</b>The 23 problems that shaped 20th-century mathematics. The sixth problem — axiomatizing physics and deriving macroscopic equations from microscopic dynamics — is the overarching challenge Deng's work resolves for the case of a rarefied hard-sphere gas.</div>
+<div class="work"><b>7. Boltzmann, "Weitere Studien über das Wärmegleichgewicht unter Gasmolekülen" (Further Studies on the Thermal Equilibrium of Gas Molecules). Vienna, 1872. <a href="https://gilles.montambaux.com/files/histoire-physique/Boltzmann-1872-anglais.pdf">English translation</a></b>The original derivation of the Boltzmann equation and the H-theorem. Boltzmann believed his equation followed from Newton's laws, but proving this rigorously eluded mathematicians for over 150 years until Deng, Hani, and Ma.</div>
+<div class="work"><b>8. Lanford, "Time evolution of large classical systems." Lecture Notes in Physics 38, Springer, 1975.</b>The first rigorous (partial) derivation of the Boltzmann equation from hard-sphere dynamics, valid only for short times. This landmark result was the direct predecessor that Deng, Hani, and Ma extended to arbitrary long times.</div>
+<div class="work"><b>9. Bourgain, "Periodic nonlinear Schrödinger equation and invariant measures." <em>Comm. Math. Phys.</em> 166, 1994; and "Invariant measures for the 2D-defocusing NLS," <em>Comm. Math. Phys.</em> 176, 1996.</b>Initiated the rigorous study of invariant Gibbs measures for Hamiltonian PDEs. Deng, Nahmod, and Yue's random tensor theory broke through barriers (like the 2D cubic case) that Bourgain's original methods could not surmount.</div>
+<h4>Current Impact and Follow-Up</h4>
+<div class="work"><b>10. Bodineau, Gallagher, Saint-Raymond, Simonella. "Derivation of the Boltzmann equation from hard-sphere dynamics (after Deng, Hani, Ma)." Séminaire Bourbaki, 2026. <a href="https://arxiv.org/abs/2602.04407">arXiv:2602.04407</a></b>A Bourbaki seminar exposition of Deng-Hani-Ma's work by leading experts in kinetic theory, written within two years of the result — a strong indicator of its transformative impact. The authors describe it as the result achieved "fifty years after the seminal paper by Lanford."</div>
+<div class="work"><b>Also notable:</b> Bringmann, Deng, Nahmod, Yue, "Invariant Gibbs measures for the three dimensional cubic nonlinear wave equation," <em>Inventiones mathematicae</em>, 2024 (<a href="https://arxiv.org/abs/2205.03893">arXiv:2205.03893</a>) — extends the random tensor methodology to the 3D cubic wave equation, the hyperbolic counterpart to Hairer's landmark work on the parabolic Φ⁴₃ model.</div>
+<h3>Seminar Discussion Questions</h3>
+<div class="q">The tree-diagram method Deng uses resembles Feynman diagrams in quantum field theory. What does this convergence suggest about the deep structure of many-body problems across physics?</div>
+<div class="q">Lanford's 1975 result worked for short times because particles barely collided. Deng's extension to long times required controlling "recollision" patterns. Can you think of other areas where short-time results are "easy" but long-time results require fundamentally new ideas?</div>
+<div class="q">How does the probabilistic viewpoint (random initial data, Gibbs measures) change what questions you can ask about a PDE, compared to the deterministic viewpoint?</div>
+</section>
+
+<!-- ═══════════ Medalist 2: John Pardon ═══════════ -->
+<section class="session">
+<span class="tag blue">Medalist 2</span>
+<h2 style="margin-top:.4rem">John Pardon — Symplectic Geometry</h2>
+<p class="meta"><b>Affiliation:</b> Stony Brook University, Simons Center for Geometry and Physics (PhD Stanford 2015, Princeton AB 2011)<br><b>Age at award:</b> 37</p>
+<h3>Official Citation</h3>
+<blockquote>"For his achievements in symplectic geometry, including new approaches to virtual fundamental cycles, Fukaya categories of Liouville manifolds and counting holomorphic curves, and for his contributions to other areas of geometry and topology, including group actions on 3-manifolds and knot theory."<br>— (<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>)</blockquote>
+<h3>The Field: Symplectic Geometry</h3>
+<p>Imagine you're climbing a rock face. Your position on the wall and your momentum (how fast and in what direction you're moving) together describe your complete state at any moment. The space of all possible (position, momentum) pairs is called <b>phase space</b> — and symplectic geometry is the geometry of phase space (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>).</p>
+<p>In phase space, position and momentum are locked in a dance: change one and the other must respond. This relationship — a <b>symplectic structure</b> — is more flexible than rigid Euclidean geometry (where shapes have fixed angles and distances) but more constrained than topology (where you can stretch and compress shapes freely). Think of it as the difference between a rigid climbing route with fixed holds (Euclidean geometry), a route where holds can shift but the overall structure stays (symplectic geometry), and a completely free-form scramble where anything goes (topology).</p>
+<p>Symplectic geometry originated in classical mechanics (Hamilton's formulation) but has become one of the deepest and most active areas of modern mathematics, with connections to string theory, mirror symmetry, and quantum physics.</p>
+<h3>The Award-Winning Contribution</h3>
+<p>Pardon's Fields Medal recognizes a series of breakthroughs across symplectic geometry, knot theory, and geometric topology:</p>
+<h4>1. Virtual fundamental cycles (dissertation work)</h4>
+<p>Many problems in symplectic geometry come down to <b>counting</b> — specifically, counting certain curves (called pseudo-holomorphic curves) on symplectic manifolds. It's like counting the number of distinct routes up a climbing wall that satisfy certain constraints. But there's a problem: sometimes the curves don't intersect the manifold "transversely" (cleanly crossing through), but instead merely "kiss" it tangentially — and when that happens, your count goes wrong (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>).</p>
+<p>Mathematicians had developed various workarounds called <b>virtual fundamental cycles</b> — techniques for perturbing or reorganizing the counting to handle these problematic tangencies. But each approach had limitations. Pardon, in his 2015 Stanford dissertation under Yakov Eliashberg, developed a completely new, algebraic approach using the notion of an <b>"implicit atlas"</b> — a sheaf-theoretic framework providing local finite-dimensional reductions. As Leonid Polterovich described it: "It was clean. It was powerful" (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>).</p>
+<p>The impact was immediate. Mohammed Abouzaid said the thesis "made it possible for many people to stop worrying about things. It was immediately impactful" (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>). Eliashberg noted that "a kind of foundation for certain parts of symplectic field theory are built on his machinery." In a field that had been in a "slow-burn crisis" over foundational rigor, Pardon's work resolved disputes and provided a solid platform.</p>
+<h4>2. The MNOP conjecture (2023)</h4>
+<p>This is Pardon's most celebrated single result. On a <b>Calabi-Yau 3-fold</b> — a shape of complex dimension 3 (real dimension 6) that appears in certain string-theory models as the geometry of hidden compactified dimensions — there are two completely different ways to count curves:</p>
+<ul>
+<li><b>Gromov-Witten invariants</b> (developed by Gromov and Witten): count curves organized by their genus (how many "holes" the curve has)</li>
+<li><b>Donaldson-Thomas invariants</b> (developed by Donaldson and Thomas): count curves organized by a different property</li>
+</ul>
+<p>These two methods give completely different sequences of numbers. But in 2003, four mathematicians — Maulik, Nekrasov, Okounkov, and Pandharipande — conjectured that these two sequences are actually coefficients of the <b>same function</b>, expanded in two different ways (<a href="https://plus.maths.org/icm-2026-fm-3">Plus Magazine</a>, <a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>).</p>
+<p>Think of it like discovering that two completely different scoring systems in martial arts — one based on strikes landed, another based on control time — are secretly measuring the same underlying performance, just from different angles. The MNOP conjecture said: these two countings are the same thing in disguise.</p>
+<p>For 20 years, no one could prove it. Then in summer 2023, Pardon posted a proof online, establishing the MNOP conjecture for all complex threefolds with nef anti-canonical bundle (including all Calabi-Yau threefolds) with primary insertions. Jim Bryan, an expert in the field, said it came "out of nowhere" and that he "would have dismissed it entirely if not for Pardon's reputation." The proof used tools from a completely different area of math and created a new mathematical structure now called a <b>"Pardon algebra"</b> (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>). Bryan called it "the biggest result in enumerative algebraic geometry for the last 20 years" and said it "rewires the way he thinks about the entire subject."</p>
+<h4>3. Fukaya categories of Liouville manifolds (with Ganatra and Shende)</h4>
+<p>The <b>Fukaya category</b> is an algebraic structure that encodes the symplectic geometry of a manifold — it's like a dictionary that translates geometric information (about Lagrangian submanifolds and their intersections) into algebra (about objects, morphisms, and compositions). Pardon, with Sheel Ganatra and Vivek Shende, constructed <b>wrapped Fukaya categories of Liouville sectors</b> with a crucial property called <b>covariant functoriality</b> — meaning the construction behaves well under maps between spaces, which is essential for actually computing things (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>).</p>
+<h4>4. Knot theory and group actions on 3-manifolds</h4>
+<p>Even before his symplectic geometry work, Pardon made headlines as a Princeton undergraduate. He solved a 1983 problem of Gromov about <b>knot distortion</b> — the ratio between the distance along a knot and the straight-line distance between two points on it. Pardon proved that torus knots can have <b>arbitrarily large distortion</b>, meaning they can be arbitrarily tangled, no matter how you try to rearrange them. This was published in the <em>Annals of Mathematics</em> — a rare achievement for an undergraduate (<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>). He also proved the <b>Hilbert-Smith conjecture for three-manifolds</b>, showing that every locally compact group acting faithfully on a 3-manifold must be a Lie group (<a href="https://arxiv.org/abs/1112.2324">arXiv:1112.2324</a>).</p>
+<h3>Why It Is Transformative</h3>
+<p>Pardon's work is characterized by seeing connections between different areas of mathematics that others miss. He didn't just solve individual problems — he built frameworks. His virtual fundamental cycles work gave the entire field of symplectic geometry a rigorous foundation. His MNOP proof didn't just settle a conjecture; it introduced entirely new mathematical structures (Pardon algebras) that are already being used by other researchers to push further. And his work on Fukaya categories provided the computational infrastructure that makes symplectic geometry actually usable in practice.</p>
+<p>As the Fields Medal citation states: "Pardon is a mathematician of extraordinary depth and originality, who has repeatedly had a significant impact on the fields of topology and symplectic geometry. He has both contributed to fundamental structure and solved problems that had stymied the community for decades" (<a href="https://plus.maths.org/icm-2026-fm-3">Plus Magazine</a>).</p>
+<div class="stage">
+<svg viewBox="0 0 640 240" width="100%" role="img" aria-label="Two countings converge to one function animation">
+<text x="140" y="40" text-anchor="middle" font-size="16" fill="#141413">Gromov-Witten count</text>
+<g fill="#6a9bcc"><circle class="tok gw1" cx="90" cy="80" r="10"/><circle class="tok gw2" cx="130" cy="80" r="10"/><circle class="tok gw3" cx="170" cy="80" r="10"/><circle class="tok gw4" cx="210" cy="80" r="10"/></g>
+<text x="500" y="40" text-anchor="middle" font-size="16" fill="#141413">Donaldson-Thomas count</text>
+<g fill="#788c5d"><rect class="tok dt1" x="420" y="70" width="20" height="20" rx="4"/><rect class="tok dt2" x="460" y="70" width="20" height="20" rx="4"/><rect class="tok dt3" x="500" y="70" width="20" height="20" rx="4"/><rect class="tok dt4" x="540" y="70" width="20" height="20" rx="4"/></g>
+<path class="beam" d="M150,100 C200,160 260,175 300,178" fill="none" stroke="#6a9bcc" stroke-width="3"/>
+<path class="beam" d="M490,100 C440,160 380,175 340,178" fill="none" stroke="#788c5d" stroke-width="3"/>
+<g class="eq" style="transform-origin:320px 190px">
+<rect x="230" y="165" width="180" height="52" rx="12" fill="#141413"/>
+<text x="320" y="198" text-anchor="middle" font-size="17" fill="#faf9f5">one partition function Z</text>
+</g>
+</svg>
+</div>
+<p class="cap">Animation (author's aid): the key idea and mechanism — blue circles (GW · by genus) and green squares (DT · by another property) count separately; two beams converge into a single pulsing "partition function Z" card: two sequences, one function, two expansions.</p>
+<h3>10 Most Influential Related Works</h3>
+<h4>Core Papers by John Pardon</h4>
+<div class="work"><b>1. Pardon. "On the distortion of knots on embedded surfaces." <em>Annals of Mathematics</em> 174(1), 2011. <a href="https://arxiv.org/abs/1010.1972">arXiv:1010.1972</a></b>Solved Gromov's 1983 distortion problem, proving torus knots have distortion growing without bound. Written as a Princeton undergraduate — a rare Annals publication for an undergrad.</div>
+<div class="work"><b>2. Pardon. "The Hilbert-Smith conjecture for three-manifolds." <em>J. Amer. Math. Soc.</em> 26(3), 2013. <a href="https://arxiv.org/abs/1112.2324">arXiv:1112.2324</a></b>Proved the 3D case of the Hilbert-Smith conjecture: every locally compact group acting faithfully on a 3-manifold must be a Lie group, via novel analysis of p-adic invariant surfaces.</div>
+<div class="work"><b>3. Pardon. "An algebraic approach to virtual fundamental cycles on moduli spaces of pseudo-holomorphic curves." <em>Geometry &amp; Topology</em> 20(2), 2016. <a href="https://arxiv.org/abs/1309.2370">arXiv:1309.2370</a></b>Pardon's dissertation work. Introduces the "implicit atlas" framework — a fundamentally new, algebraic approach to virtual fundamental cycles that provides rigorous foundations for Gromov-Witten invariants and Floer homology.</div>
+<div class="work"><b>4. Ganatra, Pardon, Shende. "Covariantly functorial wrapped Floer theory on Liouville sectors." <em>Publications Mathématiques de l'IHÉS</em> 131, 2020. <a href="https://arxiv.org/abs/1706.03152">arXiv:1706.03152</a></b>Part of a landmark trilogy constructing wrapped Fukaya categories of Liouville sectors with covariance — essential for computations and applications across symplectic topology.</div>
+<div class="work"><b>5. Pardon. "Universally counting curves in Calabi-Yau threefolds." Preprint, 2023. <a href="https://arxiv.org/abs/2308.02948">arXiv:2308.02948</a></b>Proof of the MNOP conjecture for all complex threefolds with nef anti-canonical bundle (including all Calabi-Yau threefolds) with primary insertions, showing Gromov-Witten and Donaldson-Thomas invariants are coefficients of the same partition function. Introduced the "Pardon algebra" structure.</div>
+<h4>Foundational Predecessor Works</h4>
+<div class="work"><b>6. Gromov. "Pseudo holomorphic curves in symplectic manifolds." <em>Inventiones Mathematicae</em> 82, 1985. <a href="https://doi.org/10.1007/BF01388806">DOI:10.1007/BF01388806</a></b>The founding paper of modern symplectic topology. Introduced pseudo-holomorphic curves as the central tool — the very objects whose moduli spaces Pardon's virtual fundamental cycles framework was built to handle.</div>
+<div class="work"><b>7. Maulik, Nekrasov, Okounkov, Pandharipande. "Gromov-Witten theory and Donaldson-Thomas theory, I." <em>Compositio Mathematica</em> 142, 2006. <a href="https://arxiv.org/abs/math/0312059">arXiv:math/0312059</a></b>The original MNOP conjecture paper. Proposed the equivalence between Gromov-Witten and Donaldson-Thomas invariants — the conjecture Pardon proved 17 years later.</div>
+<div class="work"><b>8. Fukaya. "Morse homotopy, A∞-category, and Floer homologies." Proceedings of GARC Workshop, Seoul, 1993.</b>Introduced the Fukaya category — the algebraic structure encoding symplectic geometry through Lagrangian submanifolds and Floer homology. Pardon's work with Ganatra and Shende directly extends this framework.</div>
+<h4>Current Impact and Follow-Up</h4>
+<div class="work"><b>9. Davison, Koseki. "Degree two Gopakumar-Vafa invariants of local curves." Preprint, 2024. <a href="https://arxiv.org/abs/2408.11698">arXiv:2408.11698</a></b>Directly builds on Pardon's MNOP proof, using his reduction to local curves as the key enabling result. Shows Pardon's framework is already generating new research.</div>
+<div class="work"><b>10. Davison, Beentjes, Kool. "The refined local Donaldson-Thomas theory of curves." Preprint, 2025. <a href="https://arxiv.org/abs/2506.14359">arXiv:2506.14359</a></b>Solves K-theoretically refined DT theory of local curves, explicitly citing Pardon's machinery as enabling the next generation of refined correspondence conjectures for all Calabi-Yau threefolds.</div>
+<h3>Seminar Discussion Questions</h3>
+<div class="q">The MNOP conjecture connects two counting theories that look completely different on the surface. What does the existence of such "hidden equivalences" tell us about the structure of mathematics? Can you think of analogies in other fields where two seemingly different measurements turn out to be the same thing?</div>
+<div class="q">Pardon's virtual fundamental cycles framework resolved a foundational crisis in symplectic geometry. How common are "foundational crises" in mathematics, and what does it take to resolve one?</div>
+<div class="q">Calabi-Yau 3-folds model the hidden dimensions of our universe in string theory. Does it change your perspective on the MNOP conjecture knowing it has direct physical relevance?</div>
+</section>
+
+<!-- ═══════════ Medalist 3: Jacob Tsimerman ═══════════ -->
+<section class="session">
+<span class="tag green">Medalist 3</span>
+<h2 style="margin-top:.4rem">Jacob Tsimerman — Number Theory and Arithmetic Geometry</h2>
+<p class="meta"><b>Affiliation:</b> University of Toronto (PhD Princeton 2011, advised by Peter Sarnak)<br><b>Age at award:</b> 38</p>
+<h3>Official Citation</h3>
+<blockquote>"For his role in the vast extension of the scope of o-minimal techniques within arithmetic and complex algebraic geometry, including the proof of Griffiths' conjecture on the algebraicity of images of the period maps."<br>— (<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>)</blockquote>
+<h3>The Field: Number Theory and Arithmetic Geometry</h3>
+<p>Number theory is the study of integers and their properties — prime numbers, divisibility, solutions to equations. Arithmetic geometry brings geometry into the picture: instead of working with equations directly, you study the <b>shapes</b> (varieties) defined by those equations. It's like how a rock climber doesn't just think about the individual holds on a route, but about the overall geometry of the wall — the overhangs, the cracks, the dihedral — because the geometry reveals where the path must go.</p>
+<p>A central theme in arithmetic geometry is the study of <b>special points</b> — points on geometric shapes that carry especially rich arithmetic information. Think of these as the "pressure points" of the geometric body: small, specific locations where deep structure is concentrated. The question is: when you find many such special points, what does that tell you about the shape they live on?</p>
+<p><b>Shimura varieties</b> are a class of geometric spaces that parameterize families of abelian varieties (higher-dimensional generalizations of elliptic curves). They are extraordinarily rich objects that encode deep arithmetic information. <b>Hodge theory</b>, developed in the mid-20th century, translates geometric problems into analytic ones — like translating a climbing problem from "where are the holds?" to "what forces are acting?" — and this translation is the setting for Tsimerman's work.</p>
+<h3>The Award-Winning Contribution</h3>
+<p>Tsimerman's Fields Medal recognizes his transformative use of <b>o-minimality</b> — a concept from mathematical logic — to solve deep problems in number theory and algebraic geometry:</p>
+<h4>1. The André-Oort conjecture</h4>
+<p>Formulated in the 1990s by Yves André and Frans Oort, the conjecture concerns <b>special points</b> on Shimura varieties. The prediction: if an irreducible subvariety of a Shimura variety contains a dense set of special points (called CM points), then the subvariety itself must be special (<a href="https://scientiamag.com/article/fields-medal-2026-jacob-tsimerman-s-proof-of-andre-oort-conjecture">ScientiaMag</a>). In other words: if you find enough "pressure points" clustered on a piece of geometry, that piece must itself be a special, highly structured object.</p>
+<p>This is analogous to a principle in martial arts: if you find that a fighter consistently exposes a particular target, it's because their stance and movement pattern are built around protecting something else — the vulnerability reveals the structure.</p>
+<p>The conjecture was attacked using the <b>Pila-Zannier strategy</b>, introduced in 2008: count the special points from above (using o-minimal geometry) and from below (using Galois orbit estimates), then compare. Tsimerman proved the conjecture for the moduli space of abelian varieties (A_g) in 2018, and then — with Jonathan Pila and Arul Shankar — proved the <b>full André-Oort conjecture for all Shimura varieties</b> in 2021 (<a href="https://arxiv.org/abs/2109.08788">arXiv:2109.08788</a>, <a href="https://scientiamag.com/article/fields-medal-2026-jacob-tsimerman-s-proof-of-andre-oort-conjecture">ScientiaMag</a>).</p>
+<h4>2. Griffiths' conjecture on period maps</h4>
+<p>In 1970, Phillip Griffiths conjectured that images of <b>period maps</b> — maps that translate geometric data about algebraic varieties into analytic (Hodge-theoretic) data — should always be algebraic varieties (shapes defined by polynomial equations). This would mean that even when you translate geometry into analysis, the underlying algebraic structure persists (<a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine</a>).</p>
+<p>Tsimerman, with Benjamin Bakker and Yohan Brunebarbe, proved this in 2018–2023. Their key innovation was <b>"o-minimal GAGA"</b> — a GAGA-type theorem (named after Serre's Geometrie Algébrique et Géométrie Analytique) for coherent sheaves on complex algebraic spaces that are definable in an o-minimal structure. This fundamentally connects o-minimal geometry to algebraic geometry and Hodge theory (<a href="https://arxiv.org/abs/1811.12230">arXiv:1811.12230</a>).</p>
+<h4>3. Ax-Schanuel for Shimura varieties</h4>
+<p>With Ngaiming Mok and Jonathan Pila, Tsimerman proved the <b>Ax-Schanuel theorem</b> for all (pure) Shimura varieties — a functional transcendence statement controlling the algebraic part of the preimage of subvarieties under the uniformization map. This is a necessary ingredient for the Pila-Zannier strategy, analogous to knowing exactly which parts of an opponent's defense can be "gotten through" before you plan your attack (<a href="https://arxiv.org/abs/1711.02189">arXiv:1711.02189</a>).</p>
+<h4>What is o-minimality?</h4>
+<p>An <b>o-minimal structure</b> is a universe of definable sets whose one-dimensional definable subsets are finite unions of points and intervals — no infinitely oscillating boundaries, no fractal pathologies. Higher-dimensional definable sets inherit strong tameness properties from this one-dimensional condition. As Tsimerman explains: "It makes precise the notion of what a tame geometry is" (<a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine</a>).</p>
+<p>The genius of Tsimerman's contribution was recognizing that this tool from mathematical logic — developed to study the foundations of geometry — could be wielded as a powerful weapon in number theory. It's like a swimmer who discovers that a technique from rock climbing — reading the texture and structure of a surface — gives them a better understanding of water flow patterns around pool walls. The cross-domain transfer is what makes the work transformative.</p>
+<h3>Why It Is Transformative</h3>
+<p>Tsimerman didn't just solve individual problems. He built an entire infrastructure — definability of period maps, Ax-Schanuel theorems, o-minimal GAGA — that has become the standard toolkit for arithmetic geometry. His results are deeply related to the <b>Hodge conjecture</b>, one of the seven million-dollar Millennium Prize Problems (<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>). The o-minimal framework is now being applied to mixed period maps, the Shafarevich conjecture, birational geometry, and the study of Calabi-Yau varieties.</p>
+<p>The University of Toronto notes that his work "opened entirely new directions of research" and influenced "functional transcendence theory, the Ax-Schanuel theorem for Hodge structures, and the study of so-called unlikely intersections" (<a href="https://www.utoronto.ca/news/nobel-prize-mathematics-u-t-mathematician-jacob-tsimerman-awarded-prestigious-fields-medal">U of T News</a>).</p>
+<div class="stage">
+<svg viewBox="0 0 640 250" width="100%" role="img" aria-label="Wild curve tamed through the o-minimal lens; two-sided squeeze animation">
+<g class="wild"><path d="M20,120 q10,-70 20,0 q8,55 16,0 q7,-40 14,0 q6,30 12,0 q10,-60 20,0 q8,45 16,0 q7,-35 14,0 q10,50 20,0 q8,-40 16,0 q6,25 12,0 q10,-55 20,0" fill="none" stroke="#b0aea5" stroke-width="3"/></g>
+<g class="lensglow"><circle cx="320" cy="120" r="52" fill="none" stroke="#d97757" stroke-width="6"/><line x1="356" y1="158" x2="392" y2="196" stroke="#d97757" stroke-width="8" stroke-linecap="round"/><text x="320" y="126" text-anchor="middle" font-size="14" fill="#d97757">o-minimal</text></g>
+<path class="tame" d="M400,120 L470,120 M492,120 L560,120 M582,120 L625,120" stroke="#788c5d" stroke-width="6" stroke-linecap="round" fill="none"/>
+<circle cx="481" cy="120" r="5" fill="#788c5d"/><circle cx="571" cy="120" r="5" fill="#788c5d"/>
+<g class="squeezeT"><path d="M430,45 l60,0 l-30,26 z" fill="#6a9bcc"/><text x="540" y="66" font-size="13" fill="#5f5d58">count from above</text></g>
+<g class="squeezeB"><path d="M430,205 l60,0 l-30,-26 z" fill="#6a9bcc"/><text x="540" y="196" font-size="13" fill="#5f5d58">count from below</text></g>
+</svg>
+</div>
+<p class="cap">Animation (author's aid): the key idea and mechanism — the infinitely oscillating "wild" curve on the left passes through the o-minimal lens and becomes tame geometry: finitely many points and intervals. The twin blue arrows squeeze from above (o-minimal point counting) and below (Galois orbit bounds) — the heart of the Pila-Zannier strategy.</p>
+<h3>10 Most Influential Related Works</h3>
+<h4>Core Papers by Jacob Tsimerman</h4>
+<div class="work"><b>1. Tsimerman. "The André-Oort conjecture for A_g." <em>Annals of Mathematics</em> 187(2), 2018. <a href="https://arxiv.org/abs/1506.01466">arXiv:1506.01466</a></b>First unconditional proof of the André-Oort conjecture for the moduli space of principally polarized abelian varieties. Used the averaged Colmez conjecture to establish the necessary Galois orbit lower bounds.</div>
+<div class="work"><b>2. Pila, Shankar, Tsimerman (appendix by Esnault, Groechenig). "Canonical heights on Shimura varieties and the André-Oort conjecture." Preprint, 2021. <a href="https://arxiv.org/abs/2109.08788">arXiv:2109.08788</a></b>Proves the full André-Oort conjecture for all Shimura varieties. Introduces "solid height functions" on CM points and establishes the Galois orbit bounds needed for the general Pila-Zannier strategy.</div>
+<div class="work"><b>3. Bakker, Brunebarbe, Tsimerman. "o-minimal GAGA and a conjecture of Griffiths." <em>Inventiones mathematicae</em> 232(1), 2023. <a href="https://arxiv.org/abs/1811.12230">arXiv:1811.12230</a></b>Proves Griffiths' 1970 conjecture that images of period maps are quasi-projective algebraic varieties. Develops "definable GAGA" — a new theory connecting o-minimal geometry to algebraic geometry and Hodge theory.</div>
+<div class="work"><b>4. Bakker, Klingler, Tsimerman. "Tame topology of arithmetic quotients and algebraicity of Hodge loci." <em>J. Amer. Math. Soc.</em> 33(4), 2020. <a href="https://arxiv.org/abs/1810.04801">arXiv:1810.04801</a></b>Proves that arithmetic quotients carry natural real semi-algebraic structures and that period maps are definable in the o-minimal structure R_an,exp. The geometric foundation underlying the entire Pila-Zannier strategy in Hodge-theoretic settings.</div>
+<div class="work"><b>5. Mok, Pila, Tsimerman. "Ax-Schanuel for Shimura varieties." <em>Annals of Mathematics</em> 189(3), 2019. <a href="https://arxiv.org/abs/1711.02189">arXiv:1711.02189</a></b>Proves the Ax-Schanuel theorem for all pure Shimura varieties — a functional transcendence statement controlling algebraic preimages under the uniformization map. A cornerstone of modern functional transcendence theory and a necessary ingredient for full André-Oort.</div>
+<h4>Foundational Predecessor Works</h4>
+<div class="work"><b>6. Pila, Zannier. "Rational points in periodic analytic sets and the Manin-Mumford conjecture." <em>Rend. Lincei Mat. Appl.</em> 19(2), 2008. <a href="https://arxiv.org/abs/0802.4016">arXiv:0802.4016</a></b>The founding paper of the Pila-Zannier strategy: count special points from above (o-minimal point counting) and below (Galois orbit bounds), then compare. This two-sided counting paradigm became the template for all subsequent André-Oort work, including Tsimerman's.</div>
+<div class="work"><b>7. André. "G-functions and geometry." Vieweg, 1989.</b>Contains the original formulation of the André-Oort conjecture (independently formulated by Oort in 1995). The conjecture — that subvarieties of Shimura varieties containing dense sets of special points must be special — became one of the central open problems in arithmetic geometry.</div>
+<div class="work"><b>8. Griffiths. "Periods of integrals on algebraic manifolds III." <em>Publications Mathématiques de l'IHÉS</em> 38, 1970.</b>Established the modern theory of period maps and introduced the conjecture (resolved by Bakker, Brunebarbe, and Tsimerman nearly 50 years later) that images of period maps are quasi-projective algebraic varieties and the Griffiths bundle is ample.</div>
+<h4>Current Impact and Follow-Up</h4>
+<div class="work"><b>9. Gao, Klingler. "The Ax-Schanuel conjecture for variations of mixed Hodge structures." Preprint, 2021. <a href="https://arxiv.org/abs/2101.10938">arXiv:2101.10938</a></b>Extends Ax-Schanuel from pure to mixed Hodge structures, building crucially on the definability infrastructure established by Tsimerman and collaborators. Demonstrates the continuing reach of the o-minimal paradigm.</div>
+<div class="work"><b>10. Bakker, Filipazzi, Mauri, Tsimerman. "Baily-Borel compactifications of period images and the b-semiampleness conjecture." Preprint, 2025. <a href="https://arxiv.org/abs/2508.19215">arXiv:2508.19215</a></b>Extends the Griffiths conjecture work to construct functorial projective compactifications of period images, deducing the b-semiampleness conjecture for Hodge bundles. Pushes o-minimal techniques into birational geometry and the Minimal Model Program — the cutting edge of Tsimerman's current research.</div>
+<h3>Seminar Discussion Questions</h3>
+<div class="q">The Pila-Zannier strategy works by counting special points from above and below and comparing. Can you think of other mathematical or physical situations where a "two-sided bound" strategy is powerful?</div>
+<div class="q">O-minimality was developed in mathematical logic but found its deepest applications in number theory. What does this cross-disciplinary transfer tell us about the unity of mathematics?</div>
+<div class="q">The André-Oort conjecture says that dense special points force the whole subvariety to be special. How does this relate to the philosophical question of whether "a lot of evidence" necessarily implies "deep structure"?</div>
+</section>
+
+<!-- ═══════════ Medalist 4: Hong Wang ═══════════ -->
+<section class="session">
+<span class="tag">Medalist 4</span>
+<h2 style="margin-top:.4rem">Hong Wang — Harmonic Analysis and Geometric Measure Theory</h2>
+<p class="meta"><b>Affiliation:</b> NYU Courant Institute and IHES (PhD MIT 2019, advised by Larry Guth)<br><b>Age at award:</b> 35 (third woman to receive a Fields Medal, after Maryam Mirzakhani in 2014 and Maryna Viazovska in 2022)</p>
+<h3>Official Citation</h3>
+<blockquote>"For her work in harmonic analysis and geometric measure theory, including applications of multiscale and decoupling techniques to the local smoothing conjecture for the planar wave equation, and major advances in Fourier restriction, Falconer distance sets, Furstenberg sets in the plane, and the Kakeya problem in three dimensions."<br>— (<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>)</blockquote>
+<h3>The Field: Harmonic Analysis and Geometric Measure Theory</h3>
+<p><b>Harmonic analysis</b> is the art of breaking things into waves. Joseph Fourier discovered in the 19th century that any sound — no matter how complex — can be decomposed into a sum of simple sine waves. This is why an MP3 can compress music: it stores the wave components rather than the raw signal. Harmonic analysis generalizes this idea to far broader mathematical settings (<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>).</p>
+<p>Think of it like a martial artist breaking down a complex combination into individual techniques: jab, cross, hook, kick. Each individual move is simple; the complexity comes from how they're combined. Harmonic analysis studies both the decomposition (breaking into waves) and the synthesis (putting waves back together), and asks: what can we say about the original object from its wave components?</p>
+<p><b>Geometric measure theory</b> extends the tools of calculus to shapes that aren't smooth — like fractals, soap bubble clusters, or the wildly irregular sets that arise in harmonic analysis. The key concept is <b>Hausdorff dimension</b>, which measures how the "size" of an object scales. A line has Hausdorff dimension 1; a square has dimension 2. But fractals can have non-integer dimensions — the Koch snowflake, for instance, has dimension about 1.26 (<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>).</p>
+<h3>The Award-Winning Contribution</h3>
+<p>Wang's Fields Medal recognizes a constellation of breakthroughs, crowned by one landmark result:</p>
+<h4>1. The Kakeya conjecture in three dimensions (with Joshua Zahl)</h4>
+<p>In 1917, the Japanese mathematician Sōichi Kakeya asked: what is the minimum area needed to rotate a needle so it points in every possible direction? You might think a circle works, but Kakeya found a smaller shape. Two years later, Abram Besicovitch showed something shocking: you can make the area <b>arbitrarily small</b> — even zero — by sliding and slightly twisting the needle in a fractal-like branching pattern (<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>).</p>
+<p>This raised a deeper question: if the area can be zero, what about the <b>dimension</b>? The <b>Kakeya conjecture</b> predicts that even though a Kakeya set can have zero volume, its Hausdorff dimension must still be as large as possible — equal to the dimension of the space it lives in. In 2D, this was proved by Roy Davies in 1971 in just a few pages. In 3D and higher, it remained open for over 50 years.</p>
+<p>In February 2025, Wang and Joshua Zahl (Nankai University) published a 127-page proof that every Kakeya set in R³ has Hausdorff dimension exactly 3 (<a href="https://arxiv.org/abs/2502.17655">arXiv:2502.17655</a>, <a href="https://www.ihes.fr/en/hong-wang2026-fields-medal/">IHES</a>). The proof works by showing that the only way a collection of thin tubes in 3D space can heavily overlap (which is what happens in a Kakeya set) is by clustering into convex sets — and then bounding the dimension of those clusters.</p>
+<p>The proof built on several earlier breakthroughs. First, Wang and Zahl proved the <b>"sticky Kakeya" case</b> — sets with multi-scale self-similarity — in 2022 (<a href="https://arxiv.org/abs/2210.09581">arXiv:2210.09581</a>). Then, in 2025, they showed that the general case reduces to the sticky case. The full argument combines multiscale geometric analysis, incidence combinatorics, and a deep understanding of how tubes in 3D space can overlap.</p>
+<h4>2. The Furstenberg set conjecture in the plane (with Kevin Ren)</h4>
+<p>A <b>Furstenberg set</b> is a set that, in many directions, contains fractal pieces of lines in that direction — a Kakeya-like condition, but one that concerns dimensional intersections with lines rather than rotating a unit needle. Wang and Kevin Ren fully resolved the Furstenberg set conjecture in R² in 2023, proving sharp dimension bounds (<a href="https://arxiv.org/abs/2308.08819">arXiv:2308.08819</a>). The multi-scale "sticky reduction" ideas developed here directly influenced the 3D Kakeya strategy.</p>
+<h4>3. The local smoothing conjecture for the planar wave equation (with Larry Guth and Ruixiang Zhang)</h4>
+<p>The <b>local smoothing conjecture</b> asks: when a wave spreads out, does it "smooth out" locally — that is, does it become more regular in any given region than it was at the start? Wang, Guth, and Zhang proved this for the wave equation in 2+1 dimensions via a sharp L⁴ square-function estimate for the cone in R³ (<a href="https://arxiv.org/abs/1909.10693">arXiv:1909.10693</a>). This was the first complete resolution of a local smoothing conjecture in any dimension.</p>
+<h4>4. Falconer distance set problem (with Guth, Iosevich, and Ou)</h4>
+<p>The <b>Falconer conjecture</b> asks: if you have a set of points in the plane with Hausdorff dimension greater than 1 (the general threshold is d/2 for R^d), must the set of distances between pairs of points have positive measure? Wang and collaborators proved that if the dimension exceeds 5/4, then the pinned distance set has positive measure — a major advance on the conjecture (<a href="https://arxiv.org/abs/1808.09346">arXiv:1808.09346</a>).</p>
+<h4>5. Fourier restriction (with Shukun Wu)</h4>
+<p>The <b>Fourier restriction conjecture</b> asks: can you restrict the Fourier transform to a curved surface (like a sphere) and still get a bounded operator? This is fundamental to understanding how waves interact with curved boundaries. Wang and Wu introduced a new framework combining decoupling theory with two-ends Furstenberg inequalities, yielding new restriction estimates (<a href="https://arxiv.org/abs/2411.08871">arXiv:2411.08871</a>).</p>
+<h3>Why It Is Transformative</h3>
+<p>Wang describes her field as having "a tower of conjectures" (<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>). The Kakeya conjecture sits at the bottom: it implies the Fourier restriction conjecture, which implies the local smoothing conjecture, which implies further results about PDEs. If you disprove the Kakeya conjecture, the whole tower collapses. By proving the 3D Kakeya conjecture, Wang didn't just solve one problem — she provided "foundational strength" to an entire tower of results in harmonic analysis, PDEs, and geometric measure theory.</p>
+<p>Moreover, the methods Wang developed — the multiscale analysis, the sticky reduction, the interaction between incidence combinatorics and geometric measure theory — are already being applied to higher dimensions and related problems. As Wang herself put it: "In Fourier analysis we have a tower of conjectures. The Kakeya conjecture lies at the bottom of three other conjectures, one implying the other. If you disprove the Kakeya conjecture, then you disprove the whole tower" (<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>).</p>
+<p>The problem remains open for dimensions 4 and higher — the frontier beckons.</p>
+<div class="stage">
+<svg viewBox="0 0 640 230" width="100%" role="img" aria-label="Rotating needle sweeps all directions; dimension meter fills to 3; conjecture tower lights up">
+<circle cx="150" cy="110" r="86" fill="none" stroke="#e3e0d6" stroke-width="2"/>
+<g class="sweep"><path d="M150,110 L150,18 A92,92 0 0 1 229,64 Z" fill="#d97757"/></g>
+<g class="needle"><line x1="150" y1="110" x2="150" y2="20" stroke="#141413" stroke-width="5" stroke-linecap="round"/><circle cx="150" cy="110" r="5" fill="#d97757"/></g>
+<text x="150" y="222" text-anchor="middle" font-size="13" fill="#5f5d58">needle sweeps all directions · area can be zero</text>
+<g class="brick b1"><rect x="330" y="160" width="200" height="34" rx="6" fill="#141413"/><text x="430" y="182" text-anchor="middle" font-size="13" fill="#faf9f5">Kakeya conjecture (3D: proved ✓)</text></g>
+<g class="brick b2"><rect x="345" y="120" width="170" height="32" rx="6" fill="#d97757"/><text x="430" y="141" text-anchor="middle" font-size="13" fill="#fff">Fourier restriction</text></g>
+<g class="brick b3"><rect x="360" y="82" width="140" height="30" rx="6" fill="#6a9bcc"/><text x="430" y="102" text-anchor="middle" font-size="13" fill="#fff">local smoothing</text></g>
+<g class="brick b4"><rect x="375" y="46" width="110" height="28" rx="6" fill="#788c5d"/><text x="430" y="65" text-anchor="middle" font-size="13" fill="#fff">further PDE results</text></g>
+</svg>
+<div class="dimbox"><div style="display:flex;justify-content:space-between;font-size:.8rem;color:#5f5d58"><span>Hausdorff dimension</span><span><b style="color:#d97757">→ 3.00 (full)</b></span></div><div class="dimtrack"><div class="dimbar dimfill"></div></div></div>
+</div>
+<p class="cap">Animation (author's aid): the key idea and mechanism — the needle rotates through every direction in the disc (area can be zero); the dimension meter is pushed to a full 3.00; the tower of conjectures lights up from its base (Kakeya): if the base falls the tower falls; the base proved, the tower stands.</p>
+<h3>10 Most Influential Related Works</h3>
+<h4>Core Papers by Hong Wang</h4>
+<div class="work"><b>1. Wang, Zahl. "Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions." Preprint, 2025. <a href="https://arxiv.org/abs/2502.17655">arXiv:2502.17655</a></b>The capstone: full proof that every Kakeya set in R³ has Hausdorff and Minkowski dimension 3. Shows that heavy tube overlap forces clustering into convex sets, resolving a problem open since 1917.</div>
+<div class="work"><b>2. Wang, Zahl. "Sticky Kakeya sets and the sticky Kakeya conjecture." <em>J. Amer. Math. Soc.</em> 39(2), 2026. <a href="https://arxiv.org/abs/2210.09581">arXiv:2210.09581</a></b>Proved the first major ingredient of the 3D Kakeya proof: sticky Kakeya sets (those with multi-scale self-similarity) in R³ have full Hausdorff dimension. The 2025 proof reduces the general case to this.</div>
+<div class="work"><b>3. Ren, Wang. "Furstenberg sets estimate in the plane." Preprint, 2023. <a href="https://arxiv.org/abs/2308.08819">arXiv:2308.08819</a></b>Fully resolves the Furstenberg set conjecture in R² with sharp dimension bounds. The multi-scale "sticky reduction" ideas directly influenced the 3D Kakeya strategy.</div>
+<div class="work"><b>4. Guth, Wang, Zhang. "A sharp square function estimate for the cone in R³." <em>Annals of Mathematics</em> 192(2), 2020. <a href="https://arxiv.org/abs/1909.10693">arXiv:1909.10693</a></b>Proves a sharp L⁴ square-function estimate for the cone, implying the local smoothing conjecture for the wave equation in 2+1 dimensions — the first complete resolution in any dimension.</div>
+<div class="work"><b>5. Guth, Iosevich, Ou, Wang. "On Falconer's distance set problem in the plane." <em>Inventiones Mathematicae</em> 219(3), 2020. <a href="https://arxiv.org/abs/1808.09346">arXiv:1808.09346</a></b>Proves that sets of Hausdorff dimension &gt; 5/4 in R² have pinned distance sets of positive measure — a major advance on Falconer's conjecture, using decoupling theory.</div>
+<div class="work"><b>6. Wang, Wu. "Restriction estimates using decoupling theorems and two-ends Furstenberg inequalities." Preprint, 2024. <a href="https://arxiv.org/abs/2411.08871">arXiv:2411.08871</a></b>New framework for the Fourier restriction conjecture, combining decoupling with Furstenberg inequalities. Yields restriction estimates for p &gt; 22/7 in 3D and connects Kakeya-type geometry to the core restriction problem.</div>
+<div class="work"><b>7. Shmerkin, Wang. "Dimensions of Furstenberg sets and an extension of Bourgain's projection theorem." <em>Analysis &amp; PDE</em> 18, 2025. <a href="https://arxiv.org/abs/2211.13363">arXiv:2211.13363</a></b>First improvement since 1999 on the dimension of classical s-Furstenberg sets for s &lt; 1/2, via discretized incidence bounds extending Bourgain's projection and sum-product theorems. Key intermediate step toward the full Ren-Wang resolution.</div>
+<h4>Foundational Predecessor Works</h4>
+<div class="work"><b>8. Kakeya. "Some problems on minima concerning the oval." <em>Tohoku Mathematical Journal</em> 5, 1917. Besicovitch. "On Kakeya's problem and a similar one." <em>Math. Zeitschrift</em> 27, 1928.</b>Kakeya posed the needle problem; Besicovitch showed Kakeya sets can have arbitrarily small (even zero) measure, raising the central question of whether their dimension must still be maximal — the question Wang and Zahl resolved for R³.</div>
+<div class="work"><b>9. Fefferman. "The multiplier problem for the ball." <em>Annals of Mathematics</em> 94, 1971.</b>Used Besicovitch set constructions to show the ball multiplier is unbounded on L^p for p ≠ 2 in dimensions ≥ 2. This revealed that Kakeya-type geometry underlies central questions in Fourier analysis — the bridge connecting Wang's two fields.</div>
+<div class="work"><b>10. Bourgain, Demeter. "The proof of the ℓ² Decoupling Conjecture." <em>Annals of Mathematics</em> 182(1), 2015. <a href="https://arxiv.org/abs/1403.5335">arXiv:1403.5335</a></b>Proved sharp decoupling inequalities for compact hypersurfaces with positive curvature. Decoupling is the central analytic engine throughout Wang's program — underlying the Falconer result, the local smoothing proof, and the restriction framework.</div>
+<div class="work"><b>Also notable:</b> Larry Guth (Wang's PhD advisor) published a streamlined exposition of the Wang-Zahl proof in 2026 (<a href="https://arxiv.org/abs/2604.03416">arXiv:2604.03416</a>), and Guth, Wang, Zahl published a simplified reduction in January 2026 (<a href="https://arxiv.org/abs/2601.14411">arXiv:2601.14411</a>) — showing the rapid uptake and refinement of the methods.</div>
+<h3>Seminar Discussion Questions</h3>
+<div class="q">Wang describes a "tower of conjectures" with Kakeya at the bottom. What does it mean for a whole tower of results to depend on one foundational conjecture? Can you think of analogies in physics or other sciences?</div>
+<div class="q">The Kakeya problem connects geometry (how tubes overlap in space) to analysis (how waves behave). What is it about curved surfaces and directional tubes that creates this deep connection?</div>
+<div class="q">The 3D Kakeya conjecture is now proved, but dimensions 4+ remain open. What new ideas do you think will be needed to go higher?</div>
+</section>
+
+<!-- ═══════════ Cross-Cutting Themes ═══════════ -->
+<section class="session">
+<span class="tag blue">Cross-Cutting Themes and Conclusions</span>
+<h2 style="margin-top:.4rem">What the 2026 Fields Medals Tell Us About Mathematics</h2>
+<p>Looking across the four medalists, several patterns emerge:</p>
+<p><b>1. Bridges between fields.</b> Every medalist built a bridge between areas that seemed unrelated. Deng connected probability and PDEs. Pardon connected algebra and symplectic geometry. Tsimerman connected mathematical logic and number theory. Wang connected geometric measure theory and harmonic analysis. The most transformative mathematics happens at the boundaries between fields — like a martial artist who borrows techniques from judo, boxing, and wrestling to create something new.</p>
+<p><b>2. Deep problems solved, not just advanced.</b> Each medalist solved a problem that had been open for decades — Hilbert's sixth (1900), the MNOP conjecture (2003), the André-Oort conjecture (1990s), the Kakeya conjecture (1917). These weren't incremental improvements; they were completions of stories that had defined their fields.</p>
+<p><b>3. New tools created.</b> Beyond solving specific problems, each medalist created new mathematical machinery — random tensors (Deng), Pardon algebras and implicit atlases (Pardon), o-minimal GAGA (Tsimerman), sticky reduction and multiscale tube analysis (Wang) — that is already being used by other mathematicians to push further.</p>
+<p><b>4. Physics and mathematics intertwined.</b> Deng's work grounds the equations of physics in first principles. Pardon's Calabi-Yau manifolds appear in string-theory models of hidden dimensions. Wang's Kakeya conjecture underlies our understanding of wave propagation. The unreasonable effectiveness of mathematics in describing the physical world remains as mysterious and fruitful as ever.</p>
+<p><b>5. The global nature of mathematics.</b> The 2026 medalists hail from China (Deng, Wang), the United States (Pardon), and Canada (Tsimerman, born in Russia). Two are Chinese nationals — the first time mathematicians holding Chinese citizenship have won the Fields Medal (Shing-Tung Yau, who won in 1982, is of Chinese descent but was a US citizen at the time). Wang is only the third woman to receive the medal in its 90-year history (<a href="https://www.cnn.com/2026/07/24/china/fields-medal-wang-hong-deng-yu-china-intl-hnk">CNN</a>, <a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>). Mathematics is, increasingly, a truly global endeavor.</p>
+<h3>Looking Forward</h3>
+<p>The 2026 Fields Medalists have not only solved long-standing problems but opened new frontiers. Deng's methods may extend to more complex fluids and plasmas. Pardon's framework could unlock further enumerative geometry conjectures. Tsimerman's o-minimal toolkit is pushing into birational geometry. And Wang's 3D Kakeya proof has raised the urgent question: can these methods go to dimension 4 and beyond?</p>
+<p>For the young mathematician — the one who sees waves in the pool, routes on the wall, and strategy on the mat — the lesson is clear: the deepest mathematics lives where different worlds meet. The 2026 Fields Medalists didn't just climb higher; they found new mountains.</p>
+<div class="stage">
+<svg viewBox="0 0 640 210" width="100%" role="img" aria-label="Four bridges connecting different fields of mathematics">
+<g class="node"><circle cx="80" cy="60" r="34" fill="#f0eee6" stroke="#d97757" stroke-width="3"/><text x="80" y="66" text-anchor="middle" font-size="12">probability</text></g>
+<g class="node"><circle cx="240" cy="150" r="34" fill="#f0eee6" stroke="#d97757" stroke-width="3"/><text x="240" y="156" text-anchor="middle" font-size="13">PDE</text></g>
+<g class="node"><circle cx="240" cy="45" r="34" fill="#f0eee6" stroke="#6a9bcc" stroke-width="3"/><text x="240" y="51" text-anchor="middle" font-size="12">algebra</text></g>
+<g class="node"><circle cx="400" cy="150" r="34" fill="#f0eee6" stroke="#6a9bcc" stroke-width="3"/><text x="400" y="148" text-anchor="middle" font-size="11">symplectic</text><text x="400" y="162" text-anchor="middle" font-size="11">geometry</text></g>
+<g class="node"><circle cx="400" cy="45" r="34" fill="#f0eee6" stroke="#788c5d" stroke-width="3"/><text x="400" y="51" text-anchor="middle" font-size="12">logic</text></g>
+<g class="node"><circle cx="560" cy="150" r="34" fill="#f0eee6" stroke="#788c5d" stroke-width="3"/><text x="560" y="148" text-anchor="middle" font-size="11">number</text><text x="560" y="162" text-anchor="middle" font-size="11">theory</text></g>
+<g class="node"><circle cx="80" cy="160" r="34" fill="#f0eee6" stroke="#141413" stroke-width="3"/><text x="80" y="156" text-anchor="middle" font-size="10">geometric</text><text x="80" y="169" text-anchor="middle" font-size="10">measure theory</text></g>
+<g class="node"><circle cx="560" cy="55" r="34" fill="#f0eee6" stroke="#141413" stroke-width="3"/><text x="560" y="53" text-anchor="middle" font-size="11">harmonic</text><text x="560" y="67" text-anchor="middle" font-size="11">analysis</text></g>
+<path class="bridge br1" d="M108,80 C150,110 190,130 208,138" stroke="#d97757" stroke-width="4" fill="none"/>
+<path class="bridge br2" d="M272,60 C310,85 350,120 370,135" stroke="#6a9bcc" stroke-width="4" fill="none"/>
+<path class="bridge br3" d="M432,60 C470,85 510,120 530,135" stroke="#788c5d" stroke-width="4" fill="none"/>
+<path class="bridge br4" d="M112,148 C260,95 420,70 527,60" stroke="#141413" stroke-width="4" fill="none"/>
+</svg>
+</div>
+<p class="cap">Animation (author's aid): four bridges arc into place — probability↔PDE (Deng), algebra↔symplectic geometry (Pardon), logic↔number theory (Tsimerman), geometric measure theory↔harmonic analysis (Wang).</p>
+</section>
+
+<!-- ═══════════ Appendix ═══════════ -->
+<section class="session">
+<span class="tag green">Appendix</span>
+<h2 style="margin-top:.4rem">Quick Reference — The Four Medalists</h2>
+<table>
+<tr><th>Medalist</th><th>Field</th><th>Key Problem Solved</th><th>Problem Origin</th><th>Affiliation</th></tr>
+<tr><td>Yu Deng</td><td>PDEs / Kinetic Theory</td><td>Hilbert's Sixth Problem (Boltzmann from Newton)</td><td>1900</td><td>University of Chicago</td></tr>
+<tr><td>John Pardon</td><td>Symplectic Geometry</td><td>MNOP conjecture (curve counting equivalence)</td><td>2003</td><td>Stony Brook University</td></tr>
+<tr><td>Jacob Tsimerman</td><td>Arithmetic Geometry</td><td>André-Oort conjecture + Griffiths' conjecture</td><td>1990s / 1970</td><td>University of Toronto</td></tr>
+<tr><td>Hong Wang</td><td>Harmonic Analysis</td><td>3D Kakeya conjecture</td><td>1917</td><td>NYU / IHES</td></tr>
+</table>
+<p style="font-size:.88rem;color:var(--muted)"><em>This briefing was compiled from official IMU citations, university press releases, Quanta Magazine profiles, Plus Magazine explainers, and arXiv preprints. arXiv identifiers and journal references have been cross-checked against multiple sources.</em></p>
+<p style="font-size:.82rem;color:var(--muted)">Sources: <a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a> · <a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine — Deng</a> · <a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine — Pardon</a> · <a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine — Deng</a> · <a href="https://plus.maths.org/icm-2026-fm-3">Plus Magazine — Pardon</a> · <a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine — Tsimerman</a> · <a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine — Wang</a> · <a href="https://www.ihes.fr/en/hong-wang2026-fields-medal/">IHES — Wang</a> · <a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News — Deng</a> · <a href="https://www.utoronto.ca/news/nobel-prize-mathematics-u-t-mathematician-jacob-tsimerman-awarded-prestigious-fields-medal">U of T News — Tsimerman</a> · <a href="https://scientiamag.com/article/fields-medal-2026-jacob-tsimerman-s-proof-of-andre-oort-conjecture">ScientiaMag — Tsimerman</a> · <a href="https://www.princeton.edu/news/2026/07/23/princeton-alumni-awarded-three-four-2026-fields-medals-math">Princeton University</a> · <a href="https://mathematics.stanford.edu/news/john-pardon-phd-15-awarded-fields-medal-2026-icm">Stanford Mathematics</a> · <a href="https://www.scientificamerican.com/article/2026-fields-medals-go-to-four-young-mathematicians/">Scientific American</a> · <a href="https://www.cnn.com/2026/07/24/china/fields-medal-wang-hong-deng-yu-china-intl-hnk">CNN</a> · <a href="https://www.nytimes.com/2026/07/23/science/jacob-tsimerman-fields-medal.html">NYT — Tsimerman</a> · <a href="https://www.nytimes.com/2026/07/23/science/hong-wang-fields-medal.html">NYT — Wang</a> · <a href="https://www.nytimes.com/2026/07/23/science/yu-deng-fields-medal.html">NYT — Deng</a> · <a href="https://arxiv.org">arXiv</a></p>
+</section>
+
+<p class="foot"><b>Note:</b> the full briefing text above is presented verbatim; the per-session animations are the author's teaching aids (following the CSS keyframe craft of <a href="https://github.com/wjlgatech/animate-anything">animate-anything</a> and the Anthropic brand system) and are not rigorous mathematical statements. 中文全译版：<a href="/articles/fields-2026-zh.html">简体中文版</a>.<br>Author: <a href="https://agentic-portfolio-lovat.vercel.app/"><b>Paul Jialiang Wu</b></a> · <a href="https://agentic-portfolio-lovat.vercel.app/">agentic-portfolio-lovat.vercel.app</a></p>
+</main>
+</body>
+</html>
