@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2026 菲尔兹奖四杰 · All-in 学习页</title>
-<meta name="description" content="2026年菲尔兹奖四位得主的中文学习页：每一课配有核心思想、运行机制与纯CSS动画演示。由 allin-anything 路由编译（master-anything 学习范式 + animate-anything 动画工艺）。">
+<title>2026年菲尔兹奖得主：一份机构研究简报（简体中文全译）</title>
+<meta name="description" content="《2026年菲尔兹奖得主：一份机构研究简报》简体中文全文翻译：邓煜、John Pardon、Jacob Tsimerman、王虹四位得主的领域、获奖贡献、变革意义与各自最有影响力的十篇文献。每一节配有纯CSS动画演示核心思想与运行机制。译者：Paul Jialiang Wu。">
 <style>
 :root{
   --bg:#faf9f5; --card:#ffffff; --card2:#f0eee6; --ink:#141413; --muted:#5f5d58;
@@ -13,39 +13,40 @@
   --serif:"Songti SC","Noto Serif CJK SC",Georgia,serif;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
-.wrap{max-width:46rem;margin:0 auto;padding:40px 20px 80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.85;-webkit-font-smoothing:antialiased}
+.wrap{max-width:48rem;margin:0 auto;padding:40px 20px 80px}
 .topbar{height:6px;background:linear-gradient(90deg,var(--accent),var(--blue),var(--green))}
 .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
-h1{font-family:var(--serif);font-weight:700;font-size:2.1rem;line-height:1.25;margin:.2em 0}
-h2{font-family:var(--serif);font-weight:700;font-size:1.45rem;margin:0 0 .5rem}
-.sub{color:var(--muted);font-size:1rem}
-.session{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px 28px;margin:26px 0;box-shadow:0 14px 36px -30px rgba(20,20,19,.35)}
-.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:999px;padding:3px 12px;margin-bottom:8px}
+h1{font-family:var(--serif);font-weight:700;font-size:2.05rem;line-height:1.3;margin:.2em 0}
+h2{font-family:var(--serif);font-weight:700;font-size:1.5rem;margin:2.2rem 0 .6rem;padding-top:.3rem}
+h3{font-weight:700;font-size:1.08rem;margin:1.6rem 0 .4rem;color:var(--ink)}
+h4{font-weight:700;font-size:.95rem;margin:1.2rem 0 .3rem;color:var(--accent)}
+.byline{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 18px;margin:1rem 0;font-size:.93rem;color:var(--muted)}
+.byline a{color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid var(--border2)}
+.session{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 30px;margin:28px 0;box-shadow:0 14px 36px -30px rgba(20,20,19,.35)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:999px;padding:3px 12px;margin-bottom:6px}
 .tag.blue{background:var(--blue)} .tag.green{background:var(--green)}
-.kv{background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:12px 16px;margin:.9rem 0;font-size:.95rem}
-.kv b{color:var(--accent)}
-.mech{margin:.6rem 0 .2rem;padding-left:1.3rem} .mech li{margin:.35rem 0}
-.stage{position:relative;background:var(--card2);border:1px solid var(--border);border-radius:12px;margin:1.1rem 0 .4rem;overflow:hidden}
+.meta{color:var(--muted);font-size:.93rem;margin:.2rem 0 .8rem}
+blockquote{margin:1rem 0;padding:.7rem 1.1rem;border-left:4px solid var(--accent);background:var(--card2);border-radius:0 10px 10px 0;color:var(--muted);font-size:.97rem}
+.stage{position:relative;background:var(--card2);border:1px solid var(--border);border-radius:12px;margin:1.2rem 0 .3rem;overflow:hidden}
 .cap{color:var(--muted);font-size:.8rem;font-style:italic;text-align:center;margin:.4rem 0 0}
-.refs{font-size:.85rem;color:var(--muted);border-top:1px dashed var(--border2);margin-top:1rem;padding-top:.7rem}
-.refs a{color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border2)}
-.q{background:var(--card2);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:.55rem .9rem;font-size:.92rem;color:var(--muted);margin-top:.9rem}
+.work{margin:.7rem 0;padding:.6rem .9rem;background:var(--card2);border:1px solid var(--border);border-radius:10px;font-size:.92rem}
+.work b{display:block}
+.work a{color:var(--blue);text-decoration:none;border-bottom:1px solid var(--border2)}
+.q{background:var(--card2);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:.55rem .9rem;font-size:.93rem;color:var(--muted);margin:.5rem 0}
 .foot{margin-top:2.2rem;padding-top:1.1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}
+a{color:var(--blue)}
 table{border-collapse:collapse;width:100%;font-size:.88rem;margin:.6rem 0}
 th,td{border:1px solid var(--border);padding:6px 10px;text-align:left}
 th{background:var(--card2)}
+em{font-style:italic}
 @media (prefers-reduced-motion: reduce){ *{animation-duration:0s!important;transition:none!important} }
-
-/* ---- S0 山脉与新路线 ---- */
 .route{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 3.2s ease forwards}
 .route.r2{animation-delay:.7s}.route.r3{animation-delay:1.4s}.route.r4{animation-delay:2.1s}
 @keyframes draw{to{stroke-dashoffset:0}}
 .flag{opacity:0;animation:pop .6s ease forwards}
 .flag.f1{animation-delay:2.9s}.flag.f2{animation-delay:3.4s}.flag.f3{animation-delay:3.9s}.flag.f4{animation-delay:4.4s}
 @keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-
-/* ---- S1 粒子→流体 ---- */
 .p{animation:jit 1.1s infinite alternate ease-in-out}
 @keyframes jit{from{transform:translate(0,0)}to{transform:translate(var(--dx,4px),var(--dy,-4px))}}
 .wave{stroke-dasharray:560;stroke-dashoffset:560;animation:draw 3s 1.4s ease forwards}
@@ -53,16 +54,12 @@ th{background:var(--card2)}
 .s1a{animation-delay:.2s}.s1b{animation-delay:1.4s}.s1c{animation-delay:2.6s}
 .arrowflow{stroke-dasharray:8 6;animation:flow 1.2s linear infinite}
 @keyframes flow{to{stroke-dashoffset:-28}}
-
-/* ---- S2 两种计数 = 同一函数 ---- */
 .tok{opacity:0;animation:pop .5s ease forwards}
 .gw1{animation-delay:.2s}.gw2{animation-delay:.5s}.gw3{animation-delay:.8s}.gw4{animation-delay:1.1s}
 .dt1{animation-delay:.35s}.dt2{animation-delay:.65s}.dt3{animation-delay:.95s}.dt4{animation-delay:1.25s}
 .eq{opacity:0;animation:pop .7s 1.8s ease forwards, pulse 2.4s 2.6s infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 .beam{stroke-dasharray:200;stroke-dashoffset:200;animation:draw 1.2s 1.5s ease forwards}
-
-/* ---- S3 驯服镜片 + 上下夹逼 ---- */
 .wild{animation:wildshift 3.5s ease-in-out infinite alternate}
 @keyframes wildshift{from{transform:translateX(0)}to{transform:translateX(-24px)}}
 .lensglow{animation:glow 2.2s ease-in-out infinite alternate}
@@ -72,8 +69,6 @@ th{background:var(--card2)}
 .squeezeB{animation:upp 2.6s ease-in-out infinite}
 @keyframes downp{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
 @keyframes upp{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-
-/* ---- S4 旋转的针 ---- */
 .needle{transform-origin:150px 110px;animation:spin 6s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .sweep{transform-origin:150px 110px;animation:spin 6s linear infinite;opacity:.16}
@@ -84,8 +79,6 @@ th{background:var(--card2)}
 .dimbar{height:100%;background:linear-gradient(90deg,var(--blue),var(--accent));border-radius:999px}
 .brick{opacity:0;animation:pop .6s ease forwards}
 .b1{animation-delay:.4s}.b2{animation-delay:1s}.b3{animation-delay:1.6s}.b4{animation-delay:2.2s}
-
-/* ---- S5 桥 ---- */
 .bridge{stroke-dasharray:240;stroke-dashoffset:240;animation:draw 1.6s ease forwards}
 .br1{animation-delay:.3s}.br2{animation-delay:.9s}.br3{animation-delay:1.5s}.br4{animation-delay:2.1s}
 .node{animation:glow 2.6s ease-in-out infinite alternate}
@@ -94,21 +87,26 @@ th{background:var(--card2)}
 <body>
 <div class="topbar"></div>
 <main class="wrap">
-<p class="eyebrow">ALLIN-ANYTHING · ALL-IN 学习页 · 编译自英文机构简报</p>
-<h1>2026 菲尔兹奖四杰：<br>他们没有只登顶，他们改画了地图</h1>
-<p class="sub">2026年7月23日，费城国际数学家大会（ICM）。四位40岁以下的数学家各自终结了一个悬置数十年、甚至逾百年的问题。本页每一课都给出<b>核心思想 → 运行机制 → 动画演示</b>，供跨学科的年轻研究者一次学透。路由记录：<code>route → master-anything（学习范式）</code>，动画遵循 <a href="https://github.com/wjlgatech/animate-anything" style="color:var(--blue)">animate-anything</a> 的 CSS 关键帧工艺。</p>
+<p class="eyebrow">简体中文全文翻译 · 每节配动画演示 · ALLIN-ANYTHING 出品</p>
+<h1>2026年菲尔兹奖得主：<br>一份机构研究简报</h1>
+<p class="meta"><b>大学数学系研讨会</b> · 2026年7月27日</p>
+<p class="meta"><em>为研讨会报告而备。写给具有数学天赋、善于跨学科思考的年轻研究者——那种在游泳中看见波、在攀岩路线中看见几何、在武术中看见策略、在万物中看见结构的人。</em></p>
+<div class="byline">作者 / 译者：<a href="https://agentic-portfolio-lovat.vercel.app/">Paul Jialiang Wu</a> · 联系与更多作品：<a href="https://agentic-portfolio-lovat.vercel.app/">agentic-portfolio-lovat.vercel.app</a><br><span style="font-size:.85rem">本页为英文原稿的<b>忠实全文翻译</b>（简体中文）；各节动画为译者补充的教学演示，用以直观呈现每一节的核心思想与运行机制。</span></div>
 
-<!-- ═══════════ 课时 0 ═══════════ -->
+<!-- ═══════════ 执行综述 ═══════════ -->
 <section class="session">
-<span class="tag">课时 0 · 总览</span>
-<h2>把数学想成一片山脉</h2>
-<div class="kv"><b>核心思想：</b>有人人可见的高峰（著名未解问题），有从山下看不见的隐藏山脊（领域间的联系）。2026年的四位得主不只是登顶——他们修出了<b>改变地图本身的新路线</b>。</div>
-<ul class="mech">
-<li><b>邓煜（Yu Deng）</b>：证明数十亿粒子的混沌之舞确实产生流体力学的光滑方程——完成希尔伯特1900年的梦。</li>
-<li><b>约翰·帕登（John Pardon）</b>：证明六维形状上两种完全不同的曲线计数其实数的是同一件事（MNOP猜想，悬置20年）。</li>
-<li><b>雅各布·齐默尔曼（Jacob Tsimerman）</b>：把数理逻辑的 o-极小性引入数论，攻克1970年代以来的猜想。</li>
-<li><b>王虹（Hong Wang）</b>：证明三维空间中向所有方向旋转的针，扫过的集合维数必须为满维3——解决1917年的挂谷问题。她是史上第三位女性得主。</li>
+<span class="tag">执行综述</span>
+<h2 style="margin-top:.4rem">数学界发生了什么变化？</h2>
+<p>2026年7月23日，在费城举行的国际数学家大会（ICM）上，国际数学联盟（IMU）将四枚菲尔兹奖章——常被称为"数学界的诺贝尔奖"——授予四位40岁以下的数学家（<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）。每位得主所解决的问题，都曾令世界上最优秀的数学家们束手无策数十年，有的甚至超过一个世纪。</p>
+<p>请把数学想象成一片巨大的山脉。有些高峰人人可见——那些著名的未解问题高悬于地景之上。有些隐藏的山脊连接着从山下看似毫不相关的峰峦。还有整片整片的"技术山谷"，多数攀登者甚至不知道它们的存在，而它们恰恰握有通往顶峰的关键路线。</p>
+<p>2026年的四位菲尔兹奖得主不只是登上了峰顶。他们修筑了新的攀登路线，改变了地图本身：</p>
+<ul>
+<li><b>邓煜（Yu Deng）</b>证明了数十亿粒子的混沌之舞确实会产生流体力学那光滑、可预测的方程——完成了大卫·希尔伯特（David Hilbert）在1900年提出的梦想（<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>）。</li>
+<li><b>John Pardon</b> 证明了在六维形状（这些形状在弦理论中可能是我们宇宙的模型）上，两种完全不同的曲线计数方式实际上数的是同一件事，一举解决了悬置20年的猜想（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。</li>
+<li><b>Jacob Tsimerman</b> 从数理逻辑引入了一件工具——一个名为"o-极小性"（o-minimality）的概念，它精确定义了"温顺几何"的含义——并用它证明了自1970年代以来悬而未决的数论猜想（<a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine</a>）。</li>
+<li><b>王虹（Hong Wang）</b>证明了在三维空间中向所有方向旋转的一根针，其扫过的集合必须具有满维数——解决了1917年提出的问题，并为调和分析中一整座猜想之塔打开了大门（<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>，<a href="https://www.ihes.fr/en/hong-wang2026-fields-medal/">IHES</a>）。</li>
 </ul>
+<p>本简报将深入介绍每一位得主：他们的研究领域、所解决的问题、其重要性所在，以及界定其研究谱系的10篇最有影响力的著作——包括他们本人的与前辈的。</p>
 <div class="stage">
 <svg viewBox="0 0 640 240" width="100%" role="img" aria-label="山脉与四条新路线动画">
 <polyline points="0,210 90,120 150,180 240,70 320,170 410,90 480,180 560,110 640,200" fill="none" stroke="#b0aea5" stroke-width="3"/>
@@ -117,26 +115,43 @@ th{background:var(--card2)}
 <path class="route r3" d="M360,208 C400,190 430,150 560,114" fill="none" stroke="#788c5d" stroke-width="4" stroke-linecap="round"/>
 <path class="route r4" d="M500,208 C520,190 540,160 638,132" fill="none" stroke="#141413" stroke-width="4" stroke-linecap="round" stroke-dasharray="420" />
 <g class="flag f1"><circle cx="240" cy="70" r="7" fill="#d97757"/><text x="240" y="52" text-anchor="middle" font-size="15" fill="#141413">邓煜</text></g>
-<g class="flag f2"><circle cx="410" cy="90" r="7" fill="#6a9bcc"/><text x="410" y="72" text-anchor="middle" font-size="15" fill="#141413">帕登</text></g>
-<g class="flag f3"><circle cx="560" cy="110" r="7" fill="#788c5d"/><text x="560" y="92" text-anchor="middle" font-size="15" fill="#141413">齐默尔曼</text></g>
+<g class="flag f2"><circle cx="410" cy="90" r="7" fill="#6a9bcc"/><text x="410" y="72" text-anchor="middle" font-size="15" fill="#141413">Pardon</text></g>
+<g class="flag f3"><circle cx="560" cy="110" r="7" fill="#788c5d"/><text x="560" y="92" text-anchor="middle" font-size="15" fill="#141413">Tsimerman</text></g>
 <g class="flag f4"><circle cx="150" cy="180" r="7" fill="#141413"/><text x="150" y="162" text-anchor="middle" font-size="15" fill="#141413">王虹</text></g>
 </svg>
 </div>
-<p class="cap">动画：四条新路线依次画入山脉，四面旗帜落在被终结的峰顶上。</p>
+<p class="cap">动画（译者演示）：四条新路线依次画入山脉，四面旗帜落在被终结的峰顶上——他们改变了地图本身。</p>
 </section>
 
-<!-- ═══════════ 课时 1 ═══════════ -->
+<!-- ═══════════ 得主一：邓煜 ═══════════ -->
 <section class="session">
-<span class="tag">课时 1 · 偏微分方程</span>
-<h2>邓煜：从牛顿的粒子到流体的方程</h2>
-<p>芝加哥大学教授，37岁，普林斯顿2015年博士。灵感来自罗德岛一家韩式炸鸡店。</p>
-<div class="kv"><b>核心思想：</b>物理的三个尺度——微观（粒子服从牛顿定律）→ 介观（玻尔兹曼方程的统计描述，1872）→ 宏观（纳维-斯托克斯流体方程）。希尔伯特第六问题（1900）要求把每一环严格证出来。最难的一环是 <b>牛顿 → 玻尔兹曼</b>：1975年 Lanford 只证到极短时间（百万个粒子里平均只有一个碰撞过一次）。</div>
-<p><b>运行机制</b>（邓煜 + Zaher Hani + 马骁，200页证明，2024–2025）：</p>
-<ol class="mech">
-<li>把长时间<b>切成许多短段</b>，逐段接力；</li>
-<li>用「<b>分子切割</b>」算法控制碰撞历史的组合爆炸；</li>
-<li>把碰撞历史表示为<b>树状图</b>（神似物理的费曼图），证明无穷复杂的树的贡献会<b>受控地相消与合并</b>。</li>
-</ol>
+<span class="tag">得主一</span>
+<h2 style="margin-top:.4rem">邓煜 —— 偏微分方程</h2>
+<p class="meta"><b>任职机构：</b>芝加哥大学（此前任职于南加州大学 Dornsife 学院；2015年普林斯顿大学博士）<br><b>获奖时年龄：</b>37岁</p>
+<h3>官方颁奖词</h3>
+<blockquote>"表彰他在偏微分方程领域的工作，包括从硬球动力学出发对稀薄气体玻尔兹曼方程的严格推导、从非线性色散系统出发对波动动理学方程的推导，以及对非线性薛定谔动力学的概率方法。"<br>——（<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）</blockquote>
+<h3>研究领域：偏微分方程（PDE）</h3>
+<p>想象你正在海里游泳。你周围的水并不是静止的——它流动、旋转、拍击，那些模式近看似乎混沌，在更大尺度上却又不知怎地井然有序。描述流体、气体与波如何演化的方程，叫做<b>偏微分方程（PDE）</b>。一个偏微分方程同时描述某个量在空间与时间中如何变化——不只是"球下落得多快？"（那是常微分方程），而是"随着时间推移，温度如何在一块金属板上扩散？"（<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>）。</p>
+<p>PDE 是物理学所说的语言。热方程、波动方程、流体力学的纳维-斯托克斯（Navier-Stokes）方程、量子力学的薛定谔方程——全都是 PDE。但要严格地求解 PDE 是出了名的困难。你可以把方程写下来，但要证明解存在、解的行为符合物理预测、并且你确实能对它说出点精确的东西——数学的难处正在这里。</p>
+<p>邓煜的工作位于 PDE 与概率论的交汇处。他把灵活的概率视角带入了波动方程那个刚性、结构化的世界——就像把武术家的流动应变能力带入一套刚硬的套路（型）之中。正如邓煜本人所说："这个世界上存在大量随机性，我们需要一种数学方式去捕捉它。"（<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>）</p>
+<h3>获奖贡献</h3>
+<p>邓煜的菲尔兹奖表彰三项相互关联的突破：</p>
+<h4>1. 从硬球动力学推导玻尔兹曼方程（希尔伯特第六问题）</h4>
+<p>1900年，大卫·希尔伯特提出了23个问题，塑造了此后一个世纪的数学。他的第六问题问道：我们能否从第一性原理出发——从单个粒子的运动开始——推导出物理学的方程，尤其是流体力学的方程？（<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>）</p>
+<p>请想象这样的图景：一种气体由数十亿个微小的硬球组成，它们像台球一样相互碰撞。在微观层面，每个粒子都遵循牛顿定律——决定论的，对任何单个粒子都可预测。但在宏观层面，气体的行为服从<b>玻尔兹曼方程</b>（1872），它用统计平均来描述温度、压强与速度。再到最大的尺度上，气体作为连续流体流动，由<b>纳维-斯托克斯方程</b>描述（<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>）。</p>
+<p>这条链是：<b>牛顿 → 玻尔兹曼 → 纳维-斯托克斯</b>。希尔伯特要求数学家严格证明其中的每一环。</p>
+<p>第二环（玻尔兹曼 → 纳维-斯托克斯）此前已被理解。难的是第一环（牛顿 → 玻尔兹曼）。1975年，Oscar Lanford 证明了它——但只对极短的时间成立，短到"预计一百万个粒子中只有一个发生过一次碰撞"（<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>）。在更长的时间里，粒子反复碰撞，累积出复杂的共同历史——就像交手过太多回合的对练伙伴，彼此都能预判对方的动作。玻尔兹曼所依赖的独立性假设就此失效。</p>
+<p>邓煜与 Zaher Hani（密歇根大学）、Xiao Ma（普林斯顿大学）一起攻克了这个问题。他们的关键洞见——出现在罗德岛普罗维登斯一家韩式炸鸡店里（<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>）——是把长时间区间切分为若干短区间，然后用一套精巧的"<b>分子切割</b>"算法来控制碰撞模式的组合爆炸。他们把碰撞历史表示成树状图（令人想起物理学中的费曼图），进而证明：尽管这些树在长时间下会变得无穷复杂，它们的贡献却以受控的方式相消与合并（<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>）。</p>
+<p>结果是：2024–2025年间，邓煜、Hani 与 Ma 发表了一篇200页的证明，对任意长的时间（只要相应的玻尔兹曼解存在，并在 Boltzmann-Grad 假设下）从硬球动力学推导出玻尔兹曼方程，随后又在该模型设定中补全了从牛顿到纳维-斯托克斯的严格管线。希尔伯特第六问题——至少对于 Boltzmann-Grad 极限下的稀薄硬球气体情形——宣告解决（<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>，<a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News</a>）。</p>
+<h4>2. 从非线性色散系统推导波动动理学方程</h4>
+<p>在处理气体之前，邓煜与 Hani 曾研究波的类似问题。物理学家长期相信：如果从非线性薛定谔方程（它描述量子系统中波的相互作用）出发，拉远视角去看大量波的平均行为，你应当得到<b>波动动理学方程</b>——一种关于波湍流的更高层描述，就像能量如何在海浪间级联传递（<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>）。</p>
+<p>邓煜与 Hani 严格证明了这一点。他们把波的解表示为树状图之和，然后以近乎外科手术般的精度估计每棵树的贡献。正如库朗研究所的 Jalal Shatah 所言："这些估计超出了所有人的能力。"（<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>）这一成果于2023年发表在《Inventiones mathematicae》上，是 Lanford 定理的波动版本——并确立了邓煜后来用于玻尔兹曼推导的图式方法论。</p>
+<h4>3. 非线性薛定谔动力学的概率方法</h4>
+<p>邓煜还对 PDE 的<b>随机数据问题</b>作出了根本性贡献。当你用随机初值启动一个 PDE——波剧烈震荡或带有间断——你还能证明方程有解吗？邓煜与 Andrea Nahmod（马萨诸塞大学阿默斯特分校）、Haitian Yue 一起证明了<b>吉布斯测度</b>（一种刻画热平衡的概率法则）对二维非线性薛定谔方程是不变的。他们的关键创新是<b>随机张量</b>理论——一个用于分析解中狂野震荡部分的框架，此前的方法对这些部分束手无策（<a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta Magazine</a>）。</p>
+<p>可以这样想：在武术中，面对一个动作难以捉摸的对手，你要么试图预测他的每一个动作（传统的决定论方法），要么去学习统计规律——哪些动作概率高、哪些组合罕见——并把策略建立在概率之上。邓煜把这种概率思维带进了波动方程的决定论世界。</p>
+<h3>为何具有变革性</h3>
+<p>邓煜的工作以数学家们追寻了一个多世纪的严格性，架起了物理学三个尺度之间的桥梁——微观（粒子动力学）、介观（动理学理论）与宏观（流体力学）。IMU 的颁奖词称之为"数学家与物理学家从第一性原理推导物理基本定律这一延续数百年的求索中的一次飞跃"（<a href="https://plus.maths.org/icm-2026-fm-1">Plus Magazine</a>）。</p>
+<p>邓煜发展的方法论——树图分解、"分子切割"算法、随机张量理论——不是只能用一次的解题技巧，而是一套新工具箱，目前已被应用于 PDE 理论、统计物理与随机分析各处。数学界最负盛名的综述讲坛 Séminaire Bourbaki 在该工作问世两年内即为其专设一讲——这是其影响力的有力指标（<a href="https://arxiv.org/abs/2602.04407">arXiv:2602.04407</a>）。</p>
 <div class="stage">
 <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="粒子到流体的三尺度动画">
 <g class="scalebox s1a">
@@ -163,25 +178,64 @@ th{background:var(--card2)}
 <rect x="460" y="30" width="160" height="160" rx="10" fill="#ffffff" stroke="#e3e0d6"/>
 <text x="540" y="215" text-anchor="middle" font-size="14" fill="#5f5d58">宏观：流体方程</text>
 <path class="wave" d="M470,120 C495,85 520,155 545,120 S595,85 615,120" fill="none" stroke="#788c5d" stroke-width="5" stroke-linecap="round"/>
+</g>
 </svg>
 </div>
-<p class="cap">动画：抖动的粒子（微观）→ 统计直方图（介观）→ 光滑波形（宏观）依次点亮——邓煜把三个尺度用一条严格证明的链焊接起来。</p>
-<div class="refs">关键文献：<a href="https://arxiv.org/abs/2503.01800">arXiv:2503.01800</a>（希尔伯特第六问题·全链条）· <a href="https://arxiv.org/abs/2408.07818">arXiv:2408.07818</a>（长时间玻尔兹曼推导）· <a href="https://arxiv.org/abs/2104.11204">arXiv:2104.11204</a>（波动动理学方程，Invent. Math. 2023）</div>
-<div class="q">讨论：为什么"短时间容易、长时间需要全新思想"？你的领域里有类似现象吗？</div>
+<p class="cap">动画（译者演示）：核心思想与机制——抖动的粒子（微观·牛顿）经"分子切割+树图相消"焊接到统计直方图（介观·玻尔兹曼），再到光滑波形（宏观·流体）；三个尺度依次点亮，箭头持续流动表示严格证明的推导方向。</p>
+<h3>10篇最有影响力的相关著作</h3>
+<h4>邓煜的核心论文</h4>
+<div class="work"><b>1. Deng, Hani, Ma. “Hilbert's sixth problem: derivation of fluid equations via Boltzmann's kinetic theory.” 预印本，2025。<a href="https://arxiv.org/abs/2503.01800">arXiv:2503.01800</a></b>通过玻尔兹曼方程从牛顿硬球动力学推导出欧拉方程与纳维-斯托克斯-傅里叶方程，完成希尔伯特第六问题的解决——从粒子到流体的完整链条。</div>
+<div class="work"><b>2. Deng, Hani, Ma. “Long-time derivation of the Boltzmann equation from hard sphere dynamics.” 预印本，2024。<a href="https://arxiv.org/abs/2408.07818">arXiv:2408.07818</a></b>把 Lanford 1975年的定理从短时间推广到任意长时间，引入长时间累积量拟设与"分子切割"算法以控制组合图展开。这是核心的技术突破。</div>
+<div class="work"><b>3. Deng, Hani. “Full derivation of the wave kinetic equation.” 《Inventiones mathematicae》，2023。<a href="https://arxiv.org/abs/2104.11204">arXiv:2104.11204</a></b>首次在动理学时间尺度上从三次非线性薛定谔方程严格推导出波动动理学方程——Lanford 定理的波动版本。确立了后来被用于玻尔兹曼推导的图式方法论。</div>
+<div class="work"><b>4. Deng, Nahmod, Yue. “Invariant Gibbs measures and global strong solutions for nonlinear Schrödinger equations in dimension two.” 《Annals of Mathematics》200(2)，2024。<a href="https://arxiv.org/abs/1910.08492">arXiv:1910.08492</a></b>证明二维 NLS 的几乎必然整体适定性与吉布斯测度的不变性，引入随机平均算子方法——色散 PDE 概率研究的一大突破。</div>
+<div class="work"><b>5. Deng, Nahmod, Yue. “Random tensors, propagation of randomness, and nonlinear dispersive equations.” 《Inventiones mathematicae》，2021。<a href="https://arxiv.org/abs/2006.09285">arXiv:2006.09285</a></b>提出随机张量理论——Hairer 正则性结构在色散方程中的对应物——在整个次临界范围内确立半线性薛定谔方程的几乎必然局部适定性。</div>
+<h4>奠基性前驱工作</h4>
+<div class="work"><b>6. Hilbert, “Mathematische Probleme”（数学问题）。哥廷根，1900。</b>塑造了20世纪数学的23个问题。第六问题——将物理学公理化、并从微观动力学推导宏观方程——正是邓煜的工作为稀薄硬球气体情形所解决的总纲性挑战。</div>
+<div class="work"><b>7. Boltzmann, “Weitere Studien über das Wärmegleichgewicht unter Gasmolekülen”（关于气体分子热平衡的进一步研究）。维也纳，1872。<a href="https://gilles.montambaux.com/files/histoire-physique/Boltzmann-1872-anglais.pdf">英译本</a></b>玻尔兹曼方程与 H 定理的原始推导。玻尔兹曼相信他的方程可由牛顿定律导出，但严格证明这一点让数学家们求索了150多年，直到邓煜、Hani 与 Ma。</div>
+<div class="work"><b>8. Lanford, “Time evolution of large classical systems.” Lecture Notes in Physics 38，Springer，1975。</b>首个从硬球动力学出发的严格（部分）玻尔兹曼方程推导，仅在短时间内有效。这一里程碑式结果是邓煜、Hani 与 Ma 推广到任意长时间的直接前驱。</div>
+<div class="work"><b>9. Bourgain, “Periodic nonlinear Schrödinger equation and invariant measures.” 《Comm. Math. Phys.》166，1994；及 “Invariant measures for the 2D-defocusing NLS”，《Comm. Math. Phys.》176，1996。</b>开创了哈密顿 PDE 不变吉布斯测度的严格研究。邓煜、Nahmod 与 Yue 的随机张量理论突破了 Bourgain 原始方法无法逾越的障碍（如二维三次情形）。</div>
+<h4>当前影响与后续工作</h4>
+<div class="work"><b>10. Bodineau, Gallagher, Saint-Raymond, Simonella. “Derivation of the Boltzmann equation from hard-sphere dynamics (after Deng, Hani, Ma).” Séminaire Bourbaki，2026。<a href="https://arxiv.org/abs/2602.04407">arXiv:2602.04407</a></b>由动理学理论的顶尖专家在成果问世两年内撰写的 Bourbaki 讲座综述——其变革性影响的有力指标。作者们称这一成果是在"Lanford 开创性论文五十年之后"达成的。</div>
+<div class="work"><b>另值一提：</b>Bringmann, Deng, Nahmod, Yue, “Invariant Gibbs measures for the three dimensional cubic nonlinear wave equation”，《Inventiones mathematicae》，2024（<a href="https://arxiv.org/abs/2205.03893">arXiv:2205.03893</a>）——把随机张量方法推广到三维三次非线性波动方程，是 Hairer 关于抛物型 Φ⁴₃ 模型里程碑工作的双曲对应。</div>
+<h3>研讨会讨论题</h3>
+<div class="q">邓煜使用的树图方法与量子场论中的费曼图相似。这种趋同对跨物理学的多体问题的深层结构意味着什么？</div>
+<div class="q">Lanford 1975年的结果对短时间成立，因为粒子几乎不碰撞。邓煜推广到长时间则需要控制"再碰撞"模式。你能想到其他"短时结果容易、长时结果需要根本性新想法"的领域吗？</div>
+<div class="q">与决定论视角相比，概率视角（随机初值、吉布斯测度）改变了你能对一个 PDE 提出的问题。它改变了什么？</div>
 </section>
 
-<!-- ═══════════ 课时 2 ═══════════ -->
+<!-- ═══════════ 得主二：John Pardon ═══════════ -->
 <section class="session">
-<span class="tag blue">课时 2 · 辛几何</span>
-<h2>约翰·帕登：两种数法，一个真相</h2>
-<p>石溪大学西蒙斯几何物理中心，37岁。本科时就在《数学年刊》解决了 Gromov 1983年的纽结扭曲问题。</p>
-<div class="kv"><b>核心思想：</b>在弦论中可能刻画宇宙隐藏维度的<b>卡拉比-丘三维流形</b>上，有两种完全不同的曲线计数：<b>Gromov-Witten</b>（按亏格数）与 <b>Donaldson-Thomas</b>（按另一种性质数）。两串数字看起来毫不相干。2003年 MNOP 四人猜想：它们其实是<b>同一个函数的两种展开</b>。20年无人能证；2023年夏，帕登的证明"凭空出现"。</div>
-<p><b>运行机制：</b></p>
-<ol class="mech">
-<li>先在博士论文中发明「<b>隐式图册</b>」——为"曲线相切不横截"的计数病症提供代数化的<b>虚拟基本闭链</b>基础，终结领域的奠基危机；</li>
-<li>证明 MNOP 时从完全不同的数学领域调来工具，归约到<b>局部曲线</b>，并创造出新结构「<b>帕登代数</b>」；</li>
-<li>结论对所有反典范丛 nef 的复三维流形成立（含全部卡拉比-丘三维流形，带主插入）。</li>
-</ol>
+<span class="tag blue">得主二</span>
+<h2 style="margin-top:.4rem">John Pardon —— 辛几何</h2>
+<p class="meta"><b>任职机构：</b>石溪大学，西蒙斯几何与物理中心（2015年斯坦福大学博士，2011年普林斯顿大学本科）<br><b>获奖时年龄：</b>37岁</p>
+<h3>官方颁奖词</h3>
+<blockquote>"表彰他在辛几何中的成就，包括处理虚拟基本闭链的新方法、Liouville 流形的 Fukaya 范畴与全纯曲线计数，以及他对几何与拓扑其他领域的贡献，包括三维流形上的群作用与纽结理论。"<br>——（<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）</blockquote>
+<h3>研究领域：辛几何</h3>
+<p>想象你正在攀爬一面岩壁。你在墙上的位置与你的动量（速度多大、朝什么方向）共同描述了你在任一时刻的完整状态。所有可能的（位置，动量）对构成的空间叫做<b>相空间</b>——而辛几何就是相空间的几何学（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。</p>
+<p>在相空间中，位置与动量被锁定在一支双人舞里：改变其一，另一个必须响应。这种关系——<b>辛结构</b>——比刚性的欧几里得几何（形状有固定的角度与距离）更灵活，又比拓扑学（形状可以自由拉伸压缩）更受约束。可以把三者想成：固定支点的刚性攀岩路线（欧氏几何）、支点可以移动但整体结构不变的路线（辛几何）、以及怎么爬都行的自由攀爬（拓扑学）。</p>
+<p>辛几何起源于经典力学（哈密顿的表述），如今已成为现代数学最深刻、最活跃的领域之一，与弦理论、镜像对称和量子物理都有联系。</p>
+<h3>获奖贡献</h3>
+<p>Pardon 的菲尔兹奖表彰他横跨辛几何、纽结理论与几何拓扑的一系列突破：</p>
+<h4>1. 虚拟基本闭链（博士论文工作）</h4>
+<p>辛几何中的许多问题归结为<b>计数</b>——具体说，是数辛流形上的某类曲线（称为伪全纯曲线）。这就像数一面攀岩墙上满足特定约束的不同路线的数目。但有一个麻烦：有时曲线与流形的相交不是"横截的"（干净利落地穿过），而只是与之相切地"轻吻"——一旦发生这种情况，你的计数就会出错（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。</p>
+<p>数学家们为此发展了各种变通方法，统称<b>虚拟基本闭链</b>——通过扰动或重组计数来处理这些成问题的相切。但每种方法都有局限。Pardon 在2015年斯坦福的博士论文中（导师 Yakov Eliashberg）发展了一套全新的代数方法，使用"<b>隐式图册</b>"（implicit atlas）的概念——一个提供局部有限维归约的层论框架。Leonid Polterovich 如此评价它："干净，而且强大。"（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）</p>
+<p>其影响立竿见影。Mohammed Abouzaid 说这篇论文"让许多人得以不再为一些事情担忧。它立刻产生了影响。"Eliashberg 指出"辛场论某些部分的基础，就建立在他的机器之上。"在一个曾因基础严格性问题陷入"慢燃危机"的领域里，Pardon 的工作化解了争议，提供了坚实的平台。</p>
+<h4>2. MNOP 猜想（2023）</h4>
+<p>这是 Pardon 最负盛名的单项成果。在<b>卡拉比-丘三维流形</b>——复维数为3（实维数为6）的形状，在某些弦理论模型中作为隐藏紧化维度的几何出现——之上，存在两种完全不同的曲线计数方式：</p>
+<ul>
+<li><b>Gromov-Witten 不变量</b>（由 Gromov 与 Witten 发展）：按曲线的亏格（曲线有多少个"洞"）来组织计数；</li>
+<li><b>Donaldson-Thomas 不变量</b>（由 Donaldson 与 Thomas 发展）：按另一种性质来组织计数。</li>
+</ul>
+<p>这两种方法给出完全不同的两串数。但在2003年，四位数学家——Maulik、Nekrasov、Okounkov 与 Pandharipande——猜想：这两串数其实是<b>同一个函数</b>以两种不同方式展开的系数（<a href="https://plus.maths.org/icm-2026-fm-3">Plus Magazine</a>，<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。</p>
+<p>可以这样想：就像发现武术比赛中两套完全不同的记分系统——一套按有效打击计分，另一套按控制时间计分——其实是在从不同角度度量同一种底层实力。MNOP 猜想说的就是：这两种计数是同一事物的两副面孔。</p>
+<p>二十年间无人能证。然后在2023年夏天，Pardon 把证明贴到了网上，对所有反典范丛 nef 的复三维流形（包括全部卡拉比-丘三维流形、带主插入）确立了 MNOP 猜想。该领域专家 Jim Bryan 说它"凭空出现"，还说"若不是 Pardon 的声望，我本会将其完全置之不理"。证明动用了来自完全不同数学领域的工具，并创造出一种如今被称为"<b>Pardon 代数</b>"的新数学结构（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。Bryan 称之为"近20年枚举代数几何中最大的结果"，并说它"重新接线了他对整个学科的思考方式"。</p>
+<h4>3. Liouville 流形的 Fukaya 范畴（与 Ganatra、Shende 合作）</h4>
+<p><b>Fukaya 范畴</b>是一种编码流形辛几何的代数结构——像一部词典，把几何信息（关于拉格朗日子流形及其相交）翻译为代数（关于对象、态射与合成）。Pardon 与 Sheel Ganatra、Vivek Shende 构造了具有一个关键性质——<b>协变函子性</b>——的 <b>Liouville 扇区的缠绕 Fukaya 范畴</b>。协变函子性意味着该构造在空间之间的映射下表现良好，这对实际计算至关重要（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。</p>
+<h4>4. 纽结理论与三维流形上的群作用</h4>
+<p>早在辛几何工作之前，Pardon 就以普林斯顿本科生的身份登上过头条。他解决了 Gromov 1983年关于<b>纽结扭曲度</b>的问题——纽结上两点沿结的距离与直线距离之比。Pardon 证明了环面纽结的扭曲度可以<b>任意大</b>：无论你如何摆放，它们都可以缠得任意紧。这一成果发表于《Annals of Mathematics》——对本科生而言是罕见的成就（<a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta Magazine</a>）。他还证明了三维流形的 <b>Hilbert-Smith 猜想</b>：任何在三维流形上忠实作用的局部紧群必是李群（<a href="https://arxiv.org/abs/1112.2324">arXiv:1112.2324</a>）。</p>
+<h3>为何具有变革性</h3>
+<p>Pardon 工作的特征，是看见别人错过的不同数学领域之间的联系。他不只是解决单个问题——他构建框架。他的虚拟基本闭链工作给整个辛几何领域打下了严格的地基。他的 MNOP 证明不只是解决了一个猜想，还引入了全新的数学结构（Pardon 代数），其他研究者已经在用它向前推进。他关于 Fukaya 范畴的工作则提供了让辛几何真正可用于实际计算的基础设施。</p>
+<p>正如菲尔兹奖颁奖词所言："Pardon 是一位深度与原创性非凡的数学家，屡次对拓扑学与辛几何领域产生重大影响。他既为基础结构作出了贡献，也解决了困扰学界数十年的问题。"（<a href="https://plus.maths.org/icm-2026-fm-3">Plus Magazine</a>）</p>
 <div class="stage">
 <svg viewBox="0 0 640 240" width="100%" role="img" aria-label="两种计数收敛为同一函数动画">
 <text x="140" y="40" text-anchor="middle" font-size="16" fill="#141413">Gromov-Witten 计数</text>
@@ -196,24 +250,55 @@ th{background:var(--card2)}
 </g>
 </svg>
 </div>
-<p class="cap">动画：蓝色圆（GW）与绿色方（DT）各自计数，两束光汇入同一张"配分函数"卡片——两套记分制，量的是同一场比赛。</p>
-<div class="refs">关键文献：<a href="https://arxiv.org/abs/2308.02948">arXiv:2308.02948</a>（MNOP 证明，2023）· <a href="https://arxiv.org/abs/1309.2370">arXiv:1309.2370</a>（虚拟基本闭链·博士论文）· <a href="https://arxiv.org/abs/math/0312059">arXiv:math/0312059</a>（MNOP 原始猜想，2003）</div>
-<div class="q">讨论：两种表面无关的度量"暗中相等"，这种隐藏等价在别的学科里意味着什么？</div>
+<p class="cap">动画（译者演示）：核心思想与机制——蓝色圆（GW·按亏格）与绿色方（DT·按另一性质）各自计数，两束光汇入同一张脉动的"配分函数 Z"卡片：两串数是同一函数的两种展开。</p>
+<h3>10篇最有影响力的相关著作</h3>
+<h4>John Pardon 的核心论文</h4>
+<div class="work"><b>1. Pardon. “On the distortion of knots on embedded surfaces.” 《Annals of Mathematics》174(1)，2011。<a href="https://arxiv.org/abs/1010.1972">arXiv:1010.1972</a></b>解决了 Gromov 1983年的扭曲度问题，证明环面纽结的扭曲度可无界增长。写于普林斯顿本科期间——本科生在《Annals》上发文极为罕见。</div>
+<div class="work"><b>2. Pardon. “The Hilbert-Smith conjecture for three-manifolds.” 《J. Amer. Math. Soc.》26(3)，2013。<a href="https://arxiv.org/abs/1112.2324">arXiv:1112.2324</a></b>通过对 p-进不变曲面的新颖分析，证明了 Hilbert-Smith 猜想的三维情形：在三维流形上忠实作用的局部紧群必为李群。</div>
+<div class="work"><b>3. Pardon. “An algebraic approach to virtual fundamental cycles on moduli spaces of pseudo-holomorphic curves.” 《Geometry &amp; Topology》20(2)，2016。<a href="https://arxiv.org/abs/1309.2370">arXiv:1309.2370</a></b>Pardon 的博士论文工作。引入"隐式图册"框架——一种全新的、代数化的虚拟基本闭链方法，为 Gromov-Witten 不变量与 Floer 同调提供了严格基础。</div>
+<div class="work"><b>4. Ganatra, Pardon, Shende. “Covariantly functorial wrapped Floer theory on Liouville sectors.” 《Publications Mathématiques de l'IHÉS》131，2020。<a href="https://arxiv.org/abs/1706.03152">arXiv:1706.03152</a></b>构造具有协变性的 Liouville 扇区缠绕 Fukaya 范畴的里程碑三部曲之一——对辛拓扑中的计算与应用至关重要。</div>
+<div class="work"><b>5. Pardon. “Universally counting curves in Calabi-Yau threefolds.” 预印本，2023。<a href="https://arxiv.org/abs/2308.02948">arXiv:2308.02948</a></b>对所有反典范丛 nef 的复三维流形（含全部卡拉比-丘三维流形、带主插入）证明 MNOP 猜想，表明 Gromov-Witten 与 Donaldson-Thomas 不变量是同一配分函数的系数。引入了"Pardon 代数"结构。</div>
+<h4>奠基性前驱工作</h4>
+<div class="work"><b>6. Gromov. “Pseudo holomorphic curves in symplectic manifolds.” 《Inventiones Mathematicae》82，1985。<a href="https://doi.org/10.1007/BF01388806">DOI:10.1007/BF01388806</a></b>现代辛拓扑的奠基之作。引入伪全纯曲线作为核心工具——Pardon 的虚拟基本闭链框架所要处理的模空间，正是这些对象的模空间。</div>
+<div class="work"><b>7. Maulik, Nekrasov, Okounkov, Pandharipande. “Gromov-Witten theory and Donaldson-Thomas theory, I.” 《Compositio Mathematica》142，2006。<a href="https://arxiv.org/abs/math/0312059">arXiv:math/0312059</a></b>MNOP 猜想的原始论文。提出了 Gromov-Witten 与 Donaldson-Thomas 不变量的等价性——Pardon 在17年后证明的正是这一猜想。</div>
+<div class="work"><b>8. Fukaya. “Morse homotopy, A∞-category, and Floer homologies.” GARC 研讨会论文集，首尔，1993。</b>引入 Fukaya 范畴——通过拉格朗日子流形与 Floer 同调编码辛几何的代数结构。Pardon 与 Ganatra、Shende 的工作直接扩展了这一框架。</div>
+<h4>当前影响与后续工作</h4>
+<div class="work"><b>9. Davison, Koseki. “Degree two Gopakumar-Vafa invariants of local curves.” 预印本，2024。<a href="https://arxiv.org/abs/2408.11698">arXiv:2408.11698</a></b>直接建立在 Pardon 的 MNOP 证明之上，以其"归约到局部曲线"作为关键使能结果。表明 Pardon 的框架已经在催生新研究。</div>
+<div class="work"><b>10. Davison, Beentjes, Kool. “The refined local Donaldson-Thomas theory of curves.” 预印本，2025。<a href="https://arxiv.org/abs/2506.14359">arXiv:2506.14359</a></b>解决局部曲线的 K-理论精细化 DT 理论，明确引用 Pardon 的机器作为对所有卡拉比-丘三维流形推进下一代精细化对应猜想的使能工具。</div>
+<h3>研讨会讨论题</h3>
+<div class="q">MNOP 猜想连接了两套表面上完全不同的计数理论。这类"隐藏等价"的存在，对数学的结构意味着什么？你能在其他领域想到"两种看似不同的度量其实是同一事物"的类比吗？</div>
+<div class="q">Pardon 的虚拟基本闭链框架化解了辛几何的一场基础危机。数学中的"基础危机"有多常见？化解一场危机需要什么？</div>
+<div class="q">卡拉比-丘三维流形在弦理论中刻画我们宇宙的隐藏维度。知道 MNOP 猜想有直接的物理相关性，是否改变了你看待它的方式？</div>
 </section>
 
-<!-- ═══════════ 课时 3 ═══════════ -->
+<!-- ═══════════ 得主三：Jacob Tsimerman ═══════════ -->
 <section class="session">
-<span class="tag green">课时 3 · 数论与算术几何</span>
-<h2>雅各布·齐默尔曼：用"温顺几何"驯服数论</h2>
-<p>多伦多大学，38岁，普林斯顿2011年博士（导师 Peter Sarnak）。</p>
-<div class="kv"><b>核心思想：</b>数理逻辑中的 <b>o-极小性</b> 精确定义了什么叫"温顺几何"——可定义集合的一维部分只能是有限个点与区间，没有无穷震荡、没有分形病态。齐默尔曼发现：这把逻辑学的尺子，恰好是数论攻坚的利器（André-Oort 猜想、Griffiths 1970年周期映照猜想）。</div>
-<p><b>运行机制</b>（Pila–Zannier 双向夹逼策略）：</p>
-<ol class="mech">
-<li><b>从上数</b>：o-极小几何给出特殊点数量的上界；</li>
-<li><b>从下数</b>：伽罗瓦轨道估计给出下界；</li>
-<li>两边一夹：若一个子簇含稠密的特殊点（CM点），它自身必须是特殊的——"压力点密集之处，必有深层结构"；</li>
-<li>配套基建：Ax-Schanuel 定理（与 Mok、Pila）+「o-极小 GAGA」（与 Bakker、Brunebarbe，证明周期映照的像必为代数簇）。</li>
-</ol>
+<span class="tag green">得主三</span>
+<h2 style="margin-top:.4rem">Jacob Tsimerman —— 数论与算术几何</h2>
+<p class="meta"><b>任职机构：</b>多伦多大学（2011年普林斯顿大学博士，导师 Peter Sarnak）<br><b>获奖时年龄：</b>38岁</p>
+<h3>官方颁奖词</h3>
+<blockquote>"表彰他在把 o-极小技术的适用范围大幅拓展到算术几何与复代数几何中所起的作用，包括证明 Griffiths 关于周期映照像的代数性猜想。"<br>——（<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）</blockquote>
+<h3>研究领域：数论与算术几何</h3>
+<p>数论研究整数及其性质——素数、整除性、方程的解。算术几何把几何带入画面：不直接研究方程，而是研究这些方程所定义的<b>形状</b>（簇）。这就像攀岩者不只盯着路线上一个个的支点，而是思考整面岩壁的几何——那些悬垂、裂缝、二面角——因为几何会揭示路线必经之处。</p>
+<p>算术几何的一个中心主题是研究<b>特殊点</b>——几何形状上携带格外丰富算术信息的点。可以把它们想成几何身体上的"穴位"：微小而具体的位置，却凝聚着深层结构。问题是：当你在一个形状上发现很多这样的特殊点时，这告诉你关于这个形状的什么？</p>
+<p><b>志村簇（Shimura varieties）</b>是一类参数化阿贝尔簇（椭圆曲线的高维推广）族的几何空间。它们是极其丰富的对象，编码着深刻的算术信息。<b>霍奇理论（Hodge theory）</b>发展于20世纪中叶，它把几何问题翻译为分析问题——就像把一个攀岩问题从"支点在哪里？"翻译成"哪些力在起作用？"——这套翻译正是 Tsimerman 工作的舞台。</p>
+<h3>获奖贡献</h3>
+<p>Tsimerman 的菲尔兹奖表彰他对 <b>o-极小性</b>（一个来自数理逻辑的概念）变革性的运用，以解决数论与代数几何中的深刻问题：</p>
+<h4>1. André-Oort 猜想</h4>
+<p>该猜想由 Yves André 与 Frans Oort 在1990年代提出，关乎志村簇上的<b>特殊点</b>。它预言：如果志村簇的一个不可约子簇包含一个稠密的特殊点集（称为 CM 点），那么这个子簇本身必须是特殊的（<a href="https://scientiamag.com/article/fields-medal-2026-jacob-tsimerman-s-proof-of-andre-oort-conjecture">ScientiaMag</a>）。换言之：如果你在一块几何体上发现足够多聚集的"穴位"，那块几何体自身必是一个特殊的、高度结构化的对象。</p>
+<p>这类似于武术中的一条原理：如果你发现一个拳手总是暴露某个特定的破绽，那是因为他的站架与移动模式是围绕保护别的东西构建的——破绽本身揭示了结构。</p>
+<p>攻克该猜想使用的是2008年引入的 <b>Pila-Zannier 策略</b>：从上方数特殊点（用 o-极小几何），再从下方数（用伽罗瓦轨道估计），然后两相比较。Tsimerman 在2018年对阿贝尔簇的模空间（A_g）证明了该猜想，随后在2021年——与 Jonathan Pila、Arul Shankar 一起——证明了<b>对所有志村簇成立的完整 André-Oort 猜想</b>（<a href="https://arxiv.org/abs/2109.08788">arXiv:2109.08788</a>，<a href="https://scientiamag.com/article/fields-medal-2026-jacob-tsimerman-s-proof-of-andre-oort-conjecture">ScientiaMag</a>）。</p>
+<h4>2. Griffiths 关于周期映照的猜想</h4>
+<p>1970年，Phillip Griffiths 猜想：<b>周期映照</b>——把代数簇的几何数据翻译为分析（霍奇理论）数据的映射——的像应当总是代数簇（由多项式方程定义的形状）。这意味着即使把几何翻译成分析，底层的代数结构依然存续（<a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine</a>）。</p>
+<p>Tsimerman 与 Benjamin Bakker、Yohan Brunebarbe 在2018–2023年间证明了它。他们的关键创新是"<b>o-极小 GAGA</b>"——一个针对在 o-极小结构中可定义的复代数空间上凝聚层的 GAGA 型定理（名称源自 Serre 的《代数几何与解析几何》）。它从根本上把 o-极小几何与代数几何及霍奇理论连接起来（<a href="https://arxiv.org/abs/1811.12230">arXiv:1811.12230</a>）。</p>
+<h4>3. 志村簇的 Ax-Schanuel 定理</h4>
+<p>Tsimerman 与 Ngaiming Mok、Jonathan Pila 一起证明了对所有（纯）志村簇成立的 <b>Ax-Schanuel 定理</b>——一个函数超越性命题，控制子簇在单值化映射下原像的代数部分。这是 Pila-Zannier 策略的必要素材，就像在计划进攻之前，先确切知道对手防御中哪些部分是可以"打穿"的（<a href="https://arxiv.org/abs/1711.02189">arXiv:1711.02189</a>）。</p>
+<h4>什么是 o-极小性？</h4>
+<p>一个 <b>o-极小结构</b>是一个可定义集的宇宙，其中一维可定义子集只能是有限个点与区间的并——没有无穷震荡的边界，没有分形式的病态。高维可定义集从这个一维条件继承了强有力的温顺性质。正如 Tsimerman 所解释："它把'什么是温顺几何'这一概念变得精确。"（<a href="https://plus.maths.org/icm-2026-fm-4">Plus Magazine</a>）</p>
+<p>Tsimerman 贡献的天才之处，在于认识到这个来自数理逻辑——原本为研究几何基础而发展——的工具，可以作为数论中的强大武器来挥舞。这就像一位游泳者发现，攀岩中的一项技术——阅读表面的纹理与结构——能让他更好地理解泳池壁周围的水流模式。这种跨领域迁移正是其工作变革性的所在。</p>
+<h3>为何具有变革性</h3>
+<p>Tsimerman 不只是解决了几个单独的问题。他建成了一整套基础设施——周期映照的可定义性、Ax-Schanuel 定理、o-极小 GAGA——如今已成为算术几何的标准工具箱。他的结果与<b>霍奇猜想</b>（七个百万美元千禧年大奖问题之一）有深刻关联（<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）。o-极小框架目前正被应用于混合周期映照、Shafarevich 猜想、双有理几何以及卡拉比-丘簇的研究。</p>
+<p>多伦多大学指出，他的工作"开辟了全新的研究方向"，并影响了"函数超越性理论、霍奇结构的 Ax-Schanuel 定理，以及所谓非概然相交的研究"（<a href="https://www.utoronto.ca/news/nobel-prize-mathematics-u-t-mathematician-jacob-tsimerman-awarded-prestigious-fields-medal">U of T News</a>）。</p>
 <div class="stage">
 <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="狂野曲线经过o-极小镜片被驯服，上下夹逼动画">
 <g class="wild"><path d="M20,120 q10,-70 20,0 q8,55 16,0 q7,-40 14,0 q6,30 12,0 q10,-60 20,0 q8,45 16,0 q7,-35 14,0 q10,50 20,0 q8,-40 16,0 q6,25 12,0 q10,-55 20,0" fill="none" stroke="#b0aea5" stroke-width="3"/></g>
@@ -224,23 +309,57 @@ th{background:var(--card2)}
 <g class="squeezeB"><path d="M430,205 l60,0 l-30,-26 z" fill="#6a9bcc"/><text x="540" y="196" font-size="14" fill="#5f5d58">从下数（伽罗瓦）</text></g>
 </svg>
 </div>
-<p class="cap">动画：左侧无穷震荡的"狂野"曲线，经过 o-极小镜片后变成有限段落的"温顺"几何；右侧蓝色双箭上下夹逼——Pila–Zannier 策略的心脏。</p>
-<div class="refs">关键文献：<a href="https://arxiv.org/abs/2109.08788">arXiv:2109.08788</a>（全 André-Oort，2021）· <a href="https://arxiv.org/abs/1811.12230">arXiv:1811.12230</a>（o-极小 GAGA 与 Griffiths 猜想，Invent. Math. 2023）· <a href="https://arxiv.org/abs/1711.02189">arXiv:1711.02189</a>（Shimura 簇的 Ax-Schanuel，Annals 2019）</div>
-<div class="q">讨论："大量证据"是否必然意味着"深层结构"？André-Oort 给了数学版的肯定回答——它的哲学边界在哪里？</div>
+<p class="cap">动画（译者演示）：核心思想与机制——左侧无穷震荡的"狂野"曲线经过 o-极小镜片，变成右侧有限段落的"温顺"几何（有限个点与区间）；蓝色双箭自上、自下夹逼，正是 Pila-Zannier 双向计数策略的心脏。</p>
+<h3>10篇最有影响力的相关著作</h3>
+<h4>Jacob Tsimerman 的核心论文</h4>
+<div class="work"><b>1. Tsimerman. “The André-Oort conjecture for A_g.” 《Annals of Mathematics》187(2)，2018。<a href="https://arxiv.org/abs/1506.01466">arXiv:1506.01466</a></b>对主极化阿贝尔簇模空间的 André-Oort 猜想的首个无条件证明。利用平均 Colmez 猜想确立所需的伽罗瓦轨道下界。</div>
+<div class="work"><b>2. Pila, Shankar, Tsimerman（附录：Esnault, Groechenig）. “Canonical heights on Shimura varieties and the André-Oort conjecture.” 预印本，2021。<a href="https://arxiv.org/abs/2109.08788">arXiv:2109.08788</a></b>证明对所有志村簇成立的完整 André-Oort 猜想。在 CM 点上引入"实高度函数"（solid height functions），确立一般 Pila-Zannier 策略所需的伽罗瓦轨道界。</div>
+<div class="work"><b>3. Bakker, Brunebarbe, Tsimerman. “o-minimal GAGA and a conjecture of Griffiths.” 《Inventiones mathematicae》232(1)，2023。<a href="https://arxiv.org/abs/1811.12230">arXiv:1811.12230</a></b>证明 Griffiths 1970年的猜想：周期映照的像是拟射影代数簇。发展了"可定义 GAGA"——连接 o-极小几何、代数几何与霍奇理论的新理论。</div>
+<div class="work"><b>4. Bakker, Klingler, Tsimerman. “Tame topology of arithmetic quotients and algebraicity of Hodge loci.” 《J. Amer. Math. Soc.》33(4)，2020。<a href="https://arxiv.org/abs/1810.04801">arXiv:1810.04801</a></b>证明算术商空间携带自然的实半代数结构、周期映照在 o-极小结构 R_an,exp 中可定义。这是整个霍奇理论语境下 Pila-Zannier 策略的几何基础。</div>
+<div class="work"><b>5. Mok, Pila, Tsimerman. “Ax-Schanuel for Shimura varieties.” 《Annals of Mathematics》189(3)，2019。<a href="https://arxiv.org/abs/1711.02189">arXiv:1711.02189</a></b>证明对所有纯志村簇成立的 Ax-Schanuel 定理——控制单值化映射下代数原像的函数超越性命题。现代函数超越性理论的基石，也是完整 André-Oort 的必要素材。</div>
+<h4>奠基性前驱工作</h4>
+<div class="work"><b>6. Pila, Zannier. “Rational points in periodic analytic sets and the Manin-Mumford conjecture.” 《Rend. Lincei Mat. Appl.》19(2)，2008。<a href="https://arxiv.org/abs/0802.4016">arXiv:0802.4016</a></b>Pila-Zannier 策略的奠基论文：从上（o-极小点计数）与从下（伽罗瓦轨道界）计数特殊点再比较。这种双侧计数范式成为后续所有 André-Oort 工作的模板，包括 Tsimerman 的。</div>
+<div class="work"><b>7. André. “G-functions and geometry.” Vieweg，1989。</b>包含 André-Oort 猜想的最初表述（Oort 于1995年独立提出）。该猜想——志村簇中含稠密特殊点集的子簇必为特殊子簇——成为算术几何的中心开放问题之一。</div>
+<div class="work"><b>8. Griffiths. “Periods of integrals on algebraic manifolds III.” 《Publications Mathématiques de l'IHÉS》38，1970。</b>建立了周期映照的现代理论，并提出了那个（近50年后被 Bakker、Brunebarbe 与 Tsimerman 解决的）猜想：周期映照的像是拟射影代数簇、Griffiths 丛是丰沛的。</div>
+<h4>当前影响与后续工作</h4>
+<div class="work"><b>9. Gao, Klingler. “The Ax-Schanuel conjecture for variations of mixed Hodge structures.” 预印本，2021。<a href="https://arxiv.org/abs/2101.10938">arXiv:2101.10938</a></b>把 Ax-Schanuel 从纯霍奇结构推广到混合霍奇结构，关键性地建立在 Tsimerman 及合作者的可定义性基础设施之上。展示了 o-极小范式的持续辐射力。</div>
+<div class="work"><b>10. Bakker, Filipazzi, Mauri, Tsimerman. “Baily-Borel compactifications of period images and the b-semiampleness conjecture.” 预印本，2025。<a href="https://arxiv.org/abs/2508.19215">arXiv:2508.19215</a></b>延伸 Griffiths 猜想工作，构造周期像的函子性射影紧化，推出霍奇丛的 b-半丰沛性猜想。把 o-极小技术推进到双有理几何与极小模型纲领——Tsimerman 当前研究的最前沿。</div>
+<h3>研讨会讨论题</h3>
+<div class="q">Pila-Zannier 策略靠"从上数与从下数再比较"生效。你能想到其他"双侧夹逼"策略大显身手的数学或物理情境吗？</div>
+<div class="q">o-极小性发展于数理逻辑，却在数论中找到最深的应用。这种跨学科迁移对"数学的统一性"意味着什么？</div>
+<div class="q">André-Oort 猜想说：稠密的特殊点迫使整个子簇是特殊的。这与"大量证据是否必然意味着深层结构"这一哲学问题有何关联？</div>
 </section>
 
-<!-- ═══════════ 课时 4 ═══════════ -->
+<!-- ═══════════ 得主四：王虹 ═══════════ -->
 <section class="session">
-<span class="tag">课时 4 · 调和分析</span>
-<h2>王虹：一根旋转的针，撑起一座猜想之塔</h2>
-<p>纽约大学库朗研究所 &amp; 法国IHES，35岁，MIT 2019年博士（导师 Larry Guth）。史上第三位菲尔兹奖女性得主。</p>
-<div class="kv"><b>核心思想：</b>1917年挂谷宗一问：让一根针转过所有方向，最少需要多大面积？Besicovitch 证明面积可以任意小甚至为零——但<b>维数</b>呢？挂谷猜想断言：哪怕体积为零，这种集合的豪斯多夫维数必须<b>拉满</b>（等于所在空间的维数）。二维1971年即被证明；三维悬置五十余年，直到2025年2月，王虹与 Joshua Zahl 用127页证明：R³ 中每个挂谷集维数恰为3。</div>
-<p><b>运行机制：</b></p>
-<ol class="mech">
-<li>先证「<b>粘性挂谷</b>」情形（具多尺度自相似性的集合，2022）；</li>
-<li>再证一般情形可<b>归约</b>到粘性情形（2025）；</li>
-<li>核心几何洞察：三维中细管若要大量重叠，唯一方式是<b>聚集成凸集</b>——然后对这些凸簇的维数设界。</li>
-</ol>
+<span class="tag">得主四</span>
+<h2 style="margin-top:.4rem">王虹 —— 调和分析与几何测度论</h2>
+<p class="meta"><b>任职机构：</b>纽约大学库朗研究所 与 法国高等科学研究所（IHES）（2019年 MIT 博士，导师 Larry Guth）<br><b>获奖时年龄：</b>35岁（史上第三位获得菲尔兹奖的女性，前两位是2014年的 Maryam Mirzakhani 与2022年的 Maryna Viazovska）</p>
+<h3>官方颁奖词</h3>
+<blockquote>"表彰她在调和分析与几何测度论中的工作，包括将多尺度与解耦技术应用于平面波动方程的局部光滑化猜想，以及在傅里叶限制、Falconer 距离集、平面 Furstenberg 集与三维挂谷问题上的重大进展。"<br>——（<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）</blockquote>
+<h3>研究领域：调和分析与几何测度论</h3>
+<p><b>调和分析</b>是把事物拆解成波的艺术。约瑟夫·傅里叶在19世纪发现：任何声音——无论多复杂——都可以分解为简单正弦波之和。这正是 MP3 能压缩音乐的原因：它存储的是波的分量而不是原始信号。调和分析把这一思想推广到远为广阔的数学场景（<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>）。</p>
+<p>可以把它想成武术家把复杂的连招拆解为单个技术：刺拳、直拳、勾拳、踢腿。每个单独动作都简单；复杂性来自它们的组合方式。调和分析同时研究分解（拆成波）与合成（把波拼回去），并追问：从波的分量中，我们能对原对象说出什么？</p>
+<p><b>几何测度论</b>把微积分的工具扩展到不光滑的形状——比如分形、肥皂泡簇，或调和分析中冒出来的那些狂野不规则的集合。核心概念是<b>豪斯多夫维数</b>，它度量一个对象的"大小"如何随尺度伸缩。直线的豪斯多夫维数是1；正方形是2。但分形可以有非整数维数——例如科赫雪花的维数约为1.26（<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>）。</p>
+<h3>获奖贡献</h3>
+<p>王虹的菲尔兹奖表彰一系列星群般的突破，其顶冠是一项里程碑式结果：</p>
+<h4>1. 三维挂谷猜想（与 Joshua Zahl 合作）</h4>
+<p>1917年，日本数学家挂谷宗一（Sōichi Kakeya）问：让一根针旋转指向所有可能的方向，最少需要多大的面积？你可能以为圆就行，但挂谷找到了更小的形状。两年后，Abram Besicovitch 展示了令人震惊的事实：通过以类似分形的分支模式滑动并微微扭转针，可以把面积做到<b>任意小</b>——甚至为零（<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>）。</p>
+<p>这引出一个更深的问题：既然面积可以为零，那<b>维数</b>呢？<b>挂谷猜想</b>预言：即便挂谷集可以体积为零，它的豪斯多夫维数仍必须尽可能大——等于它所在空间的维数。二维情形由 Roy Davies 于1971年用寥寥数页证明。三维及更高维则悬置了五十多年。</p>
+<p>2025年2月，王虹与 Joshua Zahl（南开大学）发表了127页的证明：R³ 中每个挂谷集的豪斯多夫维数恰为3（<a href="https://arxiv.org/abs/2502.17655">arXiv:2502.17655</a>，<a href="https://www.ihes.fr/en/hong-wang2026-fields-medal/">IHES</a>）。证明的思路是：三维空间中的细管若要大量重叠（挂谷集中正是如此），唯一的方式是聚集成凸集——然后再对这些凸簇的维数设界。</p>
+<p>这一证明建立在若干更早的突破之上。首先，王虹与 Zahl 在2022年证明了"<b>粘性挂谷</b>"情形——具有多尺度自相似性的集合（<a href="https://arxiv.org/abs/2210.09581">arXiv:2210.09581</a>）。然后在2025年，他们证明一般情形可以归约到粘性情形。完整论证融合了多尺度几何分析、关联组合学，以及对三维空间中管状体如何重叠的深刻理解。</p>
+<h4>2. 平面 Furstenberg 集猜想（与 Kevin Ren 合作）</h4>
+<p><b>Furstenberg 集</b>是这样一种集合：在许多方向上，它都包含该方向直线的分形片段——一个类似挂谷的条件，但关注的是与直线的维数相交，而非旋转一根单位长的针。王虹与 Kevin Ren 在2023年完全解决了 R² 中的 Furstenberg 集猜想，证明了精确的维数界（<a href="https://arxiv.org/abs/2308.08819">arXiv:2308.08819</a>）。这里发展的多尺度"粘性归约"思想直接影响了三维挂谷的攻略。</p>
+<h4>3. 平面波动方程的局部光滑化猜想（与 Larry Guth、Ruixiang Zhang 合作）</h4>
+<p><b>局部光滑化猜想</b>问：波扩散开时，是否会"局部变光滑"——也就是说，在任一给定区域中，它是否变得比初始时更正则？王虹、Guth 与 Zhang 通过 R³ 中锥面的精确 L⁴ 平方函数估计，对2+1维的波动方程证明了这一猜想（<a href="https://arxiv.org/abs/1909.10693">arXiv:1909.10693</a>）。这是任何维数下局部光滑化猜想的首次完全解决。</p>
+<h4>4. Falconer 距离集问题（与 Guth、Iosevich、Ou 合作）</h4>
+<p><b>Falconer 猜想</b>问：如果平面上一个点集的豪斯多夫维数大于1（在 R^d 中一般阈值为 d/2），那么点对之间的距离集合是否必有正测度？王虹与合作者证明：若维数超过5/4，则钉点距离集有正测度——这是该猜想上的重大进展（<a href="https://arxiv.org/abs/1808.09346">arXiv:1808.09346</a>）。</p>
+<h4>5. 傅里叶限制（与 Shukun Wu 合作）</h4>
+<p><b>傅里叶限制猜想</b>问：能否把傅里叶变换限制到一个弯曲曲面（比如球面）上，仍得到有界算子？这对理解波与弯曲边界的相互作用至关重要。王虹与 Wu 引入了一个把解耦理论与双端 Furstenberg 不等式相结合的新框架，得到了新的限制估计（<a href="https://arxiv.org/abs/2411.08871">arXiv:2411.08871</a>）。</p>
+<h3>为何具有变革性</h3>
+<p>王虹把她的领域描述为拥有"一座猜想之塔"（<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>）。挂谷猜想坐在塔底：它蕴涵傅里叶限制猜想，后者蕴涵局部光滑化猜想，再进一步蕴涵关于 PDE 的更多结果。如果推翻挂谷猜想，整座塔就会坍塌。通过证明三维挂谷猜想，王虹不只是解决了一个问题——她为调和分析、PDE 与几何测度论中的一整座结果之塔提供了"地基强度"。</p>
+<p>此外，王虹发展的方法——多尺度分析、粘性归约、关联组合学与几何测度论的相互作用——已经被应用于更高维与相关问题。正如王虹本人所说："在傅里叶分析中我们有一座猜想之塔。挂谷猜想位于另外三个猜想的底部，一个蕴涵一个。如果你推翻了挂谷猜想，你就推翻了整座塔。"（<a href="https://plus.maths.org/icm-2026-fm-2">Plus Magazine</a>）</p>
+<p>四维及更高维的问题仍然开放——前沿在召唤。</p>
 <div class="stage">
 <svg viewBox="0 0 640 230" width="100%" role="img" aria-label="旋转的针扫过方向，维数表升至3，猜想之塔点亮">
 <circle cx="150" cy="110" r="86" fill="none" stroke="#e3e0d6" stroke-width="2"/>
@@ -254,16 +373,40 @@ th{background:var(--card2)}
 </svg>
 <div class="dimbox"><div style="display:flex;justify-content:space-between;font-size:.8rem;color:#5f5d58"><span>豪斯多夫维数</span><span><b style="color:#d97757">→ 3.00（满维）</b></span></div><div class="dimtrack"><div class="dimbar dimfill"></div></div></div>
 </div>
-<p class="cap">动画：针在圆盘中旋转扫过每个方向；右侧"猜想之塔"自底部（挂谷）逐层点亮——底层若塌，全塔皆倾；底层证实，全塔得基。维数表被推满至3。</p>
-<div class="refs">关键文献：<a href="https://arxiv.org/abs/2502.17655">arXiv:2502.17655</a>（3D挂谷全证，2025）· <a href="https://arxiv.org/abs/2210.09581">arXiv:2210.09581</a>（粘性挂谷，JAMS 2026）· <a href="https://arxiv.org/abs/1909.10693">arXiv:1909.10693</a>（局部光滑化，Annals 2020）· <a href="https://arxiv.org/abs/2308.08819">arXiv:2308.08819</a>（平面 Furstenberg 集，2023）</div>
-<div class="q">讨论：4维及以上仍未解决。你认为"归约到粘性情形"的思想能走多远？</div>
+<p class="cap">动画（译者演示）：核心思想与机制——针在圆盘中旋转扫过每个方向（面积可为零）；维数表被推满至3.00；右侧"猜想之塔"自底部（挂谷）逐层点亮：底若塌，塔皆倾；底既固，塔得基。</p>
+<h3>10篇最有影响力的相关著作</h3>
+<h4>王虹的核心论文</h4>
+<div class="work"><b>1. Wang, Zahl. “Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions.” 预印本，2025。<a href="https://arxiv.org/abs/2502.17655">arXiv:2502.17655</a></b>顶冠之作：完整证明 R³ 中每个挂谷集的豪斯多夫维数与闵可夫斯基维数均为3。证明细管的大量重叠必迫使其聚集成凸集，解决了1917年以来的悬案。</div>
+<div class="work"><b>2. Wang, Zahl. “Sticky Kakeya sets and the sticky Kakeya conjecture.” 《J. Amer. Math. Soc.》39(2)，2026。<a href="https://arxiv.org/abs/2210.09581">arXiv:2210.09581</a></b>证明三维挂谷证明的第一个重要素材：R³ 中的粘性挂谷集（具多尺度自相似性者）具有满豪斯多夫维数。2025年的证明把一般情形归约到这一情形。</div>
+<div class="work"><b>3. Ren, Wang. “Furstenberg sets estimate in the plane.” 预印本，2023。<a href="https://arxiv.org/abs/2308.08819">arXiv:2308.08819</a></b>以精确的维数界完全解决 R² 中的 Furstenberg 集猜想。其中的多尺度"粘性归约"思想直接影响了三维挂谷的攻略。</div>
+<div class="work"><b>4. Guth, Wang, Zhang. “A sharp square function estimate for the cone in R³.” 《Annals of Mathematics》192(2)，2020。<a href="https://arxiv.org/abs/1909.10693">arXiv:1909.10693</a></b>证明锥面的精确 L⁴ 平方函数估计，推出2+1维波动方程的局部光滑化猜想——任何维数下的首次完全解决。</div>
+<div class="work"><b>5. Guth, Iosevich, Ou, Wang. “On Falconer's distance set problem in the plane.” 《Inventiones Mathematicae》219(3)，2020。<a href="https://arxiv.org/abs/1808.09346">arXiv:1808.09346</a></b>利用解耦理论证明：R² 中豪斯多夫维数大于5/4的集合，其钉点距离集有正测度——Falconer 猜想上的重大进展。</div>
+<div class="work"><b>6. Wang, Wu. “Restriction estimates using decoupling theorems and two-ends Furstenberg inequalities.” 预印本，2024。<a href="https://arxiv.org/abs/2411.08871">arXiv:2411.08871</a></b>傅里叶限制猜想的新框架，把解耦与 Furstenberg 不等式结合。给出三维中 p &gt; 22/7 的限制估计，并把挂谷型几何接入核心限制问题。</div>
+<div class="work"><b>7. Shmerkin, Wang. “Dimensions of Furstenberg sets and an extension of Bourgain's projection theorem.” 《Analysis &amp; PDE》18，2025。<a href="https://arxiv.org/abs/2211.13363">arXiv:2211.13363</a></b>对 s &lt; 1/2 的经典 s-Furstenberg 集维数作出自1999年以来的首次改进，方法是延伸 Bourgain 投影与和-积定理的离散化关联界。通往 Ren-Wang 完全解决的关键中间一步。</div>
+<h4>奠基性前驱工作</h4>
+<div class="work"><b>8. Kakeya. “Some problems on minima concerning the oval.” 《Tohoku Mathematical Journal》5，1917；Besicovitch. “On Kakeya's problem and a similar one.” 《Math. Zeitschrift》27，1928。</b>挂谷提出了转针问题；Besicovitch 证明挂谷集可以有任意小（甚至为零）的测度，从而提出了那个核心问题：它们的维数是否仍必须最大——王虹与 Zahl 对 R³ 解决的正是这个问题。</div>
+<div class="work"><b>9. Fefferman. “The multiplier problem for the ball.” 《Annals of Mathematics》94，1971。</b>利用 Besicovitch 集构造证明球乘子在维数≥2、p≠2 时在 L^p 上无界。这揭示了挂谷型几何潜藏在傅里叶分析的核心问题之下——连接王虹两个领域的桥梁。</div>
+<div class="work"><b>10. Bourgain, Demeter. “The proof of the ℓ² Decoupling Conjecture.” 《Annals of Mathematics》182(1)，2015。<a href="https://arxiv.org/abs/1403.5335">arXiv:1403.5335</a></b>对正曲率紧超曲面证明精确解耦不等式。解耦是贯穿王虹整个研究纲领的核心分析引擎——支撑着 Falconer 结果、局部光滑化证明与限制框架。</div>
+<div class="work"><b>另值一提：</b>王虹的博士导师 Larry Guth 于2026年发表了 Wang-Zahl 证明的精简综述（<a href="https://arxiv.org/abs/2604.03416">arXiv:2604.03416</a>）；Guth、Wang、Zahl 于2026年1月发表了简化归约（<a href="https://arxiv.org/abs/2601.14411">arXiv:2601.14411</a>）——显示这些方法正被迅速吸收与提炼。</div>
+<h3>研讨会讨论题</h3>
+<div class="q">王虹描述了一座以挂谷为底的"猜想之塔"。一整座结果之塔依赖于一个基础猜想，这意味着什么？你能在物理或其他科学中想到类似情形吗？</div>
+<div class="q">挂谷问题把几何（管子在空间中如何重叠）与分析（波如何行为）连接起来。弯曲曲面与方向性管子之间，究竟是什么造就了这种深层联系？</div>
+<div class="q">三维挂谷猜想已证，但四维及以上仍然开放。你认为向更高维推进需要什么新想法？</div>
 </section>
 
-<!-- ═══════════ 课时 5 ═══════════ -->
+<!-- ═══════════ 贯通主题与结论 ═══════════ -->
 <section class="session">
-<span class="tag blue">课时 5 · 贯通主题</span>
-<h2>四座桥：最深的数学生长在领域交界处</h2>
-<div class="kv"><b>核心思想：</b>四位得主都是<b>造桥者</b>——邓煜连接概率与PDE；帕登连接代数与辛几何；齐默尔曼连接数理逻辑与数论；王虹连接几何测度论与调和分析。且每人都留下了新机器：随机张量、帕登代数、o-极小GAGA、粘性归约。</div>
+<span class="tag blue">贯通主题与结论</span>
+<h2 style="margin-top:.4rem">2026年菲尔兹奖告诉我们数学的什么？</h2>
+<p>纵观四位得主，几个模式浮现出来：</p>
+<p><b>1. 领域之间的桥梁。</b>每位得主都在看似无关的领域之间架起了桥。邓煜连接概率与 PDE。Pardon 连接代数与辛几何。Tsimerman 连接数理逻辑与数论。王虹连接几何测度论与调和分析。最具变革性的数学发生在领域的交界处——就像一位从柔道、拳击与摔跤中各取所长、创出新东西的武术家。</p>
+<p><b>2. 深层问题被解决，而不只是被推进。</b>每位得主解决的都是悬置数十年的问题——希尔伯特第六问题（1900）、MNOP 猜想（2003）、André-Oort 猜想（1990年代）、挂谷猜想（1917）。这些不是渐进式改良；它们是各自领域标志性故事的完结篇。</p>
+<p><b>3. 新工具被创造。</b>除了解决具体问题，每位得主都创造了新的数学机器——随机张量（邓煜）、Pardon 代数与隐式图册（Pardon）、o-极小 GAGA（Tsimerman）、粘性归约与多尺度管分析（王虹）——其他数学家已经在用它们向前推进。</p>
+<p><b>4. 物理与数学彼此交织。</b>邓煜的工作把物理方程奠基于第一性原理。Pardon 的卡拉比-丘流形出现在弦理论的隐藏维度模型中。王虹的挂谷猜想支撑着我们对波传播的理解。数学在描述物理世界上"不合理的有效性"，依然既神秘又硕果累累。</p>
+<p><b>5. 数学的全球性。</b>2026年的得主来自中国（邓煜、王虹）、美国（Pardon）与加拿大（Tsimerman，生于俄罗斯）。其中两位是中国公民——这是持有中国国籍的数学家首次获得菲尔兹奖（1982年获奖的丘成桐（Shing-Tung Yau）是华裔，但获奖时为美国公民）。王虹是该奖90年历史上仅有的第三位女性得主（<a href="https://www.cnn.com/2026/07/24/china/fields-medal-wang-hong-deng-yu-china-intl-hnk">CNN</a>，<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a>）。数学正日益成为一项真正全球性的事业。</p>
+<h3>展望</h3>
+<p>2026年的菲尔兹奖得主不仅解决了长期悬置的问题，还打开了新的疆界。邓煜的方法可能延伸到更复杂的流体与等离子体。Pardon 的框架有望解锁更多枚举几何猜想。Tsimerman 的 o-极小工具箱正在挺进双有理几何。而王虹的三维挂谷证明提出了那个紧迫的问题：这些方法能否走向四维乃至更高？</p>
+<p>对年轻的数学家——那个在泳池里看见波、在岩壁上看见路线、在垫子上看见策略的人——启示很清楚：最深的数学生长在不同世界的交汇之处。2026年的菲尔兹奖得主不只是爬得更高；他们找到了新的山脉。</p>
 <div class="stage">
 <svg viewBox="0 0 640 210" width="100%" role="img" aria-label="四座桥连接不同数学领域">
 <g class="node"><circle cx="80" cy="60" r="34" fill="#f0eee6" stroke="#d97757" stroke-width="3"/><text x="80" y="66" text-anchor="middle" font-size="14">概率</text></g>
@@ -280,17 +423,25 @@ th{background:var(--card2)}
 <path class="bridge br4" d="M112,148 C260,95 420,70 527,60" stroke="#141413" stroke-width="4" fill="none"/>
 </svg>
 </div>
-<p class="cap">动画：四座桥依次架起。给年轻研究者的启示：在泳池里看见波、在岩壁上看见几何、在武术里看见策略的人——去领域交界处寻找你的新山峰。</p>
-<table>
-<tr><th>得主</th><th>领域</th><th>终结的问题</th><th>问题起源</th><th>新机器</th></tr>
-<tr><td>邓煜</td><td>PDE / 动理论</td><td>希尔伯特第六问题</td><td>1900</td><td>随机张量 · 分子切割</td></tr>
-<tr><td>约翰·帕登</td><td>辛几何</td><td>MNOP 猜想</td><td>2003</td><td>帕登代数 · 隐式图册</td></tr>
-<tr><td>雅各布·齐默尔曼</td><td>算术几何</td><td>André-Oort + Griffiths</td><td>1990s / 1970</td><td>o-极小 GAGA</td></tr>
-<tr><td>王虹</td><td>调和分析</td><td>3D 挂谷猜想</td><td>1917</td><td>粘性归约 · 多尺度管分析</td></tr>
-</table>
+<p class="cap">动画（译者演示）：四座桥依次架起——概率↔PDE（邓煜）、代数↔辛几何（Pardon）、逻辑↔数论（Tsimerman）、几何测度论↔调和分析（王虹）。</p>
 </section>
 
-<p class="foot">本页为<b>编译摘译</b>：内容忠实压缩自英文简报《The 2026 Fields Medalists: An Institutional Research Briefing》（2026-07-27，编译自 IMU 官方颁奖词、Simons Foundation、Quanta、Plus Magazine、各大学新闻稿与 arXiv 预印本；原文所有来源链接已保留于各课"关键文献"）。动画为教学示意，<b>不是严格的数学表述</b>；奖项事实以 IMU 官方为准。构建链路：allin-anything 路由 → master-anything 学习范式 → animate-anything CSS 关键帧工艺 → Anthropic 品牌规范（暖象牙底 · 签名橙）。</p>
+<!-- ═══════════ 附录 ═══════════ -->
+<section class="session">
+<span class="tag green">附录</span>
+<h2 style="margin-top:.4rem">速查表——四位得主</h2>
+<table>
+<tr><th>得主</th><th>领域</th><th>解决的关键问题</th><th>问题起源</th><th>任职机构</th></tr>
+<tr><td>邓煜</td><td>PDE / 动理学理论</td><td>希尔伯特第六问题（从牛顿到玻尔兹曼）</td><td>1900</td><td>芝加哥大学</td></tr>
+<tr><td>John Pardon</td><td>辛几何</td><td>MNOP 猜想（曲线计数等价）</td><td>2003</td><td>石溪大学</td></tr>
+<tr><td>Jacob Tsimerman</td><td>算术几何</td><td>André-Oort 猜想 + Griffiths 猜想</td><td>1990年代 / 1970</td><td>多伦多大学</td></tr>
+<tr><td>王虹</td><td>调和分析</td><td>三维挂谷猜想</td><td>1917</td><td>纽约大学 / IHES</td></tr>
+</table>
+<p style="font-size:.88rem;color:var(--muted)"><em>本简报编纂自 IMU 官方颁奖词、大学新闻稿、Quanta Magazine 人物特写、Plus Magazine 科普解读与 arXiv 预印本。arXiv 编号与期刊文献已经过多来源交叉核对。</em></p>
+<p style="font-size:.82rem;color:var(--muted)">来源：<a href="https://www.simonsfoundation.org/2026/07/23/2026-fields-medals-awarded-to-four-of-worlds-top-mathematicians/">Simons Foundation</a> · <a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Quanta（邓煜）</a> · <a href="https://www.quantamagazine.org/john-pardon-wins-the-2026-fields-medal-for-work-in-symplectic-geometry-20260723/">Quanta（Pardon）</a> · <a href="https://plus.maths.org/icm-2026-fm-1">Plus（邓煜）</a> · <a href="https://plus.maths.org/icm-2026-fm-3">Plus（Pardon）</a> · <a href="https://plus.maths.org/icm-2026-fm-4">Plus（Tsimerman）</a> · <a href="https://plus.maths.org/icm-2026-fm-2">Plus（王虹）</a> · <a href="https://www.ihes.fr/en/hong-wang2026-fields-medal/">IHES（王虹）</a> · <a href="https://news.uchicago.edu/story/uchicago-prof-yu-deng-receives-fields-medal-highest-honor-mathematics">UChicago News（邓煜）</a> · <a href="https://www.utoronto.ca/news/nobel-prize-mathematics-u-t-mathematician-jacob-tsimerman-awarded-prestigious-fields-medal">U of T News（Tsimerman）</a> · <a href="https://scientiamag.com/article/fields-medal-2026-jacob-tsimerman-s-proof-of-andre-oort-conjecture">ScientiaMag（Tsimerman）</a> · <a href="https://www.princeton.edu/news/2026/07/23/princeton-alumni-awarded-three-four-2026-fields-medals-math">Princeton University</a> · <a href="https://mathematics.stanford.edu/news/john-pardon-phd-15-awarded-fields-medal-2026-icm">Stanford Mathematics</a> · <a href="https://www.scientificamerican.com/article/2026-fields-medals-go-to-four-young-mathematicians/">Scientific American</a> · <a href="https://www.cnn.com/2026/07/24/china/fields-medal-wang-hong-deng-yu-china-intl-hnk">CNN</a> · <a href="https://www.nytimes.com/2026/07/23/science/jacob-tsimerman-fields-medal.html">NYT（Tsimerman）</a> · <a href="https://www.nytimes.com/2026/07/23/science/hong-wang-fields-medal.html">NYT（王虹）</a> · <a href="https://www.nytimes.com/2026/07/23/science/yu-deng-fields-medal.html">NYT（邓煜）</a> · <a href="https://arxiv.org">arXiv</a></p>
+</section>
+
+<p class="foot"><b>译注：</b>本页为英文原稿《The 2026 Fields Medalists: An Institutional Research Briefing》（2026年7月27日）的<b>简体中文忠实全译</b>——全部章节、四十条文献条目、全部讨论题与来源链接均已保留；人名遵循惯例：有通行中文名者用中文（邓煜、王虹），余者保留原文。各节动画为译者补充的教学演示（非严格数学表述），遵循 <a href="https://github.com/wjlgatech/animate-anything">animate-anything</a> 的 CSS 关键帧工艺与 Anthropic 品牌规范。<br>作者 / 译者：<a href="https://agentic-portfolio-lovat.vercel.app/"><b>Paul Jialiang Wu</b></a> · <a href="https://agentic-portfolio-lovat.vercel.app/">agentic-portfolio-lovat.vercel.app</a></p>
 </main>
 </body>
 </html>
