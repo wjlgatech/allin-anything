@@ -94,5 +94,37 @@
         "evidence": "first attempt compressed when Paul asked for full translation"
       }
     ]
+  },
+  {
+    "id": "rc0004",
+    "delivery": "Fields-2026 bilingual pair published to the portfolio + PDFs in Downloads",
+    "objective": "English edition with same animation/thumbnail treatment; publish EN+ZH to the portfolio; PDF copies to Downloads",
+    "created_at": "2026-07-27T14:31:13Z",
+    "key_results": [
+      {
+        "text": "EN edition: full original text + 6 animations + EN thumbnail",
+        "target": "complete, browser-verified 0 console errors",
+        "score": 1.0,
+        "evidence": "index-en.html, 87.5KB portfolio copy"
+      },
+      {
+        "text": "both editions LIVE on the portfolio with covers + cross-links",
+        "target": "4x HTTP 200",
+        "score": 1.0,
+        "evidence": "PR #125 merged, live-polled"
+      },
+      {
+        "text": "PDF copies in Downloads",
+        "target": "2 PDFs",
+        "score": 0.9,
+        "evidence": "zh 7.8MB + en 3.2MB delivered; animations render as static frames in PDF (inherent)"
+      },
+      {
+        "text": "shared-checkout safety",
+        "target": "no interference with concurrent fix branch",
+        "score": 1.0,
+        "evidence": "published from my own branch; their uncommitted work untouched"
+      }
+    ]
   }
 ]
