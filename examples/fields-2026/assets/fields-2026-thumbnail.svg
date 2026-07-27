@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
+  <rect width="1200" height="627" fill="#faf9f5"/>
+  <rect x="0" y="0" width="1200" height="10" fill="#d97757"/>
+
+  <text x="70" y="96" font-family="PingFang SC, Hiragino Sans GB, sans-serif" font-size="22" font-weight="bold" letter-spacing="6" fill="#b0aea5">ALL-IN 学习页 · 2026 国际数学家大会 · 费城</text>
+
+  <text x="70" y="190" font-family="Songti SC, PingFang SC, serif" font-size="64" font-weight="bold" fill="#141413">2026 菲尔兹奖四杰</text>
+  <text x="70" y="268" font-family="Songti SC, PingFang SC, serif" font-size="40" fill="#5f5d58">他们没有只登顶，他们改画了地图</text>
+
+  <!-- mountain motif -->
+  <polyline points="70,540 200,420 300,500 430,360 540,480 660,390 760,490 880,400 1000,470 1130,380"
+            fill="none" stroke="#e3e0d6" stroke-width="5"/>
+  <path d="M120,536 C220,480 330,420 430,366" fill="none" stroke="#d97757" stroke-width="6" stroke-linecap="round"/>
+  <path d="M360,536 C460,500 580,430 660,396" fill="none" stroke="#6a9bcc" stroke-width="6" stroke-linecap="round"/>
+  <path d="M620,536 C700,510 810,440 880,406" fill="none" stroke="#788c5d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M860,536 C930,510 1050,430 1124,388" fill="none" stroke="#141413" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="430" cy="362" r="9" fill="#d97757"/>
+  <circle cx="660" cy="392" r="9" fill="#6a9bcc"/>
+  <circle cx="880" cy="402" r="9" fill="#788c5d"/>
+  <circle cx="1128" cy="384" r="9" fill="#141413"/>
+
+  <text x="392" y="336" font-family="PingFang SC, sans-serif" font-size="24" fill="#d97757">邓煜 · 粒子→流体</text>
+  <text x="600" y="366" font-family="PingFang SC, sans-serif" font-size="24" fill="#6a9bcc">帕登 · 两种计数=一</text>
+  <text x="836" y="378" font-family="PingFang SC, sans-serif" font-size="24" fill="#788c5d">齐默尔曼 · 温顺几何</text>
+  <text x="1010" y="352" font-family="PingFang SC, sans-serif" font-size="24" fill="#141413">王虹 · 挂谷之针</text>
+
+  <text x="70" y="596" font-family="PingFang SC, sans-serif" font-size="21" fill="#b0aea5">每课配动画演示 · 简体中文编译 · 来源全链 · allin-anything × animate-anything</text>
+</svg>

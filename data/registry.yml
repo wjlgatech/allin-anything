@@ -165,6 +165,15 @@ satellites:
     notes: "no local checkout — digest pinned from a shallow remote clone"
     triggers: ["job", "resume", "career", "application"]
 
+  - id: animate-anything
+    kind: family
+    role: digital
+    capability: "The ranked, living map of animation — CSS keyframes to AI-authored video; machine-readable registry for agents; interactive map on Pages"
+    url: https://github.com/wjlgatech/animate-anything
+    status: candidate
+    notes: "gap found by the router 2026-07-27 (learn-with-animations intent had no animation satellite); banked per protocol"
+    triggers: ["animate", "animation", "motion design", "keyframe"]
+
   - id: neuro-os
     kind: family
     role: physical

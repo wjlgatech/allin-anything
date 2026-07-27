@@ -20,9 +20,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-27** — First learn-chain artifact: 2026 Fields Medalists, all-in style (zh-CN): examples/fields-2026/: 61KB English briefing → 6-session Simplified-Chinese learning page, each session with key idea + mechanism + pure-CSS animation (animate-anything craft), Anthropic brand, browser-verified (0 console errors). Router gap banked: animate-anything joined the registry as ⚪ candidate.
 - **2026-07-25** — v1.0 launch article live — 'The Best Number in My v1.0 Was a NO-GO.': Long-form on the portfolio (PR #123, canonical URL live-verified) with cover + one-day-arc infographic; LinkedIn/X composers prefilled, posting stays Paul's click.
 - **2026-07-25** — v1.0 — M8 bounded autonomy (BRACE-calibrated) + M9 cadence; reach 40: chains.yml + AutoRunner (🟢-only, human gates mandatory, journaled; live chain-02 run exit 0). BRACE Tier-1 honestly NO-GO 15/44 → autonomy ceiling = local gate-running. Enterprise 43%→50% (LICENSE CC0 + CODEOWNERS). Weekly freshness workflow (stale pin → human-gated issue). rsi-os, FM-os, FDE-os 🟢 by live gate runs (225 tests on FDE-os). Reach 5×5 → 8×5 = 40.
-- **2026-07-25** — M6+M7 — zero ⚪ and a five-chain library; verified reach 25: Digest wave 2 (5 satellites, career-os pinned remotely — no local checkout). Chains 03–05 run live: planter STL ready_gate G1–G4, money-os make check (28 tests), graph-engineering-anything make check (green-at-birth selftest). money-os + graph-engineering-anything 🟢. Reach 3×2 → 5×5 = 25.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -50,6 +50,7 @@ edit the YAML, run `make build`; CI fails on drift.
 | [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟡 digested | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
+| [animate-anything](https://github.com/wjlgatech/animate-anything) | 💻 digital | ⚪ candidate | The ranked, living map of animation — CSS keyframes to AI-authored video; machine-readable registry for agents; interactive map on Pages |
 <!-- END GENERATED: satellites -->
 
 Status ladder: ⚪ candidate → 🟡 digested (pinned digest in `docs/satellites/`) → 🟢 integrated

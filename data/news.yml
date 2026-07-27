@@ -1,5 +1,8 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
+  - date: "2026-07-27"
+    title: "First learn-chain artifact: 2026 Fields Medalists, all-in style (zh-CN)"
+    note: "examples/fields-2026/: 61KB English briefing → 6-session Simplified-Chinese learning page, each session with key idea + mechanism + pure-CSS animation (animate-anything craft), Anthropic brand, browser-verified (0 console errors). Router gap banked: animate-anything joined the registry as ⚪ candidate."
   - date: "2026-07-25"
     title: "v1.0 launch article live — 'The Best Number in My v1.0 Was a NO-GO.'"
     note: "Long-form on the portfolio (PR #123, canonical URL live-verified) with cover + one-day-arc infographic; LinkedIn/X composers prefilled, posting stays Paul's click."
