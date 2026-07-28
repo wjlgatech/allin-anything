@@ -1,5 +1,8 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
+  - date: "2026-07-28"
+    title: "Satellite renamed: blueprint-anything → agent-forge"
+    note: "Owner's rename followed everywhere: registry id/url, digest re-pinned at a3b0fa082cf1 (repo advanced under new name), SKILL routing hints, regenerated README. Local folder + private remote confirmed under the new name."
   - date: "2026-07-27"
     title: "First learn-chain artifact: 2026 Fields Medalists, all-in style (zh-CN)"
     note: "examples/fields-2026/: 61KB English briefing → 6-session Simplified-Chinese learning page, each session with key idea + mechanism + pure-CSS animation (animate-anything craft), Anthropic brand, browser-verified (0 console errors). Router gap banked: animate-anything joined the registry as ⚪ candidate."

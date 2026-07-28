@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.0.1 — 2026-07-28
+
+- Satellite rename merged: blueprint-anything → **agent-forge** (registry id/url/notes, digest
+  renamed + re-pinned at `a3b0fa082cf1`, SKILL hints, README regenerated). Registry version 0.8.
+
 ## 1.0.0 — 2026-07-25
 
 - M8 (autonomy, bounded + calibrated): `data/chains.yml` is the chain library as data (autonomy

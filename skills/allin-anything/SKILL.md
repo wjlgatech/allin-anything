@@ -34,7 +34,7 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 
 ## Routing hints (digested / candidates — verify before promising)
 
-- blueprint-anything (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
+- agent-forge (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
 - master-anything (💻 🔒) — learn/verify/express any hard topic.
 - research-anything (💻 🔒) — verified, window-dated research briefs.
 - strategize-anything / reverse-engineering-anything (🔒 local-only) — strategy / reconstruction;

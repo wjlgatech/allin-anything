@@ -11,8 +11,8 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.7"
-updated: "2026-07-25"
+version: "0.8"
+updated: "2026-07-28"
 satellites:
   - id: penecho
     kind: external
@@ -35,13 +35,14 @@ satellites:
     notes: "the engine this super-repo is driven by; private repo, pointer only"
     triggers: ["build an agent", "agent app", "ship an agent", "grade an agent", "refine an agent"]
 
-  - id: blueprint-anything
+  - id: agent-forge
     kind: family
     role: engine
     capability: "Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms"
-    url: https://github.com/wjlgatech/blueprint-anything
+    url: https://github.com/wjlgatech/agent-forge
     status: digested
     visibility: private
+    notes: "renamed from blueprint-anything 2026-07-28; digest re-pinned at a3b0fa082cf1"
     triggers: ["scope an agent", "autonomy level", "feasibility", "before we build", "agent contract"]
 
   - id: research-anything

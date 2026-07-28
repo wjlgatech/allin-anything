@@ -20,9 +20,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-28** — Satellite renamed: blueprint-anything → agent-forge: Owner's rename followed everywhere: registry id/url, digest re-pinned at a3b0fa082cf1 (repo advanced under new name), SKILL routing hints, regenerated README. Local folder + private remote confirmed under the new name.
 - **2026-07-27** — First learn-chain artifact: 2026 Fields Medalists, all-in style (zh-CN): examples/fields-2026/: 61KB English briefing → 6-session Simplified-Chinese learning page, each session with key idea + mechanism + pure-CSS animation (animate-anything craft), Anthropic brand, browser-verified (0 console errors). Router gap banked: animate-anything joined the registry as ⚪ candidate.
 - **2026-07-25** — v1.0 launch article live — 'The Best Number in My v1.0 Was a NO-GO.': Long-form on the portfolio (PR #123, canonical URL live-verified) with cover + one-day-arc infographic; LinkedIn/X composers prefilled, posting stays Paul's click.
-- **2026-07-25** — v1.0 — M8 bounded autonomy (BRACE-calibrated) + M9 cadence; reach 40: chains.yml + AutoRunner (🟢-only, human gates mandatory, journaled; live chain-02 run exit 0). BRACE Tier-1 honestly NO-GO 15/44 → autonomy ceiling = local gate-running. Enterprise 43%→50% (LICENSE CC0 + CODEOWNERS). Weekly freshness workflow (stale pin → human-gated issue). rsi-os, FM-os, FDE-os 🟢 by live gate runs (225 tests on FDE-os). Reach 5×5 → 8×5 = 40.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -41,8 +41,8 @@ edit the YAML, run `make build`; CI fails on drift.
 | [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟢 integrated | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
 | [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟢 integrated | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
 | [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟢 integrated | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
+| [agent-forge](https://github.com/wjlgatech/agent-forge) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
 | [ai-native-os](https://github.com/wjlgatech/physical-ai-native-os) 🔒 | 💻 digital | 🟡 digested | Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door |
-| [blueprint-anything](https://github.com/wjlgatech/blueprint-anything) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | 🟡 digested | Autonomous job-search pipeline + self-upgrading inner loop |
 | [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | 🟡 digested | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
 | [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟡 digested | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |

@@ -1,7 +1,9 @@
-# Satellite digest — blueprint-anything 🔒
+# Satellite digest — agent-forge 🔒
 
-- **Pinned (local HEAD, 2026-07-25):** `6dc2389a174d`
-- **Upstream:** https://github.com/wjlgatech/blueprint-anything (PRIVATE — pointer only)
+- **Pinned (local HEAD, 2026-07-28):** `a3b0fa082cf1`
+- **Upstream:** https://github.com/wjlgatech/agent-forge (PRIVATE — pointer only)
+- **Renamed** from `blueprint-anything` (owner's call, 2026-07-28); local folder + remote + this
+  registry all follow the new name.
 - **Role here:** ⚙️ engine — the *before-you-build* studio for every agent this family ships.
 
 ## Public-safe summary
