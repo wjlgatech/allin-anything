@@ -152,5 +152,37 @@
         "evidence": "CI green on push"
       }
     ]
+  },
+  {
+    "id": "rc0006",
+    "delivery": "Live demo webapp shipped: the repo demos itself point by point + 15-yo explainer",
+    "objective": "Explain allin-anything (today vs post-roadmap) at 15-yo level; stand up an agentic webapp demoing each point",
+    "created_at": "2026-07-29T21:46:44Z",
+    "key_results": [
+      {
+        "text": "webapp backed by real engine only",
+        "target": "0 mocks; router/registry/chains/autorun live",
+        "score": 1.0,
+        "evidence": "chain-04 executed in-browser API: money-os 96 tests exit 0"
+      },
+      {
+        "text": "security boundary tested",
+        "target": "whitelist blocks arbitrary input; assisted chains refused without executing",
+        "score": 1.0,
+        "evidence": "6 tests in test_webapp.py incl. injection-shaped id"
+      },
+      {
+        "text": "browser-verified UI",
+        "target": "0 console errors; all sections render with live data",
+        "score": 0.9,
+        "evidence": "full-page screenshot; run-panel screenshot lost to browse-daemon flake, API verified instead"
+      },
+      {
+        "text": "SHIPPED per contract",
+        "target": "feature+tests+README+CHANGELOG+news, drift-gated, CI green",
+        "score": 1.0,
+        "evidence": "47 tests; make check green; push CI green"
+      }
+    ]
   }
 ]
