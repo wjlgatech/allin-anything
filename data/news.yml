@@ -1,5 +1,8 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
+  - date: "2026-07-29"
+    title: "Live demo webapp — the repo demos itself, point by point"
+    note: "scripts/webapp.py serves a 5-section Anthropic-brand demo backed by the REAL engine: router verdicts, live registry ladder + reach, chain library, bounded AutoRunner runs in-browser (chain-04 executed live, 96 money-os tests; assisted chains refused), honest horizon. Security boundary tested (whitelist, caps, refusals)."
   - date: "2026-07-28"
     title: "Satellite renamed: blueprint-anything → agent-forge"
     note: "Owner's rename followed everywhere: registry id/url, digest re-pinned at a3b0fa082cf1 (repo advanced under new name), SKILL routing hints, regenerated README. Local folder + private remote confirmed under the new name."

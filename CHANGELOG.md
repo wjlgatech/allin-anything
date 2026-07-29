@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.1.0 — 2026-07-29
+
+- Demo webapp: `scripts/webapp.py` (thin stdlib HTTP shell) over `src/allin_anything/webapp.py`
+  (handlers on the real Router/Registry/AutoRunner — nothing mocked). Five point-by-point
+  sections incl. running a bounded chain live from the browser. 6 new tests cover the security
+  boundary: chain whitelist (no arbitrary execution), input caps, assisted-chain refusal.
+  README gains the demo section + a 200-word explain-like-I'm-15 of today vs post-roadmap.
+
 ## 1.0.1 — 2026-07-28
 
 - Satellite rename merged: blueprint-anything → **agent-forge** (registry id/url/notes, digest

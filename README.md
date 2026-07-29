@@ -20,9 +20,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-07-29** — Live demo webapp — the repo demos itself, point by point: scripts/webapp.py serves a 5-section Anthropic-brand demo backed by the REAL engine: router verdicts, live registry ladder + reach, chain library, bounded AutoRunner runs in-browser (chain-04 executed live, 96 money-os tests; assisted chains refused), honest horizon. Security boundary tested (whitelist, caps, refusals).
 - **2026-07-28** — Satellite renamed: blueprint-anything → agent-forge: Owner's rename followed everywhere: registry id/url, digest re-pinned at a3b0fa082cf1 (repo advanced under new name), SKILL routing hints, regenerated README. Local folder + private remote confirmed under the new name.
 - **2026-07-27** — First learn-chain artifact: 2026 Fields Medalists, all-in style (zh-CN): examples/fields-2026/: 61KB English briefing → 6-session Simplified-Chinese learning page, each session with key idea + mechanism + pure-CSS animation (animate-anything craft), Anthropic brand, browser-verified (0 console errors). Router gap banked: animate-anything joined the registry as ⚪ candidate.
-- **2026-07-25** — v1.0 launch article live — 'The Best Number in My v1.0 Was a NO-GO.': Long-form on the portfolio (PR #123, canonical URL live-verified) with cover + one-day-arc infographic; LinkedIn/X composers prefilled, posting stays Paul's click.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -61,6 +61,19 @@ Status ladder: ⚪ candidate → 🟡 digested (pinned digest in `docs/satellite
 ```bash
 make check   # pytest + drift gate + ainative self-audit (offline, deterministic)
 ```
+
+## Demo webapp — see it, point by point
+
+```bash
+python3 scripts/webapp.py   # → http://127.0.0.1:8642 (local only)
+```
+
+Five live sections, all backed by the real engine (nothing mocked): ① route any intent through
+the deterministic Router · ② the registry ladder + verified-reach, computed at request time ·
+③ the chain library with per-chain autonomy + human gates · ④ actually run a bounded chain
+(and watch an assisted one get refused) · ⑤ the honest horizon. Handlers live in
+`src/allin_anything/webapp.py`; the security boundary (chain whitelist, input caps, refusals)
+is tested in `tests/test_webapp.py`.
 
 ## Honest edges
 
