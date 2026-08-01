@@ -47,7 +47,8 @@ the prior-ceiling anti-pattern → the meta-lesson, each with a CSS animation. S
 was **drawn as real strokes on a locally-running upstream penecho at pin `e1b936f`** (its own
 gate: 200 tests, exit 0) **and exported by penecho's own PNG exporter** — all three routed
 satellites exercised in one artifact. Browser-verified: 5 sessions, ink image loaded, 0 console
-errors. Served by the demo webapp at `/bitter-lesson`.
+errors. Served by the demo webapp at `/bitter-lesson`; published canonically (human click,
+2026-08-01) at https://agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html.
 
 ## The artifact this chain already produced
 

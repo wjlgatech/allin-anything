@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-08-01"
+    title: "Bitter Lesson artifact published canonically on the portfolio"
+    note: "agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html — the Chain 06 artifact live with the real penecho ink, brand thumbnail, and a provenance section (router → organs → gates). PR #147 merged after checks; deploy content-verified (title/ink/thumbnail/homepage listing). LinkedIn/X composers prefilled — posting stays Paul's click. Card rc0009 in the portfolio's collection (PR #148)."
+  - date: "2026-08-01"
     title: "The super-tool tested end-to-end: /allin-anything installed; penecho full-feature upstream; Bitter Lesson learned all-in"
     note: "The flagship skill is now a user-installed meta-tool (symlink → /allin-anything works in any session). penecho @e1b936f run from its OWN checkout: npm run check = 200 tests exit 0, full UI live with Claude CLI executor, 4 real strokes drawn and exported by ITS OWN exporter (8059×4438 PNG). That ink anchors examples/bitter-lesson/ — FM-os reading-list №1 (Sutton 2019) as 5 animated sessions, browser-verified 0 errors. Demo webapp gains §5 pen→digital bridge (/api/penecho, pointer-only) + /bitter-lesson. AGPL boundary intact: zero penecho code in-repo."
   - date: "2026-08-01"
