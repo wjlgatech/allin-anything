@@ -85,7 +85,16 @@ th{background:var(--card2)}
 </div>
 
 <div class="pt">
-<h2><span class="num">5</span>After the roadmap (honest horizon)</h2>
+<h2><span class="num">5</span>The pen→digital bridge — penecho, running upstream</h2>
+<p class="sub">penecho is AGPL-3.0: we index it (pointer + pinned digest), we NEVER vendor it. It runs from its <b>own</b> checkout; this panel only looks across the bridge.</p>
+<button class="go" onclick="checkBridge()">Check the bridge →</button>
+<button class="alt" onclick="window.open('http://127.0.0.1:3888/','_blank')">Open penecho ↗</button>
+<button class="alt" onclick="window.open('/bitter-lesson','_blank')">See what crossed it: The Bitter Lesson, all-in style ↗</button>
+<pre id="bridgeOut">bridge status appears here</pre>
+</div>
+
+<div class="pt">
+<h2><span class="num">6</span>After the roadmap (honest horizon)</h2>
 <ul style="margin:.4rem 0;color:var(--muted)">
 <li>🎯 <b>Every satellite green</b> — the remaining 🟡/⚪ earn 🟢 only by their own gates running live (career-os isn't even checked out yet; its digest says so).</li>
 <li>🔗 <b>Chain 06+</b> — learn-anything: article → master-anything teaching style → animate-anything motion craft (both are in the registry, waiting on live gate runs).</li>
@@ -120,6 +129,13 @@ async function loadChains(){
   for (const c of d.chains)
     h += '<tr><td><b>' + c.id + '</b></td><td>' + c.title + '</td><td>' + (c.autonomy==='autonomous_bounded' ? '🤖 bounded' : '🤝 assisted') + '</td><td>🔑 ' + c.human_gates[0] + '</td></tr>';
   document.getElementById('chainOut').innerHTML = h + '</table>';
+}
+async function checkBridge(){
+  const r = await fetch('/api/penecho'); const d = await r.json();
+  document.getElementById('bridgeOut').textContent =
+    (d.running ? '🌉 penecho is UP at ' + d.url : '🌫 no local penecho running (start it: ' + d.launch + ')') +
+    '\n📌 pin: ' + d.pinned_sha.slice(0,7) + ' · license: ' + d.license + '\n⚖️ rule: ' + d.rule +
+    '\n📂 sibling checkout present: ' + d.checkout;
 }
 async function runChain(id){
   const out = document.getElementById('runOut');

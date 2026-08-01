@@ -38,6 +38,14 @@ class Handler(BaseHTTPRequestHandler):
             self._json(APP.registry_summary())
         elif self.path == "/api/chains":
             self._json(APP.chain_list())
+        elif self.path == "/api/penecho":
+            self._json(APP.penecho_bridge())
+        elif self.path == "/bitter-lesson":
+            self._send(200, (ROOT / "examples" / "bitter-lesson" / "index.html").read_bytes(),
+                       "text/html; charset=utf-8")
+        elif self.path == "/assets/penecho-two-curves.png":
+            self._send(200, (ROOT / "examples" / "bitter-lesson" / "assets" / "penecho-two-curves.png").read_bytes(),
+                       "image/png")
         else:
             self._json({"error": "not found"}, 404)
 

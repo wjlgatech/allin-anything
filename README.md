@@ -20,9 +20,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-08-01** — The super-tool tested end-to-end: /allin-anything installed; penecho full-feature upstream; Bitter Lesson learned all-in: The flagship skill is now a user-installed meta-tool (symlink → /allin-anything works in any session). penecho @e1b936f run from its OWN checkout: npm run check = 200 tests exit 0, full UI live with Claude CLI executor, 4 real strokes drawn and exported by ITS OWN exporter (8059×4438 PNG). That ink anchors examples/bitter-lesson/ — FM-os reading-list №1 (Sutton 2019) as 5 animated sessions, browser-verified 0 errors. Demo webapp gains §5 pen→digital bridge (/api/penecho, pointer-only) + /bitter-lesson. AGPL boundary intact: zero penecho code in-repo.
 - **2026-08-01** — Chain 06 learn-anything live — reach 10 × 6 = 60; career-os ruled honestly: master-anything + animate-anything 🟢 by their own gates run live (15 tests + 8-organ smoke; 3b1b style-linter 100/100). Chain 06 article→animated-understanding ran autonomous_bounded end-to-end (both steps exit 0, stopped at the publishing human gate); its walkthrough claims the fields-2026 artifact as prior evidence. The 2026-07-27 router gap is closed by the same satellite that banked it. career-os: cloned at pin, NO machine gate upstream — stays 🟡 per no-evidence-means-no. CI actions re-bumped v5/v6.
 - **2026-07-29** — Live demo webapp — the repo demos itself, point by point: scripts/webapp.py serves a 5-section Anthropic-brand demo backed by the REAL engine: router verdicts, live registry ladder + reach, chain library, bounded AutoRunner runs in-browser (chain-04 executed live, 96 money-os tests; assisted chains refused), honest horizon. Security boundary tested (whitelist, caps, refusals).
-- **2026-07-28** — Satellite renamed: blueprint-anything → agent-forge: Owner's rename followed everywhere: registry id/url, digest re-pinned at a3b0fa082cf1 (repo advanced under new name), SKILL routing hints, regenerated README. Local folder + private remote confirmed under the new name.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -68,12 +68,18 @@ make check   # pytest + drift gate + ainative self-audit (offline, deterministic
 make demo   # = python3 scripts/webapp.py → http://127.0.0.1:8642 (local only)
 ```
 
-Five live sections, all backed by the real engine (nothing mocked): ① route any intent through
+Six live sections, all backed by the real engine (nothing mocked): ① route any intent through
 the deterministic Router · ② the registry ladder + verified-reach, computed at request time ·
 ③ the chain library with per-chain autonomy + human gates · ④ actually run a bounded chain
-(and watch an assisted one get refused) · ⑤ the honest horizon. Handlers live in
+(and watch an assisted one get refused) · ⑤ the penecho bridge — status of a locally-running
+UPSTREAM penecho (AGPL: pointer across the bridge, never an embedding) plus the artifact that
+crossed it (`/bitter-lesson`) · ⑥ the honest horizon. Handlers live in
 `src/allin_anything/webapp.py`; the security boundary (chain whitelist, input caps, refusals)
 is tested in `tests/test_webapp.py`.
+
+The flagship skill IS the meta-tool: symlink `skills/allin-anything` into `~/.claude/skills/`
+and `/allin-anything` becomes the one front door in any session — it routes, it never
+re-implements a satellite inline.
 
 ## Honest edges
 

@@ -16,6 +16,7 @@ from .models import Registry
 from .router import Router
 
 MAX_INTENT_LEN = 300
+PENECHO_URL = "http://127.0.0.1:3888/"
 
 
 class DemoApp:
@@ -55,6 +56,31 @@ class DemoApp:
              "satellites": list(c.satellites), "human_gates": list(c.human_gates),
              "walkthrough": f"docs/walkthroughs/{c.walkthrough}"}
             for c in self.chains]}
+
+    def penecho_bridge(self) -> dict:
+        """Point 5 — the pen→digital bridge: penecho runs UPSTREAM (AGPL, never vendored).
+
+        Reports the pin and, if a locally-started upstream instance is up, says so.
+        Offline-safe: no instance just means running=False — never an error.
+        """
+        s = next((x for x in self.reg.satellites if x.id == "penecho"), None)
+        running = False
+        try:
+            import urllib.request
+
+            with urllib.request.urlopen(PENECHO_URL, timeout=0.8) as r:
+                running = r.status == 200
+        except Exception:
+            running = False
+        return {
+            "pinned_sha": (s.pinned_sha if s else "") or "",
+            "license": (s.license if s else "") or "",
+            "rule": "run upstream from its own repo — pointer + pinned digest only, never vendored (AGPL-3.0-only)",
+            "url": PENECHO_URL,
+            "running": running,
+            "checkout": (self.root.parent / "penecho").exists(),
+            "launch": "cd ~/Documents/Projects/penecho && node cli.js --claude --port 3888",
+        }
 
     def autorun(self, chain_id: str) -> dict:
         """Point 4 — bounded autonomy: really run a chain; refusals are the feature."""

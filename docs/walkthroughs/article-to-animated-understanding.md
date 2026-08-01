@@ -39,6 +39,16 @@ $ cd projects/animate-anything && make check      # pinned 946bef8
 Ten executable craft checks (warm-grey canvas, palette-by-role, morph-to-equivalence,
 pacing beats, one-idea-per-play, narrative arc…) — the craft rules are a linter, not taste.
 
+## Second artifact (2026-08-01): The Bitter Lesson, with real penecho ink
+
+`examples/bitter-lesson/` — entry №1 of FM-os's Frontier AI Reading List (Sutton 2019) as a
+5-session learning page: statement → the two curves → search-and-learning mechanism →
+the prior-ceiling anti-pattern → the meta-lesson, each with a CSS animation. Session 2's figure
+was **drawn as real strokes on a locally-running upstream penecho at pin `e1b936f`** (its own
+gate: 200 tests, exit 0) **and exported by penecho's own PNG exporter** — all three routed
+satellites exercised in one artifact. Browser-verified: 5 sessions, ink image loaded, 0 console
+errors. Served by the demo webapp at `/bitter-lesson`.
+
 ## The artifact this chain already produced
 
 `examples/fields-2026/` — a 61KB institutional research briefing on the 2026 Fields Medalists

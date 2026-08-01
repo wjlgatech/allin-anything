@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bitter Lesson — learned all-in style</title>
+<style>
+:root{
+  --bg:#faf9f5; --card:#ffffff; --card2:#f0eee6; --ink:#141413; --muted:#5f5d58;
+  --border:#e3e0d6; --border2:#b0aea5; --accent:#d97757; --blue:#6a9bcc; --green:#788c5d;
+  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.75}
+.topbar{height:6px;background:linear-gradient(90deg,var(--accent),var(--blue),var(--green))}
+.wrap{max-width:50rem;margin:0 auto;padding:40px 22px 90px}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:Georgia,serif;font-size:2.2rem;line-height:1.2;margin:.2em 0 .1em}
+.byline{color:var(--muted);font-size:.92rem;margin-bottom:1.6rem}
+.byline a{color:var(--accent);text-decoration:none}
+h2{font-family:Georgia,serif;font-size:1.35rem;margin:0 0 .2rem}
+.session{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 28px;margin:22px 0}
+.tag{display:inline-block;background:var(--card2);border:1px solid var(--border2);border-radius:999px;padding:1px 12px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.quote{border-left:4px solid var(--accent);background:var(--card2);border-radius:0 10px 10px 0;padding:10px 16px;font-style:italic;color:var(--muted);margin:.8rem 0}
+.mech{font-size:.9rem;color:var(--muted)}
+.stage{position:relative;background:var(--card2);border:1px solid var(--border);border-radius:12px;height:230px;margin:1rem 0 .4rem;overflow:hidden}
+.cap{font-size:.8rem;color:var(--border2);text-align:center;margin-bottom:.2rem}
+.inkimg{width:100%;border:1px solid var(--border);border-radius:12px;background:#fff}
+ul{margin:.4rem 0 .4rem 1.2rem;padding:0}
+li{margin:.3rem 0}
+.pill{font-weight:700}
+.pill.p{color:var(--green)} .pill.a{color:var(--accent)}
+.principle{background:var(--ink);color:#faf9f5;border-radius:12px;padding:14px 20px;font-family:Georgia,serif;font-size:1.05rem;margin-top:1rem}
+.src{font-size:.85rem;color:var(--muted)}
+.src a{color:var(--accent)}
+.foot{color:var(--border2);font-size:.8rem;margin-top:2.4rem;border-top:1px solid var(--border);padding-top:1rem}
+
+/* ---------- Session 1 animation: 70 years of overtaking ---------- */
+.era{position:absolute;bottom:24px;width:120px;text-align:center;font-size:.68rem;color:var(--muted)}
+.bar{position:absolute;bottom:44px;width:34px;border-radius:6px 6px 0 0}
+.bar.h{background:var(--border2);animation:rise 2.2s ease-out infinite}
+.bar.c{background:var(--accent);animation:rise2 2.2s ease-out infinite}
+@keyframes rise {0%{height:0}30%{height:var(--h1)}70%{height:var(--h1)}100%{height:var(--h1)}}
+@keyframes rise2{0%{height:0}30%{height:8px}55%{height:8px}90%{height:var(--h2)}100%{height:var(--h2)}}
+/* ---------- Session 2 animation: the two curves ---------- */
+.axis{position:absolute;left:36px;bottom:30px;width:calc(100% - 70px);height:2px;background:var(--ink)}
+.axis.v{width:2px;height:calc(100% - 60px)}
+svg .human{stroke:var(--border2);stroke-width:4;fill:none;stroke-dasharray:640;stroke-dashoffset:640;animation:draw 3s ease-out infinite}
+svg .compute{stroke:var(--accent);stroke-width:4;fill:none;stroke-dasharray:700;stroke-dashoffset:700;animation:draw 3s 1s ease-out infinite forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+/* ---------- Session 3 animation: search tree + descending ball ---------- */
+.node{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--blue);opacity:0;animation:pop 2.8s infinite}
+@keyframes pop{0%{opacity:0;transform:scale(.3)}20%{opacity:1;transform:scale(1)}90%{opacity:1}100%{opacity:0}}
+.ball{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--accent);animation:descend 2.8s ease-in-out infinite}
+@keyframes descend{0%{left:12%;top:18%}35%{left:26%;top:52%}65%{left:40%;top:74%}100%{left:50%;top:84%}}
+.bowl{position:absolute;left:6%;bottom:18px;width:52%;height:120px;border:3px solid var(--border2);border-top:0;border-radius:0 0 120px 120px}
+/* ---------- Session 4 animation: the ceiling box ---------- */
+.boxwall{position:absolute;left:14%;bottom:30px;width:30%;height:120px;border:3px solid var(--border2);border-bottom:0}
+.grow{position:absolute;bottom:30px;width:26px;background:var(--blue);border-radius:4px 4px 0 0}
+.grow.trapped{left:calc(14% + 30px);animation:trap 3s ease-out infinite}
+.grow.free{left:64%;background:var(--accent);animation:free 3s ease-out infinite}
+@keyframes trap{0%{height:0}45%{height:112px}60%{height:118px}70%{height:114px}100%{height:116px}}
+@keyframes free{0%{height:0}100%{height:190px}}
+/* ---------- Session 5 animation: compounding ---------- */
+.dot{position:absolute;bottom:30px;width:12px;height:12px;border-radius:50%;background:var(--green);animation:comp 3.2s linear infinite}
+@keyframes comp{0%{left:6%;bottom:30px;transform:scale(1)}25%{left:28%;bottom:52px}50%{left:50%;bottom:86px;transform:scale(1.5)}75%{left:71%;bottom:136px}100%{left:90%;bottom:200px;transform:scale(2.2)}}
+@media (prefers-reduced-motion: reduce){ *,*::before,*::after{animation:none !important} }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<main class="wrap">
+<p class="eyebrow">allin-anything · Chain 06 artifact · FM-os reading list №1 → master-anything sessions → animate-anything motion → penecho ink</p>
+<h1>The Bitter Lesson, learned all-in style</h1>
+<p class="byline">Source: <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">Rich Sutton, “The Bitter Lesson” (2019)</a>, entry №1 of the
+<a href="https://github.com/wjlgatech/FM-os/blob/main/docs/reading-lists/ai-reading-list-07-30-2026.md">FM-os Frontier AI Reading List</a> ·
+Learning artifact by <b>Paul Jialiang Wu</b> — <a href="https://agentic-portfolio-lovat.vercel.app/">agentic-portfolio-lovat.vercel.app</a></p>
+
+<div class="session">
+<span class="tag">Session 1 · The statement</span>
+<h2>Seventy years, one repeating story</h2>
+<p><b>Key idea.</b> The biggest lesson of AI research: general methods that leverage computation — search and learning — consistently beat methods built from human domain knowledge. Not once; every time the hardware catches up.</p>
+<div class="quote">“Building systems based on how we think we think… in the long run, tracks failure.” — Sutton</div>
+<p class="mech"><b>Operational mechanism.</b> In chess, Go, speech, and vision the same sequence played out: hand-crafted knowledge wins early benchmarks → compute-hungry general methods look wasteful → compute gets cheap → the general method blows past the plateau. The animation replays that overtake per field.</p>
+<div class="stage">
+  <div class="bar h" style="left:12%;--h1:96px"></div><div class="era" style="left:2%">chess<br>heuristics → search</div>
+  <div class="bar c" style="left:16%;--h2:150px"></div>
+  <div class="bar h" style="left:36%;--h1:82px"></div><div class="era" style="left:27%">Go<br>patterns → self-play</div>
+  <div class="bar c" style="left:40%;--h2:168px"></div>
+  <div class="bar h" style="left:60%;--h1:90px"></div><div class="era" style="left:51%">speech<br>phonemes → learning</div>
+  <div class="bar c" style="left:64%;--h2:156px"></div>
+  <div class="bar h" style="left:84%;--h1:76px"></div><div class="era" style="left:75%">vision<br>features → CNNs</div>
+  <div class="bar c" style="left:88%;--h2:172px"></div>
+</div>
+<p class="cap">grey = human-knowledge methods · orange = general methods + compute, arriving later and going higher</p>
+</div>
+
+<div class="session">
+<span class="tag">Session 2 · The two curves — drawn by hand, verified by machine</span>
+<h2>The plateau and the line that crosses it</h2>
+<p><b>Key idea.</b> Human-intuition methods rise fast and flatten: their ceiling is the knowledge we managed to encode. Compute-leveraged methods start lower, but their ceiling is the hardware curve — and the hardware curve doesn't flatten.</p>
+<p class="mech"><b>Operational mechanism.</b> This figure was <b>drawn as real ink on penecho's canvas</b> (the family's pen→digital bridge, run upstream at pinned <code>e1b936f</code>, its own 200 tests green) and exported by <b>penecho's own PNG exporter</b> — the same bridge Chain 02 proved for floor plans, now carrying an idea instead of a wall:</p>
+<img class="inkimg" src="assets/penecho-two-curves.png" alt="Hand-drawn on penecho: the human-knowledge curve rises fast then plateaus; the compute curve crosses it and keeps rising">
+<p class="cap">real strokes, penecho's renderer and exporter — the digital↔physical bridge of this super-repo, working</p>
+<div class="stage">
+  <div class="axis v" style="left:36px;bottom:30px"></div><div class="axis"></div>
+  <svg width="100%" height="100%" viewBox="0 0 640 230" preserveAspectRatio="none">
+    <path class="human" d="M 50 210 C 110 90, 150 75, 220 70 S 500 62, 600 62"/>
+    <path class="compute" d="M 50 214 C 220 200, 380 150, 480 100 S 590 30, 615 18"/>
+  </svg>
+</div>
+<p class="cap">the same figure as motion: the grey curve saturates; the orange one is still accelerating when the frame ends</p>
+</div>
+
+<div class="session">
+<span class="tag">Session 3 · The mechanism</span>
+<h2>Search and learning: the only two methods that scale</h2>
+<p><b>Key idea.</b> Why these two? Because both convert <i>more compute</i> directly into <i>more capability</i> with no human in the loop: search explores more branches; learning fits richer functions from more data.</p>
+<p class="mech"><b>Operational mechanism.</b> Left: a search tree popping wider as budget grows. Right: gradient descent rolling to a minimum — no one tells the ball where the bottom is; the slope does.</p>
+<div class="stage">
+  <div class="node" style="left:64%;top:20%"></div>
+  <div class="node" style="left:58%;top:40%;animation-delay:.3s"></div><div class="node" style="left:70%;top:40%;animation-delay:.35s"></div>
+  <div class="node" style="left:54%;top:60%;animation-delay:.6s"></div><div class="node" style="left:62%;top:60%;animation-delay:.65s"></div>
+  <div class="node" style="left:68%;top:60%;animation-delay:.7s"></div><div class="node" style="left:76%;top:60%;animation-delay:.75s"></div>
+  <div class="node" style="left:52%;top:78%;animation-delay:.95s"></div><div class="node" style="left:58%;top:78%;animation-delay:1s"></div>
+  <div class="node" style="left:66%;top:78%;animation-delay:1.05s"></div><div class="node" style="left:72%;top:78%;animation-delay:1.1s"></div>
+  <div class="node" style="left:80%;top:78%;animation-delay:1.15s"></div>
+  <div class="bowl"></div><div class="ball"></div>
+</div>
+<p class="cap">search widens with budget (blue) · learning descends the loss surface (orange)</p>
+</div>
+
+<div class="session">
+<span class="tag">Session 4 · The anti-pattern</span>
+<h2>Why human priors become a ceiling</h2>
+<p><b>Key idea.</b> Encoding “how we think we think” — symmetries, features, grammar rules — buys early wins and then caps the system at the limits of our own introspection. The contents of minds are “irredeemably complex”; the shortcut becomes the wall.</p>
+<p class="mech"><b>Operational mechanism.</b> Two learners: one grows inside the box of human priors and hits its lid; one grows against compute alone and keeps going. The box IS the plateau from Session 2.</p>
+<div class="stage">
+  <div class="boxwall"></div>
+  <div class="grow trapped"></div>
+  <div class="grow free"></div>
+</div>
+<p class="cap">blue learner: capped by the prior-box · orange learner: capped only by compute</p>
+<ul>
+<li><span class="pill p">Pattern:</span> bet on compute — invest in algorithms that improve as compute increases.</li>
+<li><span class="pill a">Anti-pattern:</span> human-centric priors — “teaching” the model our logic limits its ultimate ceiling.</li>
+</ul>
+</div>
+
+<div class="session">
+<span class="tag">Session 5 · The meta-lesson</span>
+<h2>What to do differently tomorrow</h2>
+<p><b>Key idea.</b> The bitter part is that the lesson keeps having to be re-learned — each generation believes <i>its</i> domain knowledge is the exception. The actionable discipline: build methods that get better when the budget doubles, and resist over-engineering that only helps at today's budget.</p>
+<p class="mech"><b>Operational mechanism.</b> Compounding: every doubling multiplies the same general method, while hand-tuned gains are one-time. The dot below gains size (capability) as it rides the budget curve.</p>
+<div class="stage"><div class="dot"></div></div>
+<p class="cap">general methods compound with the budget; hand-tuned tricks are flat one-offs</p>
+<ul>
+<li><b>Prioritize scalability</b> — prefer the algorithm that wins at 10× compute over the one that wins today.</li>
+<li><b>Avoid over-engineering</b> — let the model discover structure instead of hard-coding your version of it.</li>
+</ul>
+<div class="principle">1st Principle — Search and Learning are the only two methods that scale indefinitely with compute.</div>
+</div>
+
+<p class="src"><b>Sources &amp; provenance:</b> Sutton's original essay (link above, verified) and the FM-os reading-list entry (Statement / Essential Quote / Evidence / Actions / Patterns / 1st-Principle format, links curl-verified at intake 2026-07-30). The session structure follows master-anything's teach-back discipline; the animations follow animate-anything's craft rules (one idea per beat, morph-to-equivalence, narrative arc, <code>prefers-reduced-motion</code> respected); the hand-drawn figure is real penecho ink at pin <code>e1b936f</code>.</p>
+
+<p class="foot">allin-anything · Chain 06 (article → animated understanding) · router verdict: penecho + animate-anything + master-anything, all 🟢 · Paul Jialiang Wu · <a href="https://agentic-portfolio-lovat.vercel.app/" style="color:inherit">agentic-portfolio-lovat.vercel.app</a></p>
+</main>
+</body>
+</html>

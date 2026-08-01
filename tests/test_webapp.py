@@ -44,3 +44,19 @@ def test_autorun_refuses_assisted_chain_without_executing():
     d = app().autorun("chain-01")
     assert d["mode"] == "refused" and "earned per-chain" in d["reason"]
     assert d.get("steps", []) == []
+
+
+def test_penecho_bridge_is_pointer_only_and_offline_safe():
+    d = app().penecho_bridge()
+    assert d["pinned_sha"].startswith("e1b936f")  # the registry pin, disclosed
+    assert d["license"] == "AGPL-3.0-only" and "never vendored" in d["rule"]
+    assert isinstance(d["running"], bool)  # offline (CI) must yield False, never an error
+
+
+def test_bitter_lesson_artifact_carries_real_penecho_ink():
+    page = (ROOT / "examples" / "bitter-lesson" / "index.html").read_text()
+    assert page.count('class="session"') == 5  # master-anything session structure
+    assert "penecho-two-curves.png" in page  # the exported ink, embedded
+    assert (ROOT / "examples" / "bitter-lesson" / "assets" / "penecho-two-curves.png").exists()
+    assert "prefers-reduced-motion" in page  # animate-anything craft rule
+    assert "Paul Jialiang Wu" in page and "agentic-portfolio-lovat.vercel.app" in page

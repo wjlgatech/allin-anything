@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 1.3.0 — 2026-08-01
+
+- **The super-tool, tested end-to-end on a real article.** `/allin-anything` is now an installed
+  meta-tool (symlink into `~/.claude/skills/` — one front door in any session). Test input:
+  entry №1 of FM-os's Frontier AI Reading List ("The Bitter Lesson", Sutton 2019); the router
+  verdict named penecho + animate-anything + master-anything (all 🟢), Chain 06 gates ran live,
+  and `examples/bitter-lesson/` is the artifact: 5 sessions, each with a CSS animation.
+- **penecho @e1b936f full-feature upstream**: sibling checkout at the exact pin; its own
+  `npm run check` = **200 tests, 0 failed**; full UI served via its Claude CLI executor;
+  4 real strokes drawn and exported by **penecho's own PNG exporter** (the two-curves figure,
+  embedded in the artifact). Digest updated with live evidence. AGPL boundary intact — zero
+  penecho code in this repo.
+- Demo webapp: new §5 **pen→digital bridge** (`GET /api/penecho` — pin, license, rule, live
+  reachability; offline-safe) + `/bitter-lesson` serves the artifact. 2 new tests (8 total in
+  test_webapp.py): bridge is pointer-only/offline-safe; artifact carries the real ink.
+
 ## 1.2.0 — 2026-08-01
 
 - **Chain 06 — article → animated understanding (learn-anything)**: master-anything ×

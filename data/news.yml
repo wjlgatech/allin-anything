@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-08-01"
+    title: "The super-tool tested end-to-end: /allin-anything installed; penecho full-feature upstream; Bitter Lesson learned all-in"
+    note: "The flagship skill is now a user-installed meta-tool (symlink → /allin-anything works in any session). penecho @e1b936f run from its OWN checkout: npm run check = 200 tests exit 0, full UI live with Claude CLI executor, 4 real strokes drawn and exported by ITS OWN exporter (8059×4438 PNG). That ink anchors examples/bitter-lesson/ — FM-os reading-list №1 (Sutton 2019) as 5 animated sessions, browser-verified 0 errors. Demo webapp gains §5 pen→digital bridge (/api/penecho, pointer-only) + /bitter-lesson. AGPL boundary intact: zero penecho code in-repo."
+  - date: "2026-08-01"
     title: "Chain 06 learn-anything live — reach 10 × 6 = 60; career-os ruled honestly"
     note: "master-anything + animate-anything 🟢 by their own gates run live (15 tests + 8-organ smoke; 3b1b style-linter 100/100). Chain 06 article→animated-understanding ran autonomous_bounded end-to-end (both steps exit 0, stopped at the publishing human gate); its walkthrough claims the fields-2026 artifact as prior evidence. The 2026-07-27 router gap is closed by the same satellite that banked it. career-os: cloned at pin, NO machine gate upstream — stays 🟡 per no-evidence-means-no. CI actions re-bumped v5/v6."
   - date: "2026-07-29"
