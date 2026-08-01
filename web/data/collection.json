@@ -184,5 +184,37 @@
         "evidence": "47 tests; make check green; push CI green"
       }
     ]
+  },
+  {
+    "id": "rc0007",
+    "delivery": "Chain 06 learn-anything live: master-anything + animate-anything promoted \ud83d\udfe2 by their own gates run here (15 tests + 8-organ smoke; 3b1b style-linter 100/100), chain ran autonomous_bounded end-to-end via AutoRunner (both steps exit 0, stopped at the publishing human gate), career-os ruled honestly \ud83d\udfe1 (cloned at pin, no machine gate upstream), CI actions re-bumped v5/v6 and proven green",
+    "objective": "Close the repo's own named open threads: the 2026-07-27 banked router gap (learn-with-animations), the M9 deferred 9x6 target, and the 0.4.1 CI rollback thread",
+    "created_at": "2026-08-01T14:31:14Z",
+    "key_results": [
+      {
+        "text": "two promotions by live gate runs, not claims",
+        "target": "each satellite own-gate exit 0 recorded in digest + registry notes",
+        "score": 1.0,
+        "evidence": "master-anything make check: 15 passed + smoke, 8 organs; animate-anything: style-linter 100/100 (10/10)"
+      },
+      {
+        "text": "Chain 06 autonomous_bounded, executed live",
+        "target": "AutoRunner runs both steps, stops at human gate, journaled",
+        "score": 1.0,
+        "evidence": "scripts/autorun.py chain-06: both make check steps exit 0; stopped at publishing gate; runs/journal.jsonl"
+      },
+      {
+        "text": "career-os ruled honestly (a NO recorded like a YES)",
+        "target": "live gate run or an evidenced refusal \u2014 never a faked promotion",
+        "score": 1.0,
+        "evidence": "cloned at pin 395b64b; zero runnable files found (no Makefile/tests/pyproject); digest + registry + README updated to say so"
+      },
+      {
+        "text": "SHIPPED per contract",
+        "target": "reach 40->60 drift-gated + charter-tested; tests; docs; CI green on re-bumped v5/v6 actions",
+        "score": 1.0,
+        "evidence": "48 tests green; make check green; VISION/ROADMAP/CHANGELOG/news/SKILL/eval updated; CI run 30703913093 success 20s"
+      }
+    ]
   }
 ]
