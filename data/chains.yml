@@ -59,3 +59,16 @@ chains:
     autonomy: assisted   # research-anything is 🟡 — an autonomous chain needs every satellite 🟢
     human_gates:
       - "publishing or acting on graph conclusions"
+
+  - id: chain-06
+    title: "article → animated understanding (learn-anything)"
+    walkthrough: article-to-animated-understanding.md
+    satellites: [master-anything, animate-anything]
+    autonomy: autonomous_bounded
+    steps:
+      - cwd: "projects/master-anything"
+        cmd: ["make", "check"]
+      - cwd: "projects/animate-anything"
+        cmd: ["make", "check"]
+    human_gates:
+      - "publishing the learning artifact (portfolio/LinkedIn/X posting is always a human click)"

@@ -14,15 +14,15 @@ surface, one interaction contract.
 ## Verified reach
 
 <!-- BEGIN GENERATED: reach -->
-**Verified reach = 8 🟢 × 5 chains = 40** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
+**Verified reach = 10 🟢 × 6 chains = 60** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
 <!-- END GENERATED: reach -->
 
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-08-01** — Chain 06 learn-anything live — reach 10 × 6 = 60; career-os ruled honestly: master-anything + animate-anything 🟢 by their own gates run live (15 tests + 8-organ smoke; 3b1b style-linter 100/100). Chain 06 article→animated-understanding ran autonomous_bounded end-to-end (both steps exit 0, stopped at the publishing human gate); its walkthrough claims the fields-2026 artifact as prior evidence. The 2026-07-27 router gap is closed by the same satellite that banked it. career-os: cloned at pin, NO machine gate upstream — stays 🟡 per no-evidence-means-no. CI actions re-bumped v5/v6.
 - **2026-07-29** — Live demo webapp — the repo demos itself, point by point: scripts/webapp.py serves a 5-section Anthropic-brand demo backed by the REAL engine: router verdicts, live registry ladder + reach, chain library, bounded AutoRunner runs in-browser (chain-04 executed live, 96 money-os tests; assisted chains refused), honest horizon. Security boundary tested (whitelist, caps, refusals).
 - **2026-07-28** — Satellite renamed: blueprint-anything → agent-forge: Owner's rename followed everywhere: registry id/url, digest re-pinned at a3b0fa082cf1 (repo advanced under new name), SKILL routing hints, regenerated README. Local folder + private remote confirmed under the new name.
-- **2026-07-27** — First learn-chain artifact: 2026 Fields Medalists, all-in style (zh-CN): examples/fields-2026/: 61KB English briefing → 6-session Simplified-Chinese learning page, each session with key idea + mechanism + pure-CSS animation (animate-anything craft), Anthropic brand, browser-verified (0 console errors). Router gap banked: animate-anything joined the registry as ⚪ candidate.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -35,9 +35,11 @@ edit the YAML, run `make build`; CI fails on drift.
 |---|---|---|---|
 | [FDE-os](https://github.com/wjlgatech/FDE-os) | 🌉 bridge | 🟢 integrated | Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp |
 | [FM-os](https://github.com/wjlgatech/FM-os) | 💻 digital | 🟢 integrated | Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first |
+| [animate-anything](https://github.com/wjlgatech/animate-anything) | 💻 digital | 🟢 integrated | The ranked, living map of animation — CSS keyframes to AI-authored video; machine-readable registry for agents; interactive map on Pages |
 | [anyagent](https://github.com/wjlgatech/anyagent) 🔒 | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
 | [design-anything](https://github.com/wjlgatech/design-anything) 🔒 | 🦾 physical | 🟢 integrated | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
 | [graph-engineering-anything](https://github.com/wjlgatech/graph-engineering-anything) 🔒 | 💻 digital | 🟢 integrated | Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel) |
+| [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟢 integrated | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |
 | [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟢 integrated | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
 | [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟢 integrated | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
 | [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟢 integrated | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
@@ -45,12 +47,10 @@ edit the YAML, run `make build`; CI fails on drift.
 | [ai-native-os](https://github.com/wjlgatech/physical-ai-native-os) 🔒 | 💻 digital | 🟡 digested | Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | 🟡 digested | Autonomous job-search pipeline + self-upgrading inner loop |
 | [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | 🟡 digested | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
-| [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟡 digested | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | 🟡 digested | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
 | [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟡 digested | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
-| [animate-anything](https://github.com/wjlgatech/animate-anything) | 💻 digital | ⚪ candidate | The ranked, living map of animation — CSS keyframes to AI-authored video; machine-readable registry for agents; interactive map on Pages |
 <!-- END GENERATED: satellites -->
 
 Status ladder: ⚪ candidate → 🟡 digested (pinned digest in `docs/satellites/`) → 🟢 integrated
@@ -78,7 +78,8 @@ is tested in `tests/test_webapp.py`.
 ## Honest edges
 
 - A 🟡 satellite's own gate has NOT run here — only its facts are pinned. The table tells you
-  exactly which; nothing here pretends otherwise (career-os isn't even checked out locally).
+  exactly which; nothing here pretends otherwise (career-os is checked out at its pin but has no
+  machine gate upstream to run — 🟡 is its ceiling until one exists).
 - Autonomy is bounded and BRACE-calibrated: the assessment says NO-GO beyond local gate-running,
   and the AutoRunner obeys it — every chain stops at a declared human gate (docs/AUTONOMY.md).
 - penecho is AGPL-3.0 and lives upstream: we index it (pointer + pinned SHA + digest), we do not

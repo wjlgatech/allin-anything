@@ -12,3 +12,10 @@
   retention probe.
 - Composition layer (learn router, fork queue, ROI ledger) over six swappable organs
   (Tutor / Prove / Sing / Build / Measure / Dance). Makefile check gate present.
+
+## Live gate evidence (2026-08-01)
+
+- `make check` run here on the pinned checkout (`a635d58`): **exit 0** — 15 tests passed +
+  organ smoke OK, 8 organs registered (act/browser, compress/graph, compress/skill, express/post,
+  express/scene3d, express/verse, render/song, verify/teachback). Promoted 🟡→🟢 on that run;
+  routed via Chain 06 (docs/walkthroughs/article-to-animated-understanding.md).

@@ -65,6 +65,14 @@ def test_graph_routes_to_gea_first(router):
     assert "research-anything=digested" in d.reason  # partner declared at honest status
 
 
+def test_learn_with_animation_routes_chain_06(router):
+    d = router.route("learn this article deeply, with an animation for each key idea")
+    assert d.mode == "route"
+    assert {"master-anything", "animate-anything"} <= set(d.satellite_ids)
+    assert "master-anything=integrated" in d.reason  # 🟢 earned by live gate run, disclosed
+    assert "animate-anything=integrated" in d.reason
+
+
 # ---- Should NOT trigger (or refuse) ----
 
 def test_named_satellite_goes_direct(router):

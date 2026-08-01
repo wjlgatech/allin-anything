@@ -26,6 +26,13 @@
 
 ## Post-v1.0 deliveries (milestone-independent)
 
+- **1.2.0 (2026-08-01) — Chain 06 + two promotions; the M9 deferred target closed honestly.**
+  master-anything and animate-anything 🟢 by live gate runs (15 tests + organ smoke; style-linter
+  100/100). Chain 06 *article → animated understanding* is autonomous_bounded and ran live through
+  the AutoRunner (both steps exit 0, stopped at the human gate). career-os investigated for the
+  deferred 9×6 target: cloned at its pin, but upstream has **no machine gate** — it stays 🟡 by
+  *no-evidence-means-no*; the promotion path is upstream. Reach 8×5 → **10 × 6 = 60**. CI actions
+  re-bumped to checkout@v5 + setup-python@v6 (proven safe via dispatch, CHANGELOG 0.5.0).
 - **1.1.0 (2026-07-29) — demo webapp**: `make demo` serves a local 5-section demo backed by the
   real Router/Registry/AutoRunner (nothing mocked); security boundary tested (chain whitelist,
   input caps, assisted-chain refusal). See README "Demo webapp" + CHANGELOG.

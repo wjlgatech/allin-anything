@@ -11,8 +11,8 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.8"
-updated: "2026-07-28"
+version: "0.9"
+updated: "2026-08-01"
 satellites:
   - id: penecho
     kind: external
@@ -59,8 +59,9 @@ satellites:
     role: digital
     capability: "Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe"
     url: https://github.com/wjlgatech/master-anything
-    status: digested
+    status: integrated
     visibility: private
+    notes: "🟢 earned 2026-08-01: own make check run live, exit 0 (15 tests + organ smoke, 8 organs) — docs/walkthroughs/article-to-animated-understanding.md"
     triggers: ["learn", "master this", "understand deeply", "teach me", "explain so it sticks"]
 
   - id: strategize-anything
@@ -163,7 +164,7 @@ satellites:
     capability: "Autonomous job-search pipeline + self-upgrading inner loop"
     url: https://github.com/wjlgatech/career-os
     status: digested
-    notes: "no local checkout — digest pinned from a shallow remote clone"
+    notes: "local checkout cloned 2026-08-01 at the pin (395b64b) — repo has NO machine gate (no Makefile/tests), so 🟡 is its ceiling until upstream grows one; no evidence means no"
     triggers: ["job", "resume", "career", "application"]
 
   - id: animate-anything
@@ -171,8 +172,8 @@ satellites:
     role: digital
     capability: "The ranked, living map of animation — CSS keyframes to AI-authored video; machine-readable registry for agents; interactive map on Pages"
     url: https://github.com/wjlgatech/animate-anything
-    status: candidate
-    notes: "gap found by the router 2026-07-27 (learn-with-animations intent had no animation satellite); banked per protocol"
+    status: integrated
+    notes: "gap found by the router 2026-07-27, banked; 🟢 earned 2026-08-01: own make check run live, exit 0 (style-linter gate 100/100 @946bef8) — docs/walkthroughs/article-to-animated-understanding.md"
     triggers: ["animate", "animation", "motion design", "keyframe"]
 
   - id: neuro-os

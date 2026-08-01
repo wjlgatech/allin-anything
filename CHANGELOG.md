@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.2.0 — 2026-08-01
+
+- **Chain 06 — article → animated understanding (learn-anything)**: master-anything ×
+  animate-anything, autonomous_bounded, ran live through the AutoRunner (both `make check` steps
+  exit 0; stops at the publishing human gate). Walkthrough manifest-gated; router eval case
+  `test_learn_with_animation_routes_chain_06` added (the 2026-07-27 banked gap, closed).
+- Promotions by live gate runs: **master-anything** 🟡→🟢 (15 tests + organ smoke, 8 organs) and
+  **animate-anything** ⚪→🟢 (digest minted; 3b1b style-linter 100/100). Registry v0.9.
+- **career-os ruled honestly**: local clone now exists at the pin (395b64b), but upstream has no
+  machine gate (no Makefile/tests) — stays 🟡 per *no-evidence-means-no*; promotion path is
+  upstream. The M9 deferred 9×6 target is thereby closed: reach 8×5 → **10 × 6 = 60**.
+- CI actions re-bumped to checkout@v5 + setup-python@v6 (proven safe via workflow_dispatch —
+  closes the 0.4.1 rollback thread).
+
 ## 1.1.0 — 2026-07-29
 
 - Demo webapp: `scripts/webapp.py` (thin stdlib HTTP shell) over `src/allin_anything/webapp.py`

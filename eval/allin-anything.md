@@ -22,6 +22,8 @@ pinned by `tests/test_gates.py::test_skill_eval_has_both_directions`.
   · `test_finance_routes_to_money_os`
 - "build the knowledge graph for my research corpus" → graph-engineering-anything first,
   research-anything declared at its honest status (Chain 05) · `test_graph_routes_to_gea_first`
+- "learn this article deeply, with an animation for each key idea" → master-anything +
+  animate-anything, both 🟢 (Chain 06) · `test_learn_with_animation_routes_chain_06`
 
 ## Should NOT trigger
 

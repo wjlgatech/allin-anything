@@ -31,15 +31,19 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
   (Chain 05, corpus-to-graph).
 - **rsi-os / FM-os** (⚙️ 💻) — self-improvement + foundation-model knowledge maps; gates run live.
 - **FDE-os** (🌉) — ship agents inside the customer's real environment; gates run live (225 tests).
+- **master-anything** (💻 🔒) — learn/verify/express any hard topic; own gate run live (15 tests +
+  organ smoke). With animate-anything = Chain 06 (article-to-animated-understanding).
+- **animate-anything** (💻) — executable animation craft (3b1b-style linter, gate 80); own gate
+  run live (100/100). The motion half of Chain 06.
 
 ## Routing hints (digested / candidates — verify before promising)
 
 - agent-forge (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
-- master-anything (💻 🔒) — learn/verify/express any hard topic.
 - research-anything (💻 🔒) — verified, window-dated research briefs.
 - strategize-anything / reverse-engineering-anything (🔒 local-only) — strategy / reconstruction;
   pointer entries, route only for Paul locally.
-- career-os / ai-native-os (💻) — job search, AI-native org operations.
+- career-os / ai-native-os (💻) — job search, AI-native org operations (career-os: local clone at
+  pin, but upstream has no machine gate — 🟡 is its ceiling until one exists).
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
 
