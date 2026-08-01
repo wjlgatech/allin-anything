@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-08-01"
+    title: "Reading-list №2 learned all-in: Brook for GPUs — article live on the portfolio"
+    note: "agentic-portfolio-lovat.vercel.app/articles/brook-gpus-allin.html — router named penecho + animate-anything + master-anything (all 🟢), chain-06 gates exit 0, streams→kernel ink drawn on penecho and exported by its own renderer. Full playbook: 4 verbatim quotes fetched from primary PDFs (Brook, AlexNet, Hooker), grep receipts for the zero-AI-mentions hook, reader-kit, promo kit with inline links. PR #157 merged; deploy content-verified. Honest ruling banked the same day: neuro-os pytest on this machine = 2 failed + 10 e2e errors (842 passed) — NOT green, stays 🟡; an earlier pipe had masked the exit code, caught and corrected."
+  - date: "2026-08-01"
     title: "loop-engineering-anything 🟢 — reach 13 × 6 = 78 (v1.8.0)"
     note: "Own pytest suite run live at re-pinned a608273: exit 0, 534 passed, 3 skipped (its own conditional skips, disclosed). Upstream has no root make check — the promotion note says so plainly: its gate IS its test suite. The convergence organ (generate→judge→refactor→re-judge) joins the integrated table."
   - date: "2026-08-01"

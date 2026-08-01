@@ -120,7 +120,7 @@
      "role": "physical",
      "capability": "Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical)",
      "private": false,
-     "notes": ""
+     "notes": "gate probed 2026-08-01: own pytest = 2 failed + 10 e2e errors (842 passed) on this machine — NOT green, stays 🟡 per no-evidence-means-no (a pipe had masked the exit code; caught on re-read)"
     },
     {
      "id": "reverse-engineering-anything",
