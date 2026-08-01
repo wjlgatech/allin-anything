@@ -83,7 +83,7 @@
       },
       {
         "text": "animations kept per session, honestly labeled",
-        "target": "6 animations, 译者演示 caption",
+        "target": "6 animations, \u8bd1\u8005\u6f14\u793a caption",
         "score": 1.0,
         "evidence": "browser-verified, 0 console errors"
       },
@@ -130,7 +130,7 @@
   {
     "id": "rc0005",
     "delivery": "agent-forge rename merged through the whole spec chain, docs updated",
-    "objective": "Merge Paul's blueprint-anything → agent-forge rename with consistent docs",
+    "objective": "Merge Paul's blueprint-anything \u2192 agent-forge rename with consistent docs",
     "created_at": "2026-07-28T21:34:39Z",
     "key_results": [
       {
@@ -187,7 +187,7 @@
   },
   {
     "id": "rc0007",
-    "delivery": "Chain 06 learn-anything live: master-anything + animate-anything promoted 🟢 by their own gates run here (15 tests + 8-organ smoke; 3b1b style-linter 100/100), chain ran autonomous_bounded end-to-end via AutoRunner (both steps exit 0, stopped at the publishing human gate), career-os ruled honestly 🟡 (cloned at pin, no machine gate upstream), CI actions re-bumped v5/v6 and proven green",
+    "delivery": "Chain 06 learn-anything live: master-anything + animate-anything promoted \ud83d\udfe2 by their own gates run here (15 tests + 8-organ smoke; 3b1b style-linter 100/100), chain ran autonomous_bounded end-to-end via AutoRunner (both steps exit 0, stopped at the publishing human gate), career-os ruled honestly \ud83d\udfe1 (cloned at pin, no machine gate upstream), CI actions re-bumped v5/v6 and proven green",
     "objective": "Close the repo's own named open threads: the 2026-07-27 banked router gap (learn-with-animations), the M9 deferred 9x6 target, and the 0.4.1 CI rollback thread",
     "created_at": "2026-08-01T14:31:14Z",
     "key_results": [
@@ -205,7 +205,7 @@
       },
       {
         "text": "career-os ruled honestly (a NO recorded like a YES)",
-        "target": "live gate run or an evidenced refusal — never a faked promotion",
+        "target": "live gate run or an evidenced refusal \u2014 never a faked promotion",
         "score": 1.0,
         "evidence": "cloned at pin 395b64b; zero runnable files found (no Makefile/tests/pyproject); digest + registry + README updated to say so"
       },
@@ -214,6 +214,38 @@
         "target": "reach 40->60 drift-gated + charter-tested; tests; docs; CI green on re-bumped v5/v6 actions",
         "score": 1.0,
         "evidence": "48 tests green; make check green; VISION/ROADMAP/CHANGELOG/news/SKILL/eval updated; CI run 30703913093 success 20s"
+      }
+    ]
+  },
+  {
+    "id": "rc0008",
+    "delivery": "Super-tool tested end-to-end: /allin-anything installed as an invocable meta-tool; penecho @e1b936f full-feature upstream (own gate 200 tests exit 0, real UI, own exporter); FM-os reading-list \u21161 (The Bitter Lesson) learned all-in as examples/bitter-lesson with real penecho ink; webapp gains the pen\u2192digital bridge",
+    "objective": "Answer Paul's meta-tool question with evidence, prove the super-tool on a real seminal article, and make penecho work perfectly without breaking the AGPL pointer-only boundary",
+    "created_at": "2026-08-01T14:50:07Z",
+    "key_results": [
+      {
+        "text": "meta-tool invocable",
+        "target": "/allin-anything resolves in any session",
+        "score": 1.0,
+        "evidence": "symlink into ~/.claude/skills; harness lists the skill as available"
+      },
+      {
+        "text": "penecho full-feature at the pin",
+        "target": "own gate green + UI + exporter proven upstream",
+        "score": 1.0,
+        "evidence": "npm run check 200/200 exit 0; 4 strokes drawn; Export PNG produced valid 8059x4438 PNG; zero penecho code in-repo"
+      },
+      {
+        "text": "article learned all-in",
+        "target": "route verdict + Chain 06 gates + browser-verified artifact",
+        "score": 1.0,
+        "evidence": "router named penecho+animate+master (all integrated); autorun chain-06 both steps exit 0; page: 5 sessions, ink loaded, 0 console errors"
+      },
+      {
+        "text": "SHIPPED per contract",
+        "target": "tests+docs+CI",
+        "score": 1.0,
+        "evidence": "50 tests green; digest/walkthrough/README/CHANGELOG/news updated; CI run 30704587596 success 13s"
       }
     ]
   }

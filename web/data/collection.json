@@ -216,5 +216,37 @@
         "evidence": "48 tests green; make check green; VISION/ROADMAP/CHANGELOG/news/SKILL/eval updated; CI run 30703913093 success 20s"
       }
     ]
+  },
+  {
+    "id": "rc0008",
+    "delivery": "Super-tool tested end-to-end: /allin-anything installed as an invocable meta-tool; penecho @e1b936f full-feature upstream (own gate 200 tests exit 0, real UI, own exporter); FM-os reading-list \u21161 (The Bitter Lesson) learned all-in as examples/bitter-lesson with real penecho ink; webapp gains the pen\u2192digital bridge",
+    "objective": "Answer Paul's meta-tool question with evidence, prove the super-tool on a real seminal article, and make penecho work perfectly without breaking the AGPL pointer-only boundary",
+    "created_at": "2026-08-01T14:50:07Z",
+    "key_results": [
+      {
+        "text": "meta-tool invocable",
+        "target": "/allin-anything resolves in any session",
+        "score": 1.0,
+        "evidence": "symlink into ~/.claude/skills; harness lists the skill as available"
+      },
+      {
+        "text": "penecho full-feature at the pin",
+        "target": "own gate green + UI + exporter proven upstream",
+        "score": 1.0,
+        "evidence": "npm run check 200/200 exit 0; 4 strokes drawn; Export PNG produced valid 8059x4438 PNG; zero penecho code in-repo"
+      },
+      {
+        "text": "article learned all-in",
+        "target": "route verdict + Chain 06 gates + browser-verified artifact",
+        "score": 1.0,
+        "evidence": "router named penecho+animate+master (all integrated); autorun chain-06 both steps exit 0; page: 5 sessions, ink loaded, 0 console errors"
+      },
+      {
+        "text": "SHIPPED per contract",
+        "target": "tests+docs+CI",
+        "score": 1.0,
+        "evidence": "50 tests green; digest/walkthrough/README/CHANGELOG/news updated; CI run 30704587596 success 13s"
+      }
+    ]
   }
 ]
