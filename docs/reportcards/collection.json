@@ -248,5 +248,31 @@
         "evidence": "50 tests green; digest/walkthrough/README/CHANGELOG/news updated; CI run 30704587596 success 13s"
       }
     ]
+  },
+  {
+    "id": "rc0009",
+    "delivery": "Roadmap feature 1 shipped solo and deep: research-anything \ud83d\udfe2 by its own gate at re-pinned 9119fc2, Chain 05 corpus\u2192graph flipped to autonomous_bounded and ran live end-to-end, reach 66",
+    "objective": "Paul's cadence: work the roadmap features one by one, merge with updated docs \u2014 quality over quantity, depth over width",
+    "created_at": "2026-08-01T15:23:49Z",
+    "key_results": [
+      {
+        "text": "promotion by evidence",
+        "target": "own gate exit 0 at the pin recorded in digest",
+        "score": 1.0,
+        "evidence": "84 tests, ainative 100/100, golden-claim-gate 5/5; the gate's own honest not-measured disclosed, not hidden"
+      },
+      {
+        "text": "autonomy earned, not granted",
+        "target": "chain-05 flip only after every satellite green, then proven live",
+        "score": 1.0,
+        "evidence": "AutoRunner run: graph-engineering-anything + research-anything gates both exit 0, stopped at human gate"
+      },
+      {
+        "text": "merged with updated docs",
+        "target": "one feature, complete docs trail",
+        "score": 1.0,
+        "evidence": "digest re-pin, SKILL routing, VISION 11x6=66 charter-tested, ROADMAP, CHANGELOG 1.4.0, news; 50 tests, CI green 14s"
+      }
+    ]
   }
 ]
