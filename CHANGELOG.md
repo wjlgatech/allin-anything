@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.8.0 — 2026-08-01
+
+- **loop-engineering-anything 🟡→🟢** by its own pytest suite run live at re-pinned `a608273`:
+  exit 0 (534 passed, 3 skipped, 21.4s). Upstream has no root `make check` — the registry note
+  and digest state honestly that its gate IS its test suite. Reach **13 × 6 = 78**.
+
 ## 1.7.0 — 2026-08-01
 
 - **agent-forge 🟡→🟢** by its own gate run live at the exact digest pin `a3b0fa0`: exit 0

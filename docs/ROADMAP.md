@@ -26,6 +26,10 @@
 
 ## Post-v1.0 deliveries (milestone-independent)
 
+- **1.8.0 (2026-08-01) — loop-engineering-anything 🟢.** No root `make check` upstream — its gate
+  IS its pytest suite, run live at re-pinned `a608273`: exit 0 (534 passed, 3 skipped). Reach
+  **13 × 6 = 78**.
+
 - **1.7.0 (2026-08-01) — agent-forge 🟢.** Own gate run live at the exact pin `a3b0fa0`:
   exit 0 (gate PASS 11 deliverables + 324 tests). Reach 11×6 → **12 × 6 = 72**. Ruled honestly
   the same day: ai-native-os has no runnable gate (stays 🟡, promotion path upstream).

@@ -21,15 +21,15 @@ surface, one interaction contract.
 ## Verified reach
 
 <!-- BEGIN GENERATED: reach -->
-**Verified reach = 12 🟢 × 6 chains = 72** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
+**Verified reach = 13 🟢 × 6 chains = 78** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
 <!-- END GENERATED: reach -->
 
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-08-01** — loop-engineering-anything 🟢 — reach 13 × 6 = 78 (v1.8.0): Own pytest suite run live at re-pinned a608273: exit 0, 534 passed, 3 skipped (its own conditional skips, disclosed). Upstream has no root make check — the promotion note says so plainly: its gate IS its test suite. The convergence organ (generate→judge→refactor→re-judge) joins the integrated table.
 - **2026-08-01** — agent-forge 🟢 by its own gate at the pin — reach 12 × 6 = 72 (v1.7.0): make check run live at a3b0fa0 (the digest pin, exactly): gate_check.py PASS with 11 deliverables verified + 324 tests, exit 0. The design studio joins the integrated table — intent can now be routed to 'scope the agent BEFORE building it' with a verified badge. ai-native-os probed the same hour: no runnable gate at root — stays 🟡 per no-evidence-means-no.
 - **2026-08-01** — Remote demo live at allin-anything-demo.vercel.app; penecho AI loop proven end-to-end (v1.6.0): Paul's amendment: 1-click means remotely visitable. One dual-mode page — deployed = data snapshot + recorded receipts, NEVER executes (BRACE ceiling honored in the UI); local make demo = real engine. And his challenge 'are you sure penecho is FULLY working?' caught a real bug: penecho sanitizes ANTHROPIC_API_KEY out of its executor env → claude-cli 502. Fixed via penecho's own --api config; its log receipt: upstreamStatus 200, write_text draft answered handwritten 1+1= on-canvas.
-- **2026-08-01** — 1-click activation becomes law; /allin-anything passes its ready gate (v1.5.0): Paul's rule, made permanent so he never repeats it: demo link at the TOP of README, make demo auto-opens the browser, PWA manifest installable — codified in anyagent's playbook row (rc0084), _templates/REPO_PLAYBOOK.md §4a, and drift-gated here by test_one_click_demo_contract. Skill ready gate added + relative-path bug fixed (route.py addressed absolutely — the front door works from any directory). Webapp validated live: all 6 sections OK, 0 console errors.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -47,6 +47,7 @@ edit the YAML, run `make build`; CI fails on drift.
 | [anyagent](https://github.com/wjlgatech/anyagent) 🔒 | ⚙️ engine | 🟢 integrated | Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry |
 | [design-anything](https://github.com/wjlgatech/design-anything) 🔒 | 🦾 physical | 🟢 integrated | Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes |
 | [graph-engineering-anything](https://github.com/wjlgatech/graph-engineering-anything) 🔒 | 💻 digital | 🟢 integrated | Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel) |
+| [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | 🟢 integrated | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
 | [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟢 integrated | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |
 | [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟢 integrated | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
 | [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟢 integrated | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
@@ -54,7 +55,6 @@ edit the YAML, run `make build`; CI fails on drift.
 | [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟢 integrated | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
 | [ai-native-os](https://github.com/wjlgatech/physical-ai-native-os) 🔒 | 💻 digital | 🟡 digested | Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | 🟡 digested | Autonomous job-search pipeline + self-upgrading inner loop |
-| [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | 🟡 digested | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | 🟡 digested | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |

@@ -41,6 +41,8 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
   now autonomous_bounded.
 - **agent-forge** (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial L0–L5, cost
   envelope, portable contract); own gate run live at the pin (11 deliverables + 324 tests).
+- **loop-engineering-anything** (⚙️) — converge any generate→judge→refactor loop; own pytest
+  suite run live (534 passed).
 
 ## Routing hints (digested / candidates — verify before promising)
 
@@ -49,7 +51,6 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 - career-os / ai-native-os (💻) — job search, AI-native org operations (career-os: local clone at
   pin, but upstream has no machine gate — 🟡 is its ceiling until one exists).
 - neuro-os (🦾) — brain mechanisms as executable primitives.
-- loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
 
 ## Ready gate (install + self-check)
 

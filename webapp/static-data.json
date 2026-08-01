@@ -2,8 +2,8 @@
  "exported_registry_version": "1.0",
  "registry": {
   "counts": {
-   "integrated": 12,
-   "digested": 6,
+   "integrated": 13,
+   "digested": 5,
    "candidate": 0
   },
   "satellites": {
@@ -58,6 +58,13 @@
      "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (incl. green-at-birth selftest) — docs/walkthroughs/corpus-to-graph.md"
     },
     {
+     "id": "loop-engineering-anything",
+     "role": "engine",
+     "capability": "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence",
+     "private": false,
+     "notes": "🟢 earned 2026-08-01: own pytest suite run live at re-pinned a608273, exit 0 (534 passed, 3 skipped) — no root make check upstream; its gate IS its test suite, stated honestly"
+    },
+    {
      "id": "master-anything",
      "role": "digital",
      "capability": "Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe",
@@ -109,13 +116,6 @@
      "notes": "local checkout cloned 2026-08-01 at the pin (395b64b) — repo has NO machine gate (no Makefile/tests), so 🟡 is its ceiling until upstream grows one; no evidence means no"
     },
     {
-     "id": "loop-engineering-anything",
-     "role": "engine",
-     "capability": "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence",
-     "private": false,
-     "notes": ""
-    },
-    {
      "id": "neuro-os",
      "role": "physical",
      "capability": "Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical)",
@@ -140,7 +140,7 @@
    "candidate": []
   },
   "chains": 6,
-  "verified_reach": 72
+  "verified_reach": 78
  },
  "chains": {
   "chains": [
@@ -356,7 +356,7 @@
   },
   {
    "id": "loop-engineering-anything",
-   "status": "digested",
+   "status": "integrated",
    "triggers": [
     "converge",
     "judge loop",

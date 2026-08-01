@@ -136,7 +136,8 @@ satellites:
     role: engine
     capability: "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence"
     url: https://github.com/wjlgatech/loop-engineering-anything
-    status: digested
+    status: integrated
+    notes: "🟢 earned 2026-08-01: own pytest suite run live at re-pinned a608273, exit 0 (534 passed, 3 skipped) — no root make check upstream; its gate IS its test suite, stated honestly"
     triggers: ["converge", "judge loop", "generate and judge"]
 
   - id: ai-native-os

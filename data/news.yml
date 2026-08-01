@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-08-01"
+    title: "loop-engineering-anything 🟢 — reach 13 × 6 = 78 (v1.8.0)"
+    note: "Own pytest suite run live at re-pinned a608273: exit 0, 534 passed, 3 skipped (its own conditional skips, disclosed). Upstream has no root make check — the promotion note says so plainly: its gate IS its test suite. The convergence organ (generate→judge→refactor→re-judge) joins the integrated table."
+  - date: "2026-08-01"
     title: "agent-forge 🟢 by its own gate at the pin — reach 12 × 6 = 72 (v1.7.0)"
     note: "make check run live at a3b0fa0 (the digest pin, exactly): gate_check.py PASS with 11 deliverables verified + 324 tests, exit 0. The design studio joins the integrated table — intent can now be routed to 'scope the agent BEFORE building it' with a verified badge. ai-native-os probed the same hour: no runnable gate at root — stays 🟡 per no-evidence-means-no."
   - date: "2026-08-01"

@@ -23,7 +23,7 @@ human hand on it.
 ## North-star metric
 
 **Verified reach = (🟢 integrated satellites) × (proven chains).** Computable offline from
-`data/registry.yml` + `docs/walkthroughs/` — currently 12 × 6 = 72. Coverage
+`data/registry.yml` + `docs/walkthroughs/` — currently 13 × 6 = 78. Coverage
 (zero ⚪ in the registry) and chain count are the two levers; a milestone that moves neither is
 maintenance, not progress.
 
