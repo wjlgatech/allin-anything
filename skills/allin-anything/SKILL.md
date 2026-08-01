@@ -39,10 +39,11 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 - **research-anything** (💻 🔒) — verified, window-dated research briefs; own gate run live
   (84 tests, golden-claim 5/5). With graph-engineering-anything = Chain 05 (corpus-to-graph),
   now autonomous_bounded.
+- **agent-forge** (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial L0–L5, cost
+  envelope, portable contract); own gate run live at the pin (11 deliverables + 324 tests).
 
 ## Routing hints (digested / candidates — verify before promising)
 
-- agent-forge (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
 - strategize-anything / reverse-engineering-anything (🔒 local-only) — strategy / reconstruction;
   pointer entries, route only for Paul locally.
 - career-os / ai-native-os (💻) — job search, AI-native org operations (career-os: local clone at

@@ -14,3 +14,8 @@
 - Each capability is a tested package; Makefile check gate present.
 
 Details beyond this summary stay in the private repo.
+
+## Live gate evidence (2026-08-01)
+
+- `make check` run here at the exact pin (`a3b0fa0`): **exit 0** — `gate_check.py` PASS
+  (11 deliverables verified) + **324 tests passed** (6.8s). Promoted 🟡→🟢 on that run.

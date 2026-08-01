@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 1.7.0 — 2026-08-01
+
+- **agent-forge 🟡→🟢** by its own gate run live at the exact digest pin `a3b0fa0`: exit 0
+  (`gate_check.py` PASS, 11 deliverables verified; 324 tests, 6.8s). Routed in the integrated
+  table (autonomy dial L0–L5, cost envelope, portable contract). Reach **12 × 6 = 72**.
+- Honest rulings the same hour: **ai-native-os** has no runnable gate at root — stays 🟡
+  (promotion path upstream, like career-os). loop-engineering-anything and neuro-os have
+  pyproject/tests and are queued as the next one-by-one ships.
+
 ## 1.6.0 — 2026-08-01
 
 - **The demo is now remotely visitable: https://allin-anything-demo.vercel.app** (Paul's

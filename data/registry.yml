@@ -40,9 +40,9 @@ satellites:
     role: engine
     capability: "Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms"
     url: https://github.com/wjlgatech/agent-forge
-    status: digested
+    status: integrated
     visibility: private
-    notes: "renamed from blueprint-anything 2026-07-28; digest re-pinned at a3b0fa082cf1"
+    notes: "renamed from blueprint-anything 2026-07-28, pinned a3b0fa082cf1; 🟢 earned 2026-08-01: own make check run live AT the pin, exit 0 (gate PASS 11 deliverables + 324 tests)"
     triggers: ["scope an agent", "autonomy level", "feasibility", "before we build", "agent contract"]
 
   - id: research-anything
@@ -146,7 +146,7 @@ satellites:
     url: https://github.com/wjlgatech/physical-ai-native-os
     status: digested
     visibility: private
-    notes: "remote repo name is physical-ai-native-os; local folder is ai-native-os"
+    notes: "remote repo name is physical-ai-native-os; local folder is ai-native-os. Probed 2026-08-01: no runnable gate at root — 🟡 is its ceiling until upstream grows one (no-evidence-means-no)"
     triggers: ["ai-native org", "founder ops", "company operations", "institutional knowledge", "compounding org"]
 
   - id: graph-engineering-anything

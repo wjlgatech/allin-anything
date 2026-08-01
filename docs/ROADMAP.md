@@ -26,6 +26,10 @@
 
 ## Post-v1.0 deliveries (milestone-independent)
 
+- **1.7.0 (2026-08-01) — agent-forge 🟢.** Own gate run live at the exact pin `a3b0fa0`:
+  exit 0 (gate PASS 11 deliverables + 324 tests). Reach 11×6 → **12 × 6 = 72**. Ruled honestly
+  the same day: ai-native-os has no runnable gate (stays 🟡, promotion path upstream).
+
 - **1.4.0 (2026-08-01) — research-anything 🟢; Chain 05 earns autonomy.** Own gate run live at
   the re-pinned `9119fc2`: exit 0 (84 tests, ainative 100/100, golden-claim-gate 5/5, one honest
   not-measured disclosed by its own gate). Chain 05 corpus→graph flipped assisted →

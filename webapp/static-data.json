@@ -2,8 +2,8 @@
  "exported_registry_version": "1.0",
  "registry": {
   "counts": {
-   "integrated": 11,
-   "digested": 7,
+   "integrated": 12,
+   "digested": 6,
    "candidate": 0
   },
   "satellites": {
@@ -21,6 +21,13 @@
      "capability": "Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first",
      "private": false,
      "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (router index drift-checked)"
+    },
+    {
+     "id": "agent-forge",
+     "role": "engine",
+     "capability": "Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms",
+     "private": true,
+     "notes": "renamed from blueprint-anything 2026-07-28, pinned a3b0fa082cf1; 🟢 earned 2026-08-01: own make check run live AT the pin, exit 0 (gate PASS 11 deliverables + 324 tests)"
     },
     {
      "id": "animate-anything",
@@ -88,18 +95,11 @@
    ],
    "digested": [
     {
-     "id": "agent-forge",
-     "role": "engine",
-     "capability": "Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms",
-     "private": true,
-     "notes": "renamed from blueprint-anything 2026-07-28; digest re-pinned at a3b0fa082cf1"
-    },
-    {
      "id": "ai-native-os",
      "role": "digital",
      "capability": "Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door",
      "private": true,
-     "notes": "remote repo name is physical-ai-native-os; local folder is ai-native-os"
+     "notes": "remote repo name is physical-ai-native-os; local folder is ai-native-os. Probed 2026-08-01: no runnable gate at root — 🟡 is its ceiling until upstream grows one (no-evidence-means-no)"
     },
     {
      "id": "career-os",
@@ -140,7 +140,7 @@
    "candidate": []
   },
   "chains": 6,
-  "verified_reach": 66
+  "verified_reach": 72
  },
  "chains": {
   "chains": [
@@ -249,7 +249,7 @@
   },
   {
    "id": "agent-forge",
-   "status": "digested",
+   "status": "integrated",
    "triggers": [
     "scope an agent",
     "autonomy level",
