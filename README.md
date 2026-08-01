@@ -65,7 +65,7 @@ make check   # pytest + drift gate + ainative self-audit (offline, deterministic
 ## Demo webapp — see it, point by point
 
 ```bash
-python3 scripts/webapp.py   # → http://127.0.0.1:8642 (local only)
+make demo   # = python3 scripts/webapp.py → http://127.0.0.1:8642 (local only)
 ```
 
 Five live sections, all backed by the real engine (nothing mocked): ① route any intent through

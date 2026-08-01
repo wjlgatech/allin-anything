@@ -24,6 +24,12 @@
 | M8 ✅ 2026-07-25 | Autonomy | **Bounded autonomy, calibrated by assessment**: `data/chains.yml` (per-chain flags, human gates mandatory) + AutoRunner (🟢-only, re-checked at runtime, journaled, stops at human gates); live bounded run of chain-02 exit 0. BRACE Tier-1 honestly **NO-GO 15/44** → ceiling set to local gate-running; enterprise 6/14→7/14 (LICENSE+CODEOWNERS) | chains.validate green in tests; live run exit 0; assessments recorded in docs/AUTONOMY.md | 8×5 ✓ (target was 7×5) |
 | M9 ✅ 2026-07-25 | Cadence | **v1.0**: weekly freshness workflow (STALE measured via `scripts/freshness.py`; stale pin → human-gated issue, never an auto-update) + `## Verified reach` README badge generated + drift-gated | sync.yml merged; reach block drift-gated by `make check`; freshness logic offline-tested | 8×5 (9×6 target deferred: career-os 🟢 needs a live gate run; Chain 06 queued) |
 
+## Post-v1.0 deliveries (milestone-independent)
+
+- **1.1.0 (2026-07-29) — demo webapp**: `make demo` serves a local 5-section demo backed by the
+  real Router/Registry/AutoRunner (nothing mocked); security boundary tested (chain whitelist,
+  input caps, assisted-chain refusal). See README "Demo webapp" + CHANGELOG.
+
 ## analyze trajectory (honest, not gamed)
 
 - M6+M7 (2026-07-25): 79/100 steady; tests 29 → 33 (3 chain-route cases + walkthrough sweep).
