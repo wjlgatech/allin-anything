@@ -26,6 +26,14 @@
 
 ## Post-v1.0 deliveries (milestone-independent)
 
+- **1.4.0 (2026-08-01) — research-anything 🟢; Chain 05 earns autonomy.** Own gate run live at
+  the re-pinned `9119fc2`: exit 0 (84 tests, ainative 100/100, golden-claim-gate 5/5, one honest
+  not-measured disclosed by its own gate). Chain 05 corpus→graph flipped assisted →
+  autonomous_bounded with executable steps and ran live end-to-end (both gates exit 0, stopped at
+  the human gate). Reach 10×6 → **11 × 6 = 66**. Remaining 🟡: agent-forge, ai-native-os,
+  career-os (no upstream gate), loop-engineering-anything, neuro-os, strategize-anything +
+  reverse-engineering-anything (local-only pointers).
+
 - **1.2.0 (2026-08-01) — Chain 06 + two promotions; the M9 deferred target closed honestly.**
   master-anything and animate-anything 🟢 by live gate runs (15 tests + organ smoke; style-linter
   100/100). Chain 06 *article → animated understanding* is autonomous_bounded and ran live through

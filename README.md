@@ -14,15 +14,15 @@ surface, one interaction contract.
 ## Verified reach
 
 <!-- BEGIN GENERATED: reach -->
-**Verified reach = 10 🟢 × 6 chains = 60** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
+**Verified reach = 11 🟢 × 6 chains = 66** — computed from `data/registry.yml` + `docs/walkthroughs/`, drift-gated (see docs/VISION.md).
 <!-- END GENERATED: reach -->
 
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-08-01** — research-anything 🟢 — Chain 05 earns bounded autonomy; reach 11 × 6 = 66: Own gate live at re-pinned 9119fc2: 84 tests, ainative 100/100, golden-claim-gate 5/5 — and its gate discloses one not-measured item honestly, the very discipline that qualifies it. Chain 05 corpus→graph flipped assisted→autonomous_bounded (the flip its own comment promised) and ran end-to-end: both gates exit 0, stopped at the publishing human gate. Roadmap-feature cadence per Paul: one at a time, quality >> quantity.
+- **2026-08-01** — Long-form live: 'Hard Ideas Bounce' — the all-in learning method, research-backed across 4 time windows: agentic-portfolio-lovat.vercel.app/articles/digest-anything-allin.html — 30d/30mo/30y/300y evidence (Ebbinghaus 1885 → Gates 1917 → Roediger-Karpicke 2006 → Harvard + Nigeria AI-tutor RCTs; graveyard: formal discipline, learning styles) for why the router's generative chain (draw/animate/teach/gate) beats AI summarizers. Bitter Lesson run is the case study. PR #149 merged, deploy content-verified; syndication prefilled, Paul's click. Card rc0010 (PR #150).
 - **2026-08-01** — Bitter Lesson artifact published canonically on the portfolio: agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html — the Chain 06 artifact live with the real penecho ink, brand thumbnail, and a provenance section (router → organs → gates). PR #147 merged after checks; deploy content-verified (title/ink/thumbnail/homepage listing). LinkedIn/X composers prefilled — posting stays Paul's click. Card rc0009 in the portfolio's collection (PR #148).
-- **2026-08-01** — The super-tool tested end-to-end: /allin-anything installed; penecho full-feature upstream; Bitter Lesson learned all-in: The flagship skill is now a user-installed meta-tool (symlink → /allin-anything works in any session). penecho @e1b936f run from its OWN checkout: npm run check = 200 tests exit 0, full UI live with Claude CLI executor, 4 real strokes drawn and exported by ITS OWN exporter (8059×4438 PNG). That ink anchors examples/bitter-lesson/ — FM-os reading-list №1 (Sutton 2019) as 5 animated sessions, browser-verified 0 errors. Demo webapp gains §5 pen→digital bridge (/api/penecho, pointer-only) + /bitter-lesson. AGPL boundary intact: zero penecho code in-repo.
-- **2026-08-01** — Chain 06 learn-anything live — reach 10 × 6 = 60; career-os ruled honestly: master-anything + animate-anything 🟢 by their own gates run live (15 tests + 8-organ smoke; 3b1b style-linter 100/100). Chain 06 article→animated-understanding ran autonomous_bounded end-to-end (both steps exit 0, stopped at the publishing human gate); its walkthrough claims the fields-2026 artifact as prior evidence. The 2026-07-27 router gap is closed by the same satellite that banked it. career-os: cloned at pin, NO machine gate upstream — stays 🟡 per no-evidence-means-no. CI actions re-bumped v5/v6.
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -42,13 +42,13 @@ edit the YAML, run `make build`; CI fails on drift.
 | [master-anything](https://github.com/wjlgatech/master-anything) 🔒 | 💻 digital | 🟢 integrated | Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe |
 | [money-os](https://github.com/wjlgatech/money-os) | 💻 digital | 🟢 integrated | AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0) |
 | [penecho](https://github.com/penecho/penecho) `@e1b936f` | 🌉 bridge | 🟢 integrated | AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge) |
+| [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟢 integrated | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
 | [rsi-os](https://github.com/wjlgatech/rsi-os) | ⚙️ engine | 🟢 integrated | Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026) |
 | [agent-forge](https://github.com/wjlgatech/agent-forge) 🔒 | ⚙️ engine | 🟡 digested | Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms |
 | [ai-native-os](https://github.com/wjlgatech/physical-ai-native-os) 🔒 | 💻 digital | 🟡 digested | Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door |
 | [career-os](https://github.com/wjlgatech/career-os) | 💻 digital | 🟡 digested | Autonomous job-search pipeline + self-upgrading inner loop |
 | [loop-engineering-anything](https://github.com/wjlgatech/loop-engineering-anything) | ⚙️ engine | 🟡 digested | Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence |
 | [neuro-os](https://github.com/wjlgatech/neuro-os) | 🦾 physical | 🟡 digested | Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical) |
-| [research-anything](https://github.com/wjlgatech/research-anything) 🔒 | 💻 digital | 🟡 digested | Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business) |
 | `reverse-engineering-anything` 🔒 | ⚙️ engine | 🟡 digested | AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize |
 | `strategize-anything` 🔒 | 💻 digital | 🟡 digested | Private strategy operating system (AI-assisted and AI-autonomous modes) |
 <!-- END GENERATED: satellites -->

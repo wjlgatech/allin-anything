@@ -62,7 +62,7 @@ def test_graph_routes_to_gea_first(router):
     d = router.route("build the knowledge graph for my research corpus")
     assert d.mode == "route"
     assert d.satellite_ids[0] == "graph-engineering-anything"
-    assert "research-anything=digested" in d.reason  # partner declared at honest status
+    assert "research-anything=integrated" in d.reason  # partner declared at honest status (🟢 2026-08-01)
 
 
 def test_learn_with_animation_routes_chain_06(router):

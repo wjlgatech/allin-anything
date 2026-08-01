@@ -35,11 +35,13 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
   organ smoke). With animate-anything = Chain 06 (article-to-animated-understanding).
 - **animate-anything** (💻) — executable animation craft (3b1b-style linter, gate 80); own gate
   run live (100/100). The motion half of Chain 06.
+- **research-anything** (💻 🔒) — verified, window-dated research briefs; own gate run live
+  (84 tests, golden-claim 5/5). With graph-engineering-anything = Chain 05 (corpus-to-graph),
+  now autonomous_bounded.
 
 ## Routing hints (digested / candidates — verify before promising)
 
 - agent-forge (⚙️ 🔒) — design/scope an agent BEFORE building (autonomy dial, cost, contract).
-- research-anything (💻 🔒) — verified, window-dated research briefs.
 - strategize-anything / reverse-engineering-anything (🔒 local-only) — strategy / reconstruction;
   pointer entries, route only for Paul locally.
 - career-os / ai-native-os (💻) — job search, AI-native org operations (career-os: local clone at

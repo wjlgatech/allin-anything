@@ -56,7 +56,12 @@ chains:
     title: "corpus → evidence-tiered knowledge graph"
     walkthrough: corpus-to-graph.md
     satellites: [graph-engineering-anything, research-anything]
-    autonomy: assisted   # research-anything is 🟡 — an autonomous chain needs every satellite 🟢
+    autonomy: autonomous_bounded   # earned 2026-08-01: research-anything 🟢 by its own gate (84 tests)
+    steps:
+      - cwd: "projects/graph-engineering-anything"
+        cmd: ["make", "check"]
+      - cwd: "projects/research-anything"
+        cmd: ["make", "check"]
     human_gates:
       - "publishing or acting on graph conclusions"
 

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.4.0 — 2026-08-01
+
+- **research-anything 🟡→🟢** by its own gate run live at re-pinned `9119fc2` (exit 0: 84 tests,
+  data-spine + graph reachability, ainative 100/100, golden-claim-gate 5/5; `science-agent-bench`
+  honestly not-measured by its own gate). Digest carries the evidence.
+- **Chain 05 corpus→graph: assisted → autonomous_bounded** — the flip its comment promised once
+  every satellite earned 🟢. Executable steps added; live AutoRunner run: both `make check` steps
+  exit 0, stopped at the "publishing or acting on graph conclusions" human gate.
+- Verified reach 10×6 → **11 × 6 = 66**. Registry v1.0. Router eval updated (partner disclosed
+  at its new honest status).
+
 ## 1.3.0 — 2026-08-01
 
 - **The super-tool, tested end-to-end on a real article.** `/allin-anything` is now an installed

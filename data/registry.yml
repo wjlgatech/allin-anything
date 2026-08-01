@@ -11,7 +11,7 @@
 # triggers: lowercase phrases the deterministic Router matches against an intent
 #           (substring match; every eval case in eval/allin-anything.md is a pytest case).
 
-version: "0.9"
+version: "1.0"
 updated: "2026-08-01"
 satellites:
   - id: penecho
@@ -50,8 +50,9 @@ satellites:
     role: digital
     capability: "Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business)"
     url: https://github.com/wjlgatech/research-anything
-    status: digested
+    status: integrated
     visibility: private
+    notes: "🟢 earned 2026-08-01: own make check run live at 9119fc2, exit 0 (84 tests, ainative 100/100, golden-claim-gate 5/5; one honest not-measured disclosed) — docs/walkthroughs/corpus-to-graph.md"
     triggers: ["research", "literature", "verified brief", "market research"]
 
   - id: master-anything
