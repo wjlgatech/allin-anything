@@ -306,5 +306,37 @@
         "evidence": "51 tests green; CHANGELOG 1.5.0 + news + README; CI run 30706037281 success 14s"
       }
     ]
+  },
+  {
+    "id": "rc0011",
+    "delivery": "Paul's 'are you sure?' answered with receipts: penecho ink\u2192AI\u2192draft loop root-caused (sanitizer strips ANTHROPIC_API_KEY \u2192 502) and fixed via penecho's own --api config (upstreamStatus 200, write_text draft on canvas); AND the demo went remote \u2014 allin-anything-demo.vercel.app, dual-mode, deployed side NEVER executes",
+    "objective": "Answer the penecho challenge honestly; make the agentic webapp remotely visitable per Paul's playbook amendment",
+    "created_at": "2026-08-01T15:48:07Z",
+    "key_results": [
+      {
+        "text": "honest audit beats confident claim",
+        "target": "the 502 chased to root cause by reproduction, not shrugged off as noise",
+        "score": 1.0,
+        "evidence": "minimal-env spawn reproduced Not-logged; fix via ~/.penecho/config.env (upstream code untouched); penecho log: upstreamStatus 200, claude-sonnet-5, 5.8s, tools [write_text]"
+      },
+      {
+        "text": "remote demo live + verified",
+        "target": "deployed URL serves, driven in a real browser",
+        "score": 1.0,
+        "evidence": "LIVE-REMOTE badge:OK route:OK reach66:OK noexec:OK bridge:OK at allin-anything-demo.vercel.app; snapshot reach 66 matches repo (drift-gated test)"
+      },
+      {
+        "text": "BRACE ceiling honored in the UI",
+        "target": "deployed demo never executes; receipts replace execution",
+        "score": 1.0,
+        "evidence": "data/evidence.yml receipts rendered remotely; local make demo remains the only execution surface"
+      },
+      {
+        "text": "SHIPPED per contract",
+        "target": "tests+docs+CI+playbook",
+        "score": 1.0,
+        "evidence": "52 tests green; CHANGELOG 1.6.0; penecho digest; playbook amended at all sources (anyagent rc0085); CI run 30706684756 success 12s"
+      }
+    ]
   }
 ]
