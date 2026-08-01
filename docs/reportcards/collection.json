@@ -274,5 +274,37 @@
         "evidence": "digest re-pin, SKILL routing, VISION 11x6=66 charter-tested, ROADMAP, CHANGELOG 1.4.0, news; 50 tests, CI green 14s"
       }
     ]
+  },
+  {
+    "id": "rc0010",
+    "delivery": "Super-tool READY + webapp fully validated + 1-click activation made LAW: README-top demo link (drift-gated), make demo auto-opens browser, PWA manifest, skill ready gate + any-cwd path fix; rule codified in anyagent playbook + REPO_PLAYBOOK so Paul never repeats it",
+    "objective": "Paul: 1) make /allin-anything ready 2) webapp fully functional/tested/validated per playbook, link at TOP of README, 1-click \u2014 and make that requirement permanent",
+    "created_at": "2026-08-01T15:30:21Z",
+    "key_results": [
+      {
+        "text": "never-repeat-again",
+        "target": "rule written at every source that generates future builds",
+        "score": 1.0,
+        "evidence": "anyagent docs/skill SKILL.md row (card rc0084 there, pushed), _templates/REPO_PLAYBOOK.md 4a, seeded copy, memory file, and test_one_click_demo_contract drift-gates this repo"
+      },
+      {
+        "text": "skill actually ready",
+        "target": "works from ANY directory + self-check documented",
+        "score": 1.0,
+        "evidence": "relative-path bug found and fixed (scripts/route.py was cwd-dependent); Ready gate section: symlink install, make check self-check, make demo"
+      },
+      {
+        "text": "webapp validated per playbook",
+        "target": "all sections exercised in a REAL browser, 0 console errors",
+        "score": 1.0,
+        "evidence": "VALIDATED route:OK refuse:OK reach66:OK chains6:OK c05bounded:OK bridge:OK; autorun API: chain-05 executed / chain-01 refused; manifest serves"
+      },
+      {
+        "text": "SHIPPED per contract",
+        "target": "tests+docs+CI",
+        "score": 1.0,
+        "evidence": "51 tests green; CHANGELOG 1.5.0 + news + README; CI run 30706037281 success 14s"
+      }
+    ]
   }
 ]
