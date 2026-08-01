@@ -1,0 +1,457 @@
+{
+ "exported_registry_version": "1.0",
+ "registry": {
+  "counts": {
+   "integrated": 11,
+   "digested": 7,
+   "candidate": 0
+  },
+  "satellites": {
+   "integrated": [
+    {
+     "id": "FDE-os",
+     "role": "bridge",
+     "capability": "Operating system for Forward Deployed Engineers — ship agentic systems inside the customer's real environment; live 3-door webapp",
+     "private": false,
+     "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (225 tests)"
+    },
+    {
+     "id": "FM-os",
+     "role": "digital",
+     "capability": "Living map of how language models are actually built and shipped — pre/post-training, fine-tuning, RL, SLM-first",
+     "private": false,
+     "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (router index drift-checked)"
+    },
+    {
+     "id": "animate-anything",
+     "role": "digital",
+     "capability": "The ranked, living map of animation — CSS keyframes to AI-authored video; machine-readable registry for agents; interactive map on Pages",
+     "private": false,
+     "notes": "gap found by the router 2026-07-27, banked; 🟢 earned 2026-08-01: own make check run live, exit 0 (style-linter gate 100/100 @946bef8) — docs/walkthroughs/article-to-animated-understanding.md"
+    },
+    {
+     "id": "anyagent",
+     "role": "engine",
+     "capability": "Build, grade, improve & accountably ship any agent app; goal-10x front door drives every repo in this registry",
+     "private": true,
+     "notes": "the engine this super-repo is driven by; private repo, pointer only"
+    },
+    {
+     "id": "design-anything",
+     "role": "physical",
+     "capability": "Design intent -> gate-verified physical blueprints: STL, floor plans, sewing patterns, sim scenes",
+     "private": true,
+     "notes": "gate run live 2026-07-25 (make check 7.7s green; construction_gate C1-C5 pass) — see docs/walkthroughs/sketch-to-buildable.md"
+    },
+    {
+     "id": "graph-engineering-anything",
+     "role": "digital",
+     "capability": "Graph Engineering Operating System — 'the model finds text; the graph finds reality'; evidence-tiered knowledge graphs + a copilot that won't bluff (live demo on Vercel)",
+     "private": true,
+     "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (incl. green-at-birth selftest) — docs/walkthroughs/corpus-to-graph.md"
+    },
+    {
+     "id": "master-anything",
+     "role": "digital",
+     "capability": "Master any hard topic in ~60 min: teach-back gate, fun >=4/5 measured, one portfolio artifact, +7-day retention probe",
+     "private": true,
+     "notes": "🟢 earned 2026-08-01: own make check run live, exit 0 (15 tests + organ smoke, 8 organs) — docs/walkthroughs/article-to-animated-understanding.md"
+    },
+    {
+     "id": "money-os",
+     "role": "digital",
+     "capability": "AI financial co-pilot — local-only data, zero uploads, zero subscriptions (v4.0)",
+     "private": false,
+     "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (28 tests, all gates) — docs/walkthroughs/intent-to-money-gates.md"
+    },
+    {
+     "id": "penecho",
+     "role": "bridge",
+     "capability": "AI spatial canvas — handwriting, equations, diagrams become model input; drafts return to the canvas (pen -> digital bridge)",
+     "private": false,
+     "notes": "AGPL — pointer + pinned digest ONLY, never vendored. 🟢 earned 2026-07-25: real canvas export → ink2plan adapter → construction_gate exit 0 (docs/walkthroughs/real-ink-to-ready.md)"
+    },
+    {
+     "id": "research-anything",
+     "role": "digital",
+     "capability": "Any research question in -> a verified, window-dated, autonomy-aware brief out (science, engineering, medicine, business)",
+     "private": true,
+     "notes": "🟢 earned 2026-08-01: own make check run live at 9119fc2, exit 0 (84 tests, ainative 100/100, golden-claim-gate 5/5; one honest not-measured disclosed) — docs/walkthroughs/corpus-to-graph.md"
+    },
+    {
+     "id": "rsi-os",
+     "role": "engine",
+     "capability": "Living, community-driven map of Recursive Self-Improvement / automated AI research — Godel Machine (2003) to AI Scientists (2026)",
+     "private": false,
+     "notes": "🟢 earned 2026-07-25: own make check run live, exit 0 (ingest check passed)"
+    }
+   ],
+   "digested": [
+    {
+     "id": "agent-forge",
+     "role": "engine",
+     "capability": "Agent design & feasibility studio (Forge): autonomy dial L0-L5, design dossier, cost envelope, portable contract for six platforms",
+     "private": true,
+     "notes": "renamed from blueprint-anything 2026-07-28; digest re-pinned at a3b0fa082cf1"
+    },
+    {
+     "id": "ai-native-os",
+     "role": "digital",
+     "capability": "Operating system for running an AI-native organization — knowledge captured in agents, contracts, durable state so it compounds instead of walking out the door",
+     "private": true,
+     "notes": "remote repo name is physical-ai-native-os; local folder is ai-native-os"
+    },
+    {
+     "id": "career-os",
+     "role": "digital",
+     "capability": "Autonomous job-search pipeline + self-upgrading inner loop",
+     "private": false,
+     "notes": "local checkout cloned 2026-08-01 at the pin (395b64b) — repo has NO machine gate (no Makefile/tests), so 🟡 is its ceiling until upstream grows one; no evidence means no"
+    },
+    {
+     "id": "loop-engineering-anything",
+     "role": "engine",
+     "capability": "Self-improving orchestrator: generate, judge, refactor, re-judge toward convergence",
+     "private": false,
+     "notes": ""
+    },
+    {
+     "id": "neuro-os",
+     "role": "physical",
+     "capability": "Executable neuroscience knowledge — brain mechanisms as primitives (the wetware end of physical)",
+     "private": false,
+     "notes": ""
+    },
+    {
+     "id": "reverse-engineering-anything",
+     "role": "engine",
+     "capability": "AI-powered reverse engineering meta-repo: Observe -> Decompose -> Model -> Reconstruct -> Validate -> Improve -> Generalize",
+     "private": true,
+     "notes": "local-only; pointer entry by owner's request — no details published"
+    },
+    {
+     "id": "strategize-anything",
+     "role": "digital",
+     "capability": "Private strategy operating system (AI-assisted and AI-autonomous modes)",
+     "private": true,
+     "notes": "local-only; pointer entry by owner's request — no details published"
+    }
+   ],
+   "candidate": []
+  },
+  "chains": 6,
+  "verified_reach": 66
+ },
+ "chains": {
+  "chains": [
+   {
+    "id": "chain-01",
+    "title": "sketch by hand → verify it's buildable",
+    "autonomy": "assisted",
+    "satellites": [
+     "penecho",
+     "design-anything"
+    ],
+    "human_gates": [
+     "drawing + accepting ink on penecho (upstream, human by design)",
+     "approving any real-world build"
+    ],
+    "walkthrough": "docs/walkthroughs/sketch-to-buildable.md"
+   },
+   {
+    "id": "chain-02",
+    "title": "real ink → construction READY",
+    "autonomy": "autonomous_bounded",
+    "satellites": [
+     "penecho",
+     "design-anything"
+    ],
+    "human_gates": [
+     "approving any real-world build (READY is design-sanity, not a permit)"
+    ],
+    "walkthrough": "docs/walkthroughs/real-ink-to-ready.md"
+   },
+   {
+    "id": "chain-03",
+    "title": "text brief → printable STL",
+    "autonomy": "autonomous_bounded",
+    "satellites": [
+     "design-anything"
+    ],
+    "human_gates": [
+     "starting the physical print (filament, printer, supervision)"
+    ],
+    "walkthrough": "docs/walkthroughs/brief-to-printable.md"
+   },
+   {
+    "id": "chain-04",
+    "title": "finance intent → money-os gates",
+    "autonomy": "autonomous_bounded",
+    "satellites": [
+     "money-os"
+    ],
+    "human_gates": [
+     "any actual financial action (money-os is human-gated for money by its own design)"
+    ],
+    "walkthrough": "docs/walkthroughs/intent-to-money-gates.md"
+   },
+   {
+    "id": "chain-05",
+    "title": "corpus → evidence-tiered knowledge graph",
+    "autonomy": "autonomous_bounded",
+    "satellites": [
+     "graph-engineering-anything",
+     "research-anything"
+    ],
+    "human_gates": [
+     "publishing or acting on graph conclusions"
+    ],
+    "walkthrough": "docs/walkthroughs/corpus-to-graph.md"
+   },
+   {
+    "id": "chain-06",
+    "title": "article → animated understanding (learn-anything)",
+    "autonomy": "autonomous_bounded",
+    "satellites": [
+     "master-anything",
+     "animate-anything"
+    ],
+    "human_gates": [
+     "publishing the learning artifact (portfolio/LinkedIn/X posting is always a human click)"
+    ],
+    "walkthrough": "docs/walkthroughs/article-to-animated-understanding.md"
+   }
+  ]
+ },
+ "routing": [
+  {
+   "id": "penecho",
+   "status": "integrated",
+   "triggers": [
+    "handwriting",
+    "sketch",
+    "canvas",
+    "whiteboard",
+    "draw by hand",
+    "by hand"
+   ]
+  },
+  {
+   "id": "anyagent",
+   "status": "integrated",
+   "triggers": [
+    "build an agent",
+    "agent app",
+    "ship an agent",
+    "grade an agent",
+    "refine an agent"
+   ]
+  },
+  {
+   "id": "agent-forge",
+   "status": "digested",
+   "triggers": [
+    "scope an agent",
+    "autonomy level",
+    "feasibility",
+    "before we build",
+    "agent contract"
+   ]
+  },
+  {
+   "id": "research-anything",
+   "status": "integrated",
+   "triggers": [
+    "research",
+    "literature",
+    "verified brief",
+    "market research"
+   ]
+  },
+  {
+   "id": "master-anything",
+   "status": "integrated",
+   "triggers": [
+    "learn",
+    "master this",
+    "understand deeply",
+    "teach me",
+    "explain so it sticks"
+   ]
+  },
+  {
+   "id": "strategize-anything",
+   "status": "digested",
+   "triggers": [
+    "strategy",
+    "strategize"
+   ]
+  },
+  {
+   "id": "reverse-engineering-anything",
+   "status": "digested",
+   "triggers": [
+    "reverse engineer",
+    "reconstruct",
+    "how does it work inside",
+    "clean-room"
+   ]
+  },
+  {
+   "id": "rsi-os",
+   "status": "integrated",
+   "triggers": [
+    "self-improv",
+    "recursive self",
+    "automated ai research",
+    "godel"
+   ]
+  },
+  {
+   "id": "FM-os",
+   "status": "integrated",
+   "triggers": [
+    "fine-tun",
+    "pretrain",
+    "post-train",
+    "small language model",
+    "slm",
+    "train a model"
+   ]
+  },
+  {
+   "id": "FDE-os",
+   "status": "integrated",
+   "triggers": [
+    "forward deployed",
+    "customer environment",
+    "on-site",
+    "field engineer"
+   ]
+  },
+  {
+   "id": "money-os",
+   "status": "integrated",
+   "triggers": [
+    "finance",
+    "invest",
+    "budget",
+    "wealth",
+    "portfolio rebalanc"
+   ]
+  },
+  {
+   "id": "design-anything",
+   "status": "integrated",
+   "triggers": [
+    "3d print",
+    "stl",
+    "floor plan",
+    "sewing",
+    "room layout",
+    "buildable",
+    "printable",
+    "garment"
+   ]
+  },
+  {
+   "id": "loop-engineering-anything",
+   "status": "digested",
+   "triggers": [
+    "converge",
+    "judge loop",
+    "generate and judge"
+   ]
+  },
+  {
+   "id": "ai-native-os",
+   "status": "digested",
+   "triggers": [
+    "ai-native org",
+    "founder ops",
+    "company operations",
+    "institutional knowledge",
+    "compounding org"
+   ]
+  },
+  {
+   "id": "graph-engineering-anything",
+   "status": "integrated",
+   "triggers": [
+    "knowledge graph",
+    "graph engineering",
+    "build the graph",
+    "entity resolution",
+    "graph rag"
+   ]
+  },
+  {
+   "id": "career-os",
+   "status": "digested",
+   "triggers": [
+    "job",
+    "resume",
+    "career",
+    "application"
+   ]
+  },
+  {
+   "id": "animate-anything",
+   "status": "integrated",
+   "triggers": [
+    "animate",
+    "animation",
+    "motion design",
+    "keyframe"
+   ]
+  },
+  {
+   "id": "neuro-os",
+   "status": "digested",
+   "triggers": [
+    "brain",
+    "neuroscience",
+    "neural mechanism"
+   ]
+  }
+ ],
+ "evidence": {
+  "chains": {
+   "chain-01": {
+    "date": "2026-07-25",
+    "receipt": "assisted by design — design-anything's construction_gate C1–C5 exit 0 (make check 7.7s); the sketch step is human"
+   },
+   "chain-02": {
+    "date": "2026-07-25",
+    "receipt": "REAL ink drawn on penecho's canvas → ink2plan adapter → construction_gate C1–C5 exit 0; live bounded AutoRunner run exit 0"
+   },
+   "chain-03": {
+    "date": "2026-07-25",
+    "receipt": "planter STL generated → ready_gate G1–G4 exit 0 (printability gates)"
+   },
+   "chain-04": {
+    "date": "2026-07-29",
+    "receipt": "money-os make check run live FROM this webapp: 96 tests, exit 0; stopped at the financial-action human gate"
+   },
+   "chain-05": {
+    "date": "2026-08-01",
+    "receipt": "autonomous_bounded run: graph-engineering-anything + research-anything own gates exit 0 (84 tests, golden-claim 5/5); stopped at the publish human gate"
+   },
+   "chain-06": {
+    "date": "2026-08-01",
+    "receipt": "autonomous_bounded run: master-anything (15 tests + 8-organ smoke) + animate-anything (style-linter 100/100) exit 0; artifact: the Bitter Lesson page"
+   }
+  },
+  "penecho": {
+   "date": "2026-08-01",
+   "receipt": "full loop verified upstream @e1b936f: own gate 200 tests exit 0; handwritten '1+1=' → /api/ai/command upstreamStatus 200 (claude-sonnet-5, 5.8s) → write_text draft returned to canvas"
+  },
+  "artifact_url": "https://agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html"
+ },
+ "penecho": {
+  "pinned_sha": "e1b936fe51103243b79c82427eef5a369448a660",
+  "license": "AGPL-3.0-only",
+  "rule": "run upstream from its own repo — pointer + pinned digest only, never vendored (AGPL-3.0-only)",
+  "upstream": "https://github.com/penecho/penecho"
+ }
+}

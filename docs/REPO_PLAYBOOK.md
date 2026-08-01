@@ -68,6 +68,9 @@ Paul's standing rule (2026-08-01): if the repo has a demo/webapp, its link goes 
 **top of README** (first screen), the server **auto-opens the browser** on start
 (`--no-open` escape hatch for CI), and the app is installable (PWA manifest / one
 `make demo` command). Add a drift test that pins the README link — undemoed ⇒ unshipped.
+**Amendment (2026-08-01):** 1-click means **remotely visitable** — deploy a public
+demo (Vercel) serving a build-time snapshot that NEVER executes; receipts replace
+execution panels remotely; the local command stays the power path.
 
 ## 5. Transferable lessons (earned, promote-worthy)
 

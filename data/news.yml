@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-08-01"
+    title: "Remote demo live at allin-anything-demo.vercel.app; penecho AI loop proven end-to-end (v1.6.0)"
+    note: "Paul's amendment: 1-click means remotely visitable. One dual-mode page — deployed = data snapshot + recorded receipts, NEVER executes (BRACE ceiling honored in the UI); local make demo = real engine. And his challenge 'are you sure penecho is FULLY working?' caught a real bug: penecho sanitizes ANTHROPIC_API_KEY out of its executor env → claude-cli 502. Fixed via penecho's own --api config; its log receipt: upstreamStatus 200, write_text draft answered handwritten 1+1= on-canvas."
+  - date: "2026-08-01"
     title: "1-click activation becomes law; /allin-anything passes its ready gate (v1.5.0)"
     note: "Paul's rule, made permanent so he never repeats it: demo link at the TOP of README, make demo auto-opens the browser, PWA manifest installable — codified in anyagent's playbook row (rc0084), _templates/REPO_PLAYBOOK.md §4a, and drift-gated here by test_one_click_demo_contract. Skill ready gate added + relative-path bug fixed (route.py addressed absolutely — the front door works from any directory). Webapp validated live: all 6 sections OK, 0 console errors."
   - date: "2026-08-01"

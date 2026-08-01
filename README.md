@@ -3,10 +3,12 @@
 **All-in interaction with both the digital and physical world — one super-repo that composes the
 `-anything` / `-os` agent family into a single front door.**
 
-> **▶️ 1-click demo:** `make demo` — starts the live webapp **and opens your browser** at
-> [http://127.0.0.1:8642](http://127.0.0.1:8642). Local-only by design (it executes real chain
-> gates); installable as an app via its PWA manifest. `/allin-anything` is the same front door
-> as a skill — see `skills/allin-anything/SKILL.md` § Ready gate.
+> **▶️ 1-click demo (no install): [allin-anything-demo.vercel.app](https://allin-anything-demo.vercel.app)**
+> — the live front door, visitable from anywhere. The deployed demo serves a build-time data
+> snapshot and **never executes** (bounded autonomy is local-only — the BRACE ceiling); execution
+> panels show recorded receipts instead. **Full power locally:** `make demo` (auto-opens the
+> browser at http://127.0.0.1:8642, runs real chain gates; PWA-installable).
+> `/allin-anything` is the same front door as a skill — `skills/allin-anything/SKILL.md` § Ready gate.
 
 You bring an intent ("design me a bracket I can print", "master this paper", "run my job search").
 The flagship skill routes it to the right satellite repo; every satellite is indexed here with a
@@ -25,9 +27,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-08-01** — Remote demo live at allin-anything-demo.vercel.app; penecho AI loop proven end-to-end (v1.6.0): Paul's amendment: 1-click means remotely visitable. One dual-mode page — deployed = data snapshot + recorded receipts, NEVER executes (BRACE ceiling honored in the UI); local make demo = real engine. And his challenge 'are you sure penecho is FULLY working?' caught a real bug: penecho sanitizes ANTHROPIC_API_KEY out of its executor env → claude-cli 502. Fixed via penecho's own --api config; its log receipt: upstreamStatus 200, write_text draft answered handwritten 1+1= on-canvas.
 - **2026-08-01** — 1-click activation becomes law; /allin-anything passes its ready gate (v1.5.0): Paul's rule, made permanent so he never repeats it: demo link at the TOP of README, make demo auto-opens the browser, PWA manifest installable — codified in anyagent's playbook row (rc0084), _templates/REPO_PLAYBOOK.md §4a, and drift-gated here by test_one_click_demo_contract. Skill ready gate added + relative-path bug fixed (route.py addressed absolutely — the front door works from any directory). Webapp validated live: all 6 sections OK, 0 console errors.
 - **2026-08-01** — research-anything 🟢 — Chain 05 earns bounded autonomy; reach 11 × 6 = 66: Own gate live at re-pinned 9119fc2: 84 tests, ainative 100/100, golden-claim-gate 5/5 — and its gate discloses one not-measured item honestly, the very discipline that qualifies it. Chain 05 corpus→graph flipped assisted→autonomous_bounded (the flip its own comment promised) and ran end-to-end: both gates exit 0, stopped at the publishing human gate. Roadmap-feature cadence per Paul: one at a time, quality >> quantity.
-- **2026-08-01** — Long-form live: 'Hard Ideas Bounce' — the all-in learning method, research-backed across 4 time windows: agentic-portfolio-lovat.vercel.app/articles/digest-anything-allin.html — 30d/30mo/30y/300y evidence (Ebbinghaus 1885 → Gates 1917 → Roediger-Karpicke 2006 → Harvard + Nigeria AI-tutor RCTs; graveyard: formal discipline, learning styles) for why the router's generative chain (draw/animate/teach/gate) beats AI summarizers. Bitter Lesson run is the case study. PR #149 merged, deploy content-verified; syndication prefilled, Paul's click. Card rc0010 (PR #150).
 <!-- END GENERATED: news -->
 
 ## Satellites
@@ -70,7 +72,9 @@ make check   # pytest + drift gate + ainative self-audit (offline, deterministic
 ## Demo webapp — see it, point by point
 
 ```bash
-make demo   # = python3 scripts/webapp.py → http://127.0.0.1:8642 (local only)
+make demo   # local full-power: real engine, real chain runs (auto-opens the browser)
+# remote:   https://allin-anything-demo.vercel.app — same UI over a build-time snapshot,
+#           receipts instead of execution (deploy: cd webapp && vercel deploy --prod)
 ```
 
 Six live sections, all backed by the real engine (nothing mocked): ① route any intent through

@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.6.0 — 2026-08-01
+
+- **The demo is now remotely visitable: https://allin-anything-demo.vercel.app** (Paul's
+  amendment: 127.0.0.1-only breaks the playbook). One dual-mode page: locally it drives the real
+  engine; deployed it serves a build-time snapshot (`webapp/static-data.json`, exported by
+  `make build`, drift-gated) and **never executes** — execution panels show recorded receipts
+  from `data/evidence.yml` (the BRACE local-only ceiling, honored in the UI itself).
+- **penecho FULLY working — Paul's challenge answered with a receipt.** The ink→AI→draft loop
+  had a real bug: penecho's env sanitizer strips `ANTHROPIC_API_KEY`, so the Claude-CLI executor
+  was "Not logged in" (502 model-error). Root-caused by reproduction, fixed via penecho's own
+  `--api` config (zero upstream code touched). Its log now shows `upstreamStatus:200 …
+  tools:["write_text"]` — handwritten `1+1=` answered on-canvas. Digest updated.
+- Playbook rule amended at every source (anyagent row, REPO_PLAYBOOK §4a, seeded copy, memory,
+  and the drift test now requires the REMOTE link atop README). 2 new tests (53 total).
+
 ## 1.5.0 — 2026-08-01
 
 - **1-click activation, made a LAW not a favor** (Paul: "I am tired of repeating myself"):

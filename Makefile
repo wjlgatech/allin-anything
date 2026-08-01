@@ -17,3 +17,4 @@ audit:
 
 build:
 	python3 scripts/build.py
+	python3 scripts/export_static.py

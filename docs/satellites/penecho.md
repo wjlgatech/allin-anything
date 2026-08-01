@@ -36,3 +36,18 @@
 
 - The draft-vs-confirmed split == our human-gated-irreversible discipline, applied to a canvas.
 - Physical ink as a first-class input modality — the pattern our router generalizes.
+
+## The AI loop, proven — and a real integration lesson (2026-08-01)
+
+- Paul asked: "are you sure penecho is FULLY working?" — the honest answer was no: the canvas,
+  export, and 200-test gate were proven, but the core ink→AI→draft loop had an unexplained 502.
+- **Root cause (reproduced, not guessed):** this machine's Claude CLI authenticates via
+  `ANTHROPIC_API_KEY`, and penecho's `sanitizeClaudeEnv` (good hygiene on their side) strips that
+  variable from the executor's environment → the CLI reports "Not logged in" → penecho 502
+  `model-error`. Reproduced with a minimal-env spawn; their code untouched.
+- **Fix within the run-upstream rule:** penecho's own supported config (`~/.penecho/config.env`,
+  chmod 600): `AI_API_URL=https://api.anthropic.com/v1/messages`, `AI_API_FORMAT=anthropic`,
+  `AI_API_MODEL=claude-sonnet-5`, key from the environment. `doctor --api` all-green.
+- **Receipt (penecho's own log):** handwritten `1+1=` → `/api/ai/command` →
+  `upstreamStatus:200, status:200, elapsedMs:5808, intent:"answer", tools:["write_text"]` —
+  a draft written back to the canvas. The full loop works.

@@ -54,17 +54,36 @@ def test_penecho_bridge_is_pointer_only_and_offline_safe():
 
 
 def test_one_click_demo_contract():
-    """Playbook rule (Paul, 2026-08-01): every agentic webapp ships 1-click activation —
-    demo link at the TOP of README, server auto-opens the browser, PWA manifest present."""
+    """Playbook rule (Paul, 2026-08-01, amended same day): every agentic webapp ships 1-click
+    activation — a REMOTELY VISITABLE deployed demo link at the TOP of README (127.0.0.1 alone
+    breaks the playbook), local `make demo` as the full-power path, auto-open, PWA manifest."""
     import json
 
     readme_top = "\n".join((ROOT / "README.md").read_text().splitlines()[:15])
-    assert "make demo" in readme_top and "127.0.0.1:8642" in readme_top, "demo link must be at the TOP of README"
+    assert "https://allin-anything-demo.vercel.app" in readme_top, "REMOTE demo link must top the README"
+    assert "make demo" in readme_top and "127.0.0.1:8642" in readme_top, "local full-power path stays documented"
     manifest = json.loads((ROOT / "webapp" / "manifest.json").read_text())
     assert manifest["display"] == "standalone" and manifest["theme_color"] == "#d97757"
     assert 'rel="manifest"' in (ROOT / "webapp" / "index.html").read_text()
     shell = (ROOT / "scripts" / "webapp.py").read_text()
     assert "webbrowser" in shell and "--no-open" in shell  # auto-open with a headless escape hatch
+
+
+def test_remote_snapshot_fresh_and_execution_free():
+    """The deployed demo's snapshot must match repo reality (drift-gated) and the remote page
+    must never execute: static mode shows receipts, not run buttons that do anything."""
+    import json
+
+    snap = json.loads((ROOT / "webapp" / "static-data.json").read_text())
+    from allin_anything import registry as reg_mod
+
+    reg = reg_mod.load(ROOT / "data" / "registry.yml")
+    greens = len(reg.by_status("integrated"))
+    chains_n = len(list((ROOT / "docs" / "walkthroughs").glob("*.md")))
+    assert snap["registry"]["verified_reach"] == greens * chains_n, "snapshot drifted — run make build"
+    assert set(snap["evidence"]["chains"]) == {c["id"] for c in snap["chains"]["chains"]}, "every chain needs a receipt"
+    page = (ROOT / "webapp" / "index.html").read_text()
+    assert "NEVER executes" in page and "static-data.json" in page  # remote mode is receipt-only
 
 
 def test_bitter_lesson_artifact_carries_real_penecho_ink():

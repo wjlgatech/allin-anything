@@ -1,0 +1,26 @@
+# evidence.yml — recorded live-run receipts, rendered into the REMOTE demo where execution
+# would be (the deployed demo never executes anything; bounded runs are local-only by BRACE).
+# Update when a chain re-runs live; exported to webapp/static-data.json by scripts/export_static.py.
+chains:
+  chain-01:
+    date: "2026-07-25"
+    receipt: "assisted by design — design-anything's construction_gate C1–C5 exit 0 (make check 7.7s); the sketch step is human"
+  chain-02:
+    date: "2026-07-25"
+    receipt: "REAL ink drawn on penecho's canvas → ink2plan adapter → construction_gate C1–C5 exit 0; live bounded AutoRunner run exit 0"
+  chain-03:
+    date: "2026-07-25"
+    receipt: "planter STL generated → ready_gate G1–G4 exit 0 (printability gates)"
+  chain-04:
+    date: "2026-07-29"
+    receipt: "money-os make check run live FROM this webapp: 96 tests, exit 0; stopped at the financial-action human gate"
+  chain-05:
+    date: "2026-08-01"
+    receipt: "autonomous_bounded run: graph-engineering-anything + research-anything own gates exit 0 (84 tests, golden-claim 5/5); stopped at the publish human gate"
+  chain-06:
+    date: "2026-08-01"
+    receipt: "autonomous_bounded run: master-anything (15 tests + 8-organ smoke) + animate-anything (style-linter 100/100) exit 0; artifact: the Bitter Lesson page"
+penecho:
+  date: "2026-08-01"
+  receipt: "full loop verified upstream @e1b936f: own gate 200 tests exit 0; handwritten '1+1=' → /api/ai/command upstreamStatus 200 (claude-sonnet-5, 5.8s) → write_text draft returned to canvas"
+artifact_url: "https://agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html"

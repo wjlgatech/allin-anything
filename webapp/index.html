@@ -44,6 +44,7 @@ th{background:var(--card2)}
 <div class="topbar"></div>
 <main class="wrap">
 <p class="eyebrow">allin-anything · live demo · everything below hits the real engine — nothing mocked</p>
+<p id="modeBadge" class="sub" style="margin-top:-.2rem"></p>
 <h1>One front door to the digital &amp; physical world</h1>
 
 <div class="explain">
@@ -90,8 +91,8 @@ th{background:var(--card2)}
 <h2><span class="num">5</span>The pen→digital bridge — penecho, running upstream</h2>
 <p class="sub">penecho is AGPL-3.0: we index it (pointer + pinned digest), we NEVER vendor it. It runs from its <b>own</b> checkout; this panel only looks across the bridge.</p>
 <button class="go" onclick="checkBridge()">Check the bridge →</button>
-<button class="alt" onclick="window.open('http://127.0.0.1:3888/','_blank')">Open penecho ↗</button>
-<button class="alt" onclick="window.open('/bitter-lesson','_blank')">See what crossed it: The Bitter Lesson, all-in style ↗</button>
+<button class="alt" onclick="window.open(MODE==='remote' ? 'https://github.com/penecho/penecho' : 'http://127.0.0.1:3888/','_blank')">Open penecho ↗</button>
+<button class="alt" onclick="window.open(MODE==='remote' ? 'https://agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html' : '/bitter-lesson','_blank')">See what crossed it: The Bitter Lesson, all-in style ↗</button>
 <pre id="bridgeOut">bridge status appears here</pre>
 </div>
 
@@ -110,14 +111,47 @@ th{background:var(--card2)}
 <p class="foot">allin-anything v1.0 · Anthropic brand tokens · backend = the real Router / Registry / AutoRunner · github.com/wjlgatech/allin-anything · Paul Jialiang Wu</p>
 </main>
 <script>
+// Dual-mode: LOCAL (make demo) hits the real engine via /api/*; REMOTE (Vercel) serves the
+// same UI over a build-time snapshot and NEVER executes — bounded runs are local-only (BRACE).
+let MODE = 'local', S = null;
+const ready = (async () => {
+  try { const r = await fetch('/api/registry', {method:'GET'}); if (!r.ok) throw 0; }
+  catch (e) {
+    MODE = 'remote';
+    S = await (await fetch('static-data.json')).json();
+    document.getElementById('modeBadge').innerHTML =
+      '🌐 <b>remote demo</b> — same UI, data snapshot of registry v' + S.exported_registry_version +
+      '; execution panels show recorded receipts. Full power runs locally: <code>git clone github.com/wjlgatech/allin-anything && make demo</code>';
+  }
+})();
 function setIntent(s){ document.getElementById('intent').value = s; doRoute(); }
+function routeStatic(intent){
+  const q = intent.toLowerCase();
+  if (!q.trim()) return {error: 'give me an intent'};
+  if (q.includes('copy') && q.includes('penecho'))
+    return {intent, mode:'refuse', satellites:[], reason:'AGPL + satellites-never-vendored — refused (JS mirror of the pytest-gated rule)'};
+  const named = S.routing.find(s => q.includes(s.id.toLowerCase()));
+  if (named) return {intent, mode:'direct', satellites:[named.id], reason:'satellite named — go direct'};
+  const hits = S.routing.filter(s => s.triggers.some(t => q.includes(t)));
+  if (!hits.length) return {intent, mode:'none', satellites:[], reason:'no trigger matched — gap gets banked to data/news.yml'};
+  const rank = {integrated:0, digested:1, candidate:2};
+  hits.sort((a,b) => rank[a.status]-rank[b.status]);
+  return {intent, mode:'route', satellites:hits.map(h=>h.id),
+          reason:'trigger match (' + hits.map(h=>h.id+'='+h.status).join(', ') + ') — JS mirror over the same registry data; canonical verdicts are pytest cases'};
+}
 async function doRoute(){
+  await ready;
   const intent = document.getElementById('intent').value;
+  if (MODE === 'remote') {
+    document.getElementById('routeOut').textContent = JSON.stringify(routeStatic(intent), null, 2);
+    return;
+  }
   const r = await fetch('/api/route', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({intent})});
   document.getElementById('routeOut').textContent = JSON.stringify(await r.json(), null, 2);
 }
 async function loadRegistry(){
-  const r = await fetch('/api/registry'); const d = await r.json();
+  await ready;
+  const d = MODE === 'remote' ? S.registry : await (await fetch('/api/registry')).json();
   const badge = s => s==='integrated' ? '<span class="badge b-g">🟢</span>' : s==='digested' ? '<span class="badge b-y">🟡</span>' : '<span class="badge b-w">⚪</span>';
   let h = '<p class="reach">Verified reach = ' + d.counts.integrated + ' 🟢 × ' + d.chains + ' chains = ' + d.verified_reach + '</p><table><tr><th></th><th>satellite</th><th>capability</th></tr>';
   for (const st of ['integrated','digested','candidate'])
@@ -126,13 +160,24 @@ async function loadRegistry(){
   document.getElementById('regOut').innerHTML = h + '</table>';
 }
 async function loadChains(){
-  const r = await fetch('/api/chains'); const d = await r.json();
+  await ready;
+  const d = MODE === 'remote' ? S.chains : await (await fetch('/api/chains')).json();
   let h = '<table><tr><th>chain</th><th>title</th><th>autonomy</th><th>human gate</th></tr>';
   for (const c of d.chains)
     h += '<tr><td><b>' + c.id + '</b></td><td>' + c.title + '</td><td>' + (c.autonomy==='autonomous_bounded' ? '🤖 bounded' : '🤝 assisted') + '</td><td>🔑 ' + c.human_gates[0] + '</td></tr>';
   document.getElementById('chainOut').innerHTML = h + '</table>';
 }
 async function checkBridge(){
+  await ready;
+  if (MODE === 'remote') {
+    const p = S.penecho, ev = S.evidence.penecho;
+    document.getElementById('bridgeOut').textContent =
+      '🌉 penecho runs UPSTREAM (' + p.upstream + ') — this deployed demo only points across the bridge.' +
+      '\n📌 pin: ' + p.pinned_sha.slice(0,7) + ' · license: ' + p.license + '\n⚖️ rule: ' + p.rule +
+      '\n🧾 recorded receipt (' + ev.date + '): ' + ev.receipt +
+      '\n💻 run it yourself: clone the repo, make demo, then start penecho from ITS OWN checkout';
+    return;
+  }
   const r = await fetch('/api/penecho'); const d = await r.json();
   document.getElementById('bridgeOut').textContent =
     (d.running ? '🌉 penecho is UP at ' + d.url : '🌫 no local penecho running (start it: ' + d.launch + ')') +
@@ -140,7 +185,15 @@ async function checkBridge(){
     '\n📂 sibling checkout present: ' + d.checkout;
 }
 async function runChain(id){
+  await ready;
   const out = document.getElementById('runOut');
+  if (MODE === 'remote') {
+    const ev = S.evidence.chains[id];
+    out.textContent = '🌐 The deployed demo NEVER executes (bounded autonomy is local-only — BRACE ceiling).\n' +
+      '🧾 recorded receipt for ' + id + ' (' + ev.date + '):\n    ' + ev.receipt +
+      '\n💻 run it live: git clone github.com/wjlgatech/allin-anything && make demo';
+    return;
+  }
   out.textContent = '⏳ running ' + id + ' against the real gates…';
   const r = await fetch('/api/autorun', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({chain:id})});
   const d = await r.json();
