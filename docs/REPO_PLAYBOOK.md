@@ -62,6 +62,13 @@ milestone**, not once at the end — and don't game a sub-metric (trust the arti
 → drift-gated README block · `eval/<skill>.md` (should / should-not-trigger, each backed by a
 test) · `llms.txt` · `.github/ISSUE_TEMPLATE/gate-dispute.md` · `## Honest edges` in README.
 
+### 4a. Agentic webapp? Then 1-click activation is part of DONE
+
+Paul's standing rule (2026-08-01): if the repo has a demo/webapp, its link goes at the
+**top of README** (first screen), the server **auto-opens the browser** on start
+(`--no-open` escape hatch for CI), and the app is installable (PWA manifest / one
+`make demo` command). Add a drift test that pins the README link — undemoed ⇒ unshipped.
+
 ## 5. Transferable lessons (earned, promote-worthy)
 
 1. **The satellite pattern is domain-agnostic** — if your repo composes external repos, index +

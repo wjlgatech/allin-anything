@@ -3,6 +3,11 @@
 **All-in interaction with both the digital and physical world — one super-repo that composes the
 `-anything` / `-os` agent family into a single front door.**
 
+> **▶️ 1-click demo:** `make demo` — starts the live webapp **and opens your browser** at
+> [http://127.0.0.1:8642](http://127.0.0.1:8642). Local-only by design (it executes real chain
+> gates); installable as an app via its PWA manifest. `/allin-anything` is the same front door
+> as a skill — see `skills/allin-anything/SKILL.md` § Ready gate.
+
 You bring an intent ("design me a bracket I can print", "master this paper", "run my job search").
 The flagship skill routes it to the right satellite repo; every satellite is indexed here with a
 verified status — never vendored, never guessed.
@@ -20,9 +25,9 @@ surface, one interaction contract.
 ## News
 
 <!-- BEGIN GENERATED: news -->
+- **2026-08-01** — 1-click activation becomes law; /allin-anything passes its ready gate (v1.5.0): Paul's rule, made permanent so he never repeats it: demo link at the TOP of README, make demo auto-opens the browser, PWA manifest installable — codified in anyagent's playbook row (rc0084), _templates/REPO_PLAYBOOK.md §4a, and drift-gated here by test_one_click_demo_contract. Skill ready gate added + relative-path bug fixed (route.py addressed absolutely — the front door works from any directory). Webapp validated live: all 6 sections OK, 0 console errors.
 - **2026-08-01** — research-anything 🟢 — Chain 05 earns bounded autonomy; reach 11 × 6 = 66: Own gate live at re-pinned 9119fc2: 84 tests, ainative 100/100, golden-claim-gate 5/5 — and its gate discloses one not-measured item honestly, the very discipline that qualifies it. Chain 05 corpus→graph flipped assisted→autonomous_bounded (the flip its own comment promised) and ran end-to-end: both gates exit 0, stopped at the publishing human gate. Roadmap-feature cadence per Paul: one at a time, quality >> quantity.
 - **2026-08-01** — Long-form live: 'Hard Ideas Bounce' — the all-in learning method, research-backed across 4 time windows: agentic-portfolio-lovat.vercel.app/articles/digest-anything-allin.html — 30d/30mo/30y/300y evidence (Ebbinghaus 1885 → Gates 1917 → Roediger-Karpicke 2006 → Harvard + Nigeria AI-tutor RCTs; graveyard: formal discipline, learning styles) for why the router's generative chain (draw/animate/teach/gate) beats AI summarizers. Bitter Lesson run is the case study. PR #149 merged, deploy content-verified; syndication prefilled, Paul's click. Card rc0010 (PR #150).
-- **2026-08-01** — Bitter Lesson artifact published canonically on the portfolio: agentic-portfolio-lovat.vercel.app/articles/bitter-lesson-allin.html — the Chain 06 artifact live with the real penecho ink, brand thumbnail, and a provenance section (router → organs → gates). PR #147 merged after checks; deploy content-verified (title/ink/thumbnail/homepage listing). LinkedIn/X composers prefilled — posting stays Paul's click. Card rc0009 in the portfolio's collection (PR #148).
 <!-- END GENERATED: news -->
 
 ## Satellites

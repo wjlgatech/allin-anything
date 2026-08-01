@@ -11,7 +11,8 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
 ## Protocol
 
 1. **Absorb** the intent in ≤3 lines; classify the world it touches: 💻 digital, 🦾 physical, or 🌉 both.
-2. **Route** — run the deterministic pre-router first: `python3 scripts/route.py "<intent>"`
+2. **Route** — run the deterministic pre-router first (works from ANY directory — never assume
+   the repo is the cwd): `python3 ~/Documents/Projects/allin-anything/scripts/route.py "<intent>"`
    (modes: route / direct / none / refuse; every eval case is a pytest in tests/test_router.py).
    Use judgment only to refine its verdict, never to contradict a `refuse`. Prefer 🟢 integrated >
    🟡 digested > ⚪ candidate; tell the user the status of what you routed to (a ⚪ candidate means
@@ -48,6 +49,16 @@ Single source of truth: `data/registry.yml` (statuses are gate-verified, never v
   pin, but upstream has no machine gate — 🟡 is its ceiling until one exists).
 - neuro-os (🦾) — brain mechanisms as executable primitives.
 - loop-engineering-anything (⚙️) — converge any generate→judge→refactor loop.
+
+## Ready gate (install + self-check)
+
+- **Install once per machine**: `ln -sfn ~/Documents/Projects/allin-anything/skills/allin-anything ~/.claude/skills/allin-anything`
+  — a symlink, so the skill can never drift from the repo. `/allin-anything` then works in any session.
+- **See it, don't imagine it**: `make demo` (in the repo) starts the live webapp and opens the
+  browser — router, ladder, chains, bounded runs, the penecho bridge, all against the real engine.
+- **Self-check**: `cd ~/Documents/Projects/allin-anything && make check` — if that is green, this
+  skill's routing table is in sync (registry validation fails the build when an integrated
+  satellite is missing from this file).
 
 ## Hard rules
 

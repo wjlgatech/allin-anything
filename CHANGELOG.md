@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.5.0 — 2026-08-01
+
+- **1-click activation, made a LAW not a favor** (Paul: "I am tired of repeating myself"):
+  demo link now at the TOP of README; `make demo` auto-opens the browser (`--no-open` for CI);
+  PWA manifest served at `/manifest.json` (installable). The rule is codified at the SOURCE —
+  anyagent's agentic-webapp playbook row (rc0084 there), `_templates/REPO_PLAYBOOK.md` §4a, the
+  seeded copy here — and enforced by `test_one_click_demo_contract` (README-top link is drift-gated).
+- **/allin-anything ready gate**: SKILL.md § Ready gate (install symlink, self-check, demo);
+  fixed the relative-path bug (`scripts/route.py` now addressed absolutely — the skill works from
+  ANY directory, which is the whole point of a front door).
+- Webapp validated per playbook in a real browser: all 6 sections exercised live (route, refusal,
+  ladder reach 66, chain table incl. chain-05 bounded, bridge pin) — 0 console errors; bounded-run
+  section proven via API (chain-05 executed, chain-01 refused). 51 tests.
+
 ## 1.4.0 — 2026-08-01
 
 - **research-anything 🟡→🟢** by its own gate run live at re-pinned `9119fc2` (exit 0: 84 tests,

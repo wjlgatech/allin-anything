@@ -53,6 +53,20 @@ def test_penecho_bridge_is_pointer_only_and_offline_safe():
     assert isinstance(d["running"], bool)  # offline (CI) must yield False, never an error
 
 
+def test_one_click_demo_contract():
+    """Playbook rule (Paul, 2026-08-01): every agentic webapp ships 1-click activation —
+    demo link at the TOP of README, server auto-opens the browser, PWA manifest present."""
+    import json
+
+    readme_top = "\n".join((ROOT / "README.md").read_text().splitlines()[:15])
+    assert "make demo" in readme_top and "127.0.0.1:8642" in readme_top, "demo link must be at the TOP of README"
+    manifest = json.loads((ROOT / "webapp" / "manifest.json").read_text())
+    assert manifest["display"] == "standalone" and manifest["theme_color"] == "#d97757"
+    assert 'rel="manifest"' in (ROOT / "webapp" / "index.html").read_text()
+    shell = (ROOT / "scripts" / "webapp.py").read_text()
+    assert "webbrowser" in shell and "--no-open" in shell  # auto-open with a headless escape hatch
+
+
 def test_bitter_lesson_artifact_carries_real_penecho_ink():
     page = (ROOT / "examples" / "bitter-lesson" / "index.html").read_text()
     assert page.count('class="session"') == 5  # master-anything session structure

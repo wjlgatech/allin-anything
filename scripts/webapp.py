@@ -40,6 +40,9 @@ class Handler(BaseHTTPRequestHandler):
             self._json(APP.chain_list())
         elif self.path == "/api/penecho":
             self._json(APP.penecho_bridge())
+        elif self.path == "/manifest.json":
+            self._send(200, (ROOT / "webapp" / "manifest.json").read_bytes(),
+                       "application/manifest+json")
         elif self.path == "/bitter-lesson":
             self._send(200, (ROOT / "examples" / "bitter-lesson" / "index.html").read_bytes(),
                        "text/html; charset=utf-8")
@@ -66,10 +69,21 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> int:
-    """Serve the demo on localhost only (this is a local demo, not a deployment)."""
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8642
+    """Serve the demo on localhost only (this is a local demo, not a deployment).
+
+    1-click activation (playbook rule): starting the server IS the demo — the browser
+    opens itself unless --no-open is passed (CI/headless).
+    """
+    args = [a for a in sys.argv[1:] if a != "--no-open"]
+    port = int(args[0]) if args else 8642
     server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
-    print(f"✓ allin-anything demo → http://127.0.0.1:{port}  (Ctrl-C stops)")
+    url = f"http://127.0.0.1:{port}"
+    print(f"✓ allin-anything demo → {url}  (Ctrl-C stops)")
+    if "--no-open" not in sys.argv:
+        import threading
+        import webbrowser
+
+        threading.Timer(0.4, webbrowser.open, args=(url,)).start()
     server.serve_forever()
     return 0
 

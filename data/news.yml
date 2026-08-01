@@ -1,6 +1,9 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
   - date: "2026-08-01"
+    title: "1-click activation becomes law; /allin-anything passes its ready gate (v1.5.0)"
+    note: "Paul's rule, made permanent so he never repeats it: demo link at the TOP of README, make demo auto-opens the browser, PWA manifest installable — codified in anyagent's playbook row (rc0084), _templates/REPO_PLAYBOOK.md §4a, and drift-gated here by test_one_click_demo_contract. Skill ready gate added + relative-path bug fixed (route.py addressed absolutely — the front door works from any directory). Webapp validated live: all 6 sections OK, 0 console errors."
+  - date: "2026-08-01"
     title: "research-anything 🟢 — Chain 05 earns bounded autonomy; reach 11 × 6 = 66"
     note: "Own gate live at re-pinned 9119fc2: 84 tests, ainative 100/100, golden-claim-gate 5/5 — and its gate discloses one not-measured item honestly, the very discipline that qualifies it. Chain 05 corpus→graph flipped assisted→autonomous_bounded (the flip its own comment promised) and ran end-to-end: both gates exit 0, stopped at the publishing human gate. Roadmap-feature cadence per Paul: one at a time, quality >> quantity."
   - date: "2026-08-01"
