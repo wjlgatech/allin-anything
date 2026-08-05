@@ -1,5 +1,8 @@
 # news.yml — compounding memory. Newest first. Rendered (top 3) into README by build.py.
 entries:
+  - date: "2026-08-04"
+    title: "▶ Open app: allin-anything joins the portfolio's project grid with a 1-click demo button"
+    note: "agentic-portfolio-lovat.vercel.app now carries an allin-anything card (Self-Improving Agentic OS, featured) whose Open app button opens allin-anything-demo.vercel.app — verified live by content. The fix underneath outlives this card: the portfolio's KV snapshot shadowed any project curated after the last GitHub sync (a committed card was a silent no-op); backfillFromSeed now appends seed-only projects, contract-tested. The repo's GitHub Website field also points at the demo, so future syncs adopt the link from the source the world reads. Portfolio PR #257 merged, all checks green. Bonus: yesterday's quota-queued digest-anything zh-CN page rode the same deploy window — now live, content-verified (三百年配方)."
   - date: "2026-08-01"
     title: "Reading-list №2 learned all-in: Brook for GPUs — article live on the portfolio"
     note: "agentic-portfolio-lovat.vercel.app/articles/brook-gpus-allin.html — router named penecho + animate-anything + master-anything (all 🟢), chain-06 gates exit 0, streams→kernel ink drawn on penecho and exported by its own renderer. Full playbook: 4 verbatim quotes fetched from primary PDFs (Brook, AlexNet, Hooker), grep receipts for the zero-AI-mentions hook, reader-kit, promo kit with inline links. PR #157 merged; deploy content-verified. Honest ruling banked the same day: neuro-os pytest on this machine = 2 failed + 10 e2e errors (842 passed) — NOT green, stays 🟡; an earlier pipe had masked the exit code, caught and corrected."
