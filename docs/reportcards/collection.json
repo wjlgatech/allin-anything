@@ -338,5 +338,41 @@
         "evidence": "52 tests green; CHANGELOG 1.6.0; penecho digest; playbook amended at all sources (anyagent rc0085); CI run 30706684756 success 12s"
       }
     ]
+  },
+  {
+    "id": "rc0012",
+    "delivery": "Portfolio Open app button: allin-anything card live + seed-shadow bug fixed",
+    "objective": "Make the allin-anything webapp reachable through a 1-click Open app button on its portfolio project card",
+    "created_at": "2026-08-04T23:16:41-05:00",
+    "key_results": [
+      {
+        "text": "allin-anything card in portfolio grid with 1-click Open app",
+        "target": "card live on agentic-portfolio-lovat.vercel.app",
+        "score": 1.0,
+        "evidence": "PR #257 merged 0c2415d; live HTML contains allin-anything-demo.vercel.app (cache-busted curl); demo 200"
+      },
+      {
+        "text": "root-cause fix, not a data patch",
+        "target": "seed-only projects surface without waiting for a GitHub sync",
+        "score": 1.0,
+        "evidence": "backfillFromSeed appends seed-only entries; contract test added; old length-1 assertion updated explicitly; full npm test + tsc + vitest green"
+      },
+      {
+        "text": "self-maintaining link",
+        "target": "future syncs adopt the app URL from GitHub",
+        "score": 1.0,
+        "evidence": "gh repo edit set Website field to allin-anything-demo.vercel.app; appFromHomepage adopts it"
+      },
+      {
+        "text": "close yesterday's queued deploy",
+        "target": "digest-anything zh-CN live",
+        "score": 1.0,
+        "evidence": "200 + content-verified \u4e09\u767e\u5e74 \u00d77 after quota window reset"
+      }
+    ],
+    "growth": [
+      "P2:met:traced the no-op risk to the KV-shadow first principle (snapshot replaces seed) before touching data \u2014 fixed the class, not the instance",
+      "C1:met:did not trust the merge alone \u2014 verified the LIVE page by cache-busted content, and caught that a seed edit alone would have shipped nothing"
+    ]
   }
 ]
